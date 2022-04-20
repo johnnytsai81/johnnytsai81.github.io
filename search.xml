@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/04/20/hello-world/"/>
+      <url>/2022/04/20/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2010/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2010/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2011/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2012/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2014/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2013/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2016/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2016/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2015/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2015/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2017/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2017/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2018/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2019/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2019/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2020/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2020/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2021/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2021/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> category_2 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%204/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%204/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%203/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%203/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> second </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%206/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%205/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%205/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%208/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%207/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%209/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%209/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy/</url>
+      
+        <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。<br>tag: </p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><div class='post-gallery'>    <img src='/images/key-visual.jpg' style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img></div><h3 id="Interdum-et-malesuada"><a href="#Interdum-et-malesuada" class="headerlink" title="Interdum et malesuada"></a>Interdum et malesuada</h3><p>fames ac ante ipsum primis in faucibus. blandit eget felis aliquam, rhoncus <a href="https://adult.noodlemagazine.com/watch/-183645685_456240086">varius</a> urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.</p><p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p><blockquote><p>你不一定要很厲害，才能開始；但你要開始，才能很厲害</p></blockquote><h2 id="List-Types"><a href="#List-Types" class="headerlink" title="List Types"></a>List Types</h2><p><img src="/images/key-visual.jpg" alt="title"><br><em>image_caption</em></p><h3 id="相對位置的方法"><a href="#相對位置的方法" class="headerlink" title="相對位置的方法"></a>相對位置的方法</h3><ol><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ol><hr><h2 id="指定的方法"><a href="#指定的方法" class="headerlink" title="指定的方法"></a>指定的方法</h2><h4 id="1-使用事件監聽器"><a href="#1-使用事件監聽器" class="headerlink" title="1. 使用事件監聽器"></a>1. 使用事件監聽器</h4><ul><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ul><hr><hr><h3 id="Checkbox-List-ul"><a href="#Checkbox-List-ul" class="headerlink" title="Checkbox List (ul)"></a>Checkbox List (ul)</h3><p><a href="https://www.youtube.com/">love</a></p><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** example **/</span></span><br><span class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fefefe</span>; <span class="comment">/*background color of the window and titlebar*/</span></span><br><span class="line">  <span class="attribute">font-family</span>: helvetica, sans-serif; <span class="comment">/*custom font*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>; <span class="comment">/*default font size*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">90%</span>; <span class="comment">/*adjust size of the wriring area*/</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1rem</span>; <span class="comment">/*basic font size*/</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#555</span>; <span class="comment">/*basic font color*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>😙</p><ul><li>This is a bullet in an un-ordered list</li><li>This is a bullet in an un-ordered list<ul><li>This is a sub-bullet</li><li>This is a sub-bullet</li></ul></li><li>This is a bullet in an un-ordered list</li></ul><ol><li>The fist item</li><li>The second item</li><li>This is a sub-bullet</li><li>This is also a sub bullet</li><li>The third item</li></ol><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><table><thead><tr><th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th></tr></thead><tbody><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr></tbody></table><blockquote><p>This is a callout box, it gets a fancy little box and border.</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/2021/12/08/html%E6%B8%AC%E8%A9%A6/"/>
+      <url>/2021/12/08/html%E6%B8%AC%E8%A9%A6/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h2 id="collapsible-markdown"><a href="#collapsible-markdown" class="headerlink" title="collapsible markdown?"></a>collapsible markdown?</h2><details><summary>CLICK ME</summary><p><h4 id="yes-even-hidden-code-blocks"><a href="#yes-even-hidden-code-blocks" class="headerlink" title="yes, even hidden code blocks!"></a>yes, even hidden code blocks!</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br></pre></td></tr></table></figure></p></details>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>lightgallery.js</title>
+      <link href="/2021/12/08/post-02/"/>
+      <url>/2021/12/08/post-02/</url>
+      
+        <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://www.lightgalleryjs.com/">version2</a>，但是需要付費獲得授權碼才能使用。但是基礎的幻燈片功能<a href="https://sachinchoolur.github.io/lightgallery.js/">version1</a>也很夠用了，所以文章主要討論的範圍皆為version1。</p><p>lightgallery 需要放css跟js兩個檔案，樣式的部分先用原生的css，之後再自己寫css覆蓋掉會快很多。</p><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>首先先設定最基礎的HTML架構及JS設定:</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img1.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb1.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img2.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb2.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(); <span class="comment">// 一個id只能套用一組幻燈片，如果一個頁面有多個幻燈片需要用不同的id</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>需要注意的是HTML的部分，官方的標準架構必須是 div &gt; a &gt; img ，如果用其他的排列方式會無法作用。</p><p>如果想要套自己的排版必須要加上 <code>data-src=&quot;&quot;</code> (圖片連結)  <code>data-poster=&quot;&quot;</code> (影片連結) 才會執行</p><p>例如：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-4&quot;</span> <span class="attr">data-src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;picture&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果想要新增功能 必須要自己建立一個function</p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">initlightGallery</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initlightGallery</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(&#123;</span><br><span class="line">    <span class="attr">autoplayControls</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">share</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">zoom</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">fullScreen</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">download</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">showThumbByDefault</span>: <span class="literal">false</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h3 id="參數設定"><a href="#參數設定" class="headerlink" title="參數設定"></a>參數設定</h3><p>這邊提供幾個常用的參數:</p><div class="table-outer"><table><thead><tr><th>參數</th><th>預設值</th><th>用途</th></tr></thead><tbody><tr><td>autoplayControls</td><td>true</td><td>可選擇是否出現自動播放的按鈕</td></tr><tr><td>share</td><td>true</td><td>可選擇是否出現分享按鈕</td></tr><tr><td>zoom</td><td>true</td><td>可選擇是否出現放大縮小按鈕</td></tr><tr><td>download</td><td>true</td><td>可選擇是否出現下載按鈕</td></tr><tr><td>showThumbByDefault</td><td>true</td><td>是否一開始就顯示預覽來源</td></tr><tr><td>exThumbImage</td><td>true</td><td>幻燈片內的預覽小圖來源，如果有修改過架構就必須加上這個參數，否則程式會抓不到圖片，一般來說設'data-src'抓一樣的圖即可</td></tr></tbody></table></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>first-post</title>
+      <link href="/2021/09/06/post/"/>
+      <url>/2021/09/06/post/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-2.png" alt="$cover"><br>這是我的第一篇網誌</p><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p></blockquote><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h1&gt;Hello World!&lt;/h1&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> first </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

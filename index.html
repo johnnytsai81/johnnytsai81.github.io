@@ -1,0 +1,700 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>Anthony Tsai's blog</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/helper.css"><link rel="stylesheet" href="/style/common/prism-okaidia.min.css"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script src="/js/common.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
+  theme: {
+    fontFamily: {
+      helvblack: ['Helvetica-black', 'sans-serif'],
+      helvbold: ['Helvetica-bold', 'sans-serif'],
+      helvmedium: ['Helvetica-medium', 'sans-serif'],
+      helvlight: ['Helvetica-light', 'sans-serif'],
+      lato: ['Lato', 'sans-serif']
+    },
+    extend: {
+      spacing: {
+        '5%': '5%',
+        '10%': '10%',
+        '15%': '15%',
+        '20%': '20%'
+      },
+      boxShadow: {
+        'sm': '0.2px 0.2px 0.8px -10px rgb(40 10 0 / 1%), 0.4px 0.4px 2px -10px rgb(40 10 0 / 2%), 0.8px 0.8px 3.8px -10px rgb(40 10 0 / 3%), 1.3px 1.3px 6.7px -10px rgb(40 10 0 / 3%), 2.5px 2.5px 12.5px -10px rgb(40 10 0 / 4%), 6px 6px 30px -10px rgb(40 10 0 / 5%)',
+        'md': '1px 0.9px 2.3px -3px rgba(30,10,10,0.04), 2.4px 2.2px 5.5px -3px rgba(30,10,10,0.05), 4.5px 4.1px 10.4px -3px rgba(30,10,10,0.06), 8px 7.4px 18.5px -3px rgba(30,10,10,0.07), 15px 13.8px 34.7px -3px rgba(30,10,10,0.08), 36px 33px 83px -3px rgba(30,10,10,0.2)',
+        'lg': '0.2px 0.4px 0.8px -10px rgba(0,0,0,0.03), 0.4px 0.9px 2px -10px rgba(0,0,0,0.03), 0.8px 1.8px 3.8px -10px rgba(0,0,0,0.038), 1.3px 3.1px 6.7px -10px rgba(0,0,0,0.045), 2.5px 5.8px 12.5px -10px rgba(0,0,0,0.06), 6px 14px 30px -10px rgba(0,0,0,0.08)'
+      }
+    }
+  }
+}</script><style type="postcss">/* 全域 */
+body{
+  @apply font-lato
+}
+/* 標題欄 */
+.nav-title {
+  @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+}
+/* 首頁視覺標題 */
+.banner-title {
+  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black font-helvblack
+}
+/* 主標題 */
+.main-title{
+  @apply text-[90px] lg:text-[120px] font-black font-helvblack mt-[-2.75rem] leading-tight
+}
+.main-title-w{
+  @apply text-[color:var(--white-color)]
+}
+/* 編號數字 */
+.main-title-no{
+  @apply block text-xl mb-4 lg:mb-0 mr-5 font-medium tracking-wider
+}
+.main-title-no-w{
+  @apply text-[color:var(--white-color)] mr-0 lg:mr-5
+}
+/* 破折號 */
+.main-title-dash{
+  @apply inline-block after:w-[7.5rem] after:h-[2px] after:inline-block after:bg-[color:var(--iron-color)]
+}
+.main-title-dash-w{
+  @apply after:bg-[color:var(--white-color)]
+}
+/* 列表標題 */
+.list-title{
+  @apply flex items-center text-xl pl-4 pb-2 font-bold border-b before:w-4 before:h-4 before:rounded-full before:mr-4 before:mt-1
+}
+.list-title-m{
+  @apply text-[color:var(--main-color)] border-[color:var(--main-color)] before:bg-[color:var(--main-color)]
+}
+.list-title-w{
+  @apply text-[color:var(--white-color)] border-[color:var(--white-color)] before:bg-[color:var(--white-color)]
+}
+/* 主區塊padding & margin設定 */
+.main-selection{
+  @apply pt-[4rem] lg:pt-[10rem] pb-12 lg:pb-20 px-4 lg:px-0 mx-auto
+}
+/* 副區塊padding & margin設定 */
+.sub-selection{
+  @apply pb-5 mx-auto pt-10
+}
+/* 直式卡片 */
+.card-col{
+  @apply flex flex-col items-center
+}
+/* 橫式卡片 */
+.card-row{
+  @apply flex flex-row items-center
+}
+/* 卡片連結 */
+.card-link{
+  @apply absolute w-full h-full top-0 left-0 z-0
+}
+/* 進度表 */
+.card-process{
+  @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
+}</style><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><article id="page"><h1></h1><style>
+.nav-title.line-hover span{
+    color: var(--white-color);
+}
+
+@media (min-width: 1024px){
+  .nav-title.line-hover:hover span{
+      color: var(--light-color);
+  }
+}
+</style>
+
+<div class="relative block h-screen mt-[-64px] lg:mt-[-78px] flex flex-wrap flex-col lg:flex-row">
+  <div class="flex w-full lg:w-1/2 h-1/3 lg:h-full flex-col justify-center self-center pt-[100px] lg:pt-0 px-4 lg:pl-5% pb-4 lg:pb-0">
+    <h2 class="banner-title fadeup-word-wrap text-[color:var(--main-color)] lg:mb-10"><span class="fadeout-word fadeout-word-1">HI, I am a</span></h2>
+    <h2 class="banner-title fadeup-word-wrap text-[color:var(--sub-color)]"><span class="fadeout-word fadeout-word-2">CREATIVE WEBSITE</span></h2>
+    <h2 class="banner-title fadeup-word-wrap text-[color:var(--sub-color)]"><span class="fadeout-word fadeout-word-3">& UI Designer</span></h2>
+  </div>
+  <div class="relative w-full lg:w-1/2 h-2/3 lg:h-full px-4 lg:px-0 overflow-hidden">
+    <img class="w-full h-full object-cover" src="/images/main-visual.jpg" alt="">
+  </div>
+  <div class="absolute scroll-btn-wrap pointer-events-auto bottom-4 lg:bottom-12 pl-8 lg:pl-5%">
+    <div class="scroll-btn"></div>
+    <span class="inline-block relative pl-2 text-[color:var(--white-color)] lg:text-[color:var(--bright-color)] tracking-wide font-light">Scroll</span>
+  </div>
+</div>
+<div class="container main-selection who-am-i">
+  <h2 class="relative flex flex-col-reverse lg:flex-row-reverse z-[2]">
+    <span class="flex flex-col lg:flex-row">
+      <span class="main-title-no">01</span>
+      <span class="flex flex-col mt-4 ml-auto lg:ml-0">
+        <span class="main-title fadeup-word-wrap"><span class="fadeup-word fadeup-word-1">Who</span></span>
+        <span class="main-title ml-[6rem] ml-[3rem] lg:ml-[4rem] mt-[-4rem] fadeup-word-wrap after:bg-[color:var(--gray-color)]">
+          <span class="main-title-dash after:mb-7 after:mr-[1rem] lg:after:mr-[4rem] fadeup-line"></span><span class="fadeup-word fadeup-word-2">am</span>
+        </span>
+        <span class="main-title ml-[6rem] lg:ml-[10rem] fadeup-word-wrap"><span class="fadeup-word fadeup-word-3">I?</span></span>
+      </span>
+    </span>
+    <span class="mr-auto text-xl flex-shrink-0 mb-4 lg:mb-0">關於我</span>
+  </h2>
+  <div class="relative flex flex-col lg:flex-row items-center justify-between lg:mt-[-4rem]">
+    <div class="order-2 lg:order-1 px-0 md:px-5% lg:px-0 lg:pl-15% mx-auto">
+      <h3 class="banner-title text-left text-[color:var(--main-color)] font-bold mb-4 lg:mb-10">
+        超級新鮮的 Website Designer 
+      </h3>
+      <p class="mb-4">
+        研究所畢業後一腳踏入了網頁設計的領域，面對眼前五花八門的技能樹，盡可能的打怪練功、累積經驗值。
+      </p>
+      <p class="mb-4">
+        踏入職場後，希望能夠記錄下自己成長的過程， 也試著把這些過程轉變成好的故事，寫在這個地方。
+      </p>
+      <p class="mb-4">
+        每個來到這個網站的人，對我來說都是傾訴的對象，在一邊寫故事、一邊成長的同時，如果能夠對 一些人產生幫助，那就太棒了！
+      </p>
+      <p class="mb-4">
+        在工作之餘，重新學習一個人生活，培養自己的興趣、找到讓自己快樂的方式。在目前的人生道路上，目前的興趣分佈大概如下所示，也許隨著時間的變化會有所更動！ 
+      </p>
+    </div>
+    <div class="order-1 lg:order-2 mx-auto lg:w-2/3 px-0 md:px-5% lg:pr-15% mb-4  mt-4 lg:mt-0 lg:mb-0 flex-col card-col">
+      <img class="order-1 lg:order-1 object-cover rounded-lg w-1/2 lg:w-full" style="aspect-ratio: 3 / 4;" src="/images/main-cv.jpg" alt="">
+      <div class="order-2 lg:order-2 w-1/2 lg:w-full">
+        <p class="text-xl font-bold text-center mb-2 text-[color:var(--main-color)] mt-6">Anthony Tsai</p>
+        <p class="text-sm font-light text-center mb-0 text-[color:var(--iron-color)]">WEBSITE / UI DESIGNER</p>
+      </div>
+    </div>
+  </div>
+  <div class="sub-selection lg:mx-10%">
+    <div class="list-title list-title-m">
+      MY HOBBY.
+    </div>
+    <div class="mt-8 grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-8 lg:px-8">
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-07.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">植栽</p>
+      </div>
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-08.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">電玩</p>
+      </div>
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-09.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">閱讀</p>
+      </div>
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-10.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">3D角色設計</p>
+      </div>
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-11.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">桌遊</p>
+      </div>
+      <div class="card-col">
+        <img class="object-cover rounded-lg aspect-square" src="/images/hobby-12.jpg" alt="">
+        <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">鋼琴</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-[color:var(--main-color)]">
+  <div class="container main-selection ">
+    <h2 class="relative flex flex-col-reverse lg:flex-row z-[2]">
+      <span class="flex flex-col lg:flex-row">
+        <span class="main-title-no main-title-no-w text-right lg:text-left">02</span>
+        <span class="flex flex-col mt-4 mr-auto lg:mr-0">
+          <span class="main-title main-title-w fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">What</span> </span>
+          <span class="main-title main-title-w fadeup-word-wrap ml-[1rem] lg:ml-[6rem] mt-[-3rem] lg:mt-[-4rem]">
+            <span class="main-title-dash main-title-dash-w fadeup-line after:mb-7 after:mr-[0rem] lg:after:mr-[4rem]"></span> <span class="fadeup-word fadeup-word-2">can I</span> 
+          </span>
+          <span class="main-title fadeup-word-wrap main-title-w ml-[1rem] lg:ml-[4rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
+        </span>
+      </span>
+      <span class="ml-auto flex-shrink-0 mb-4 lg:mb-0 text-xl text-[color:var(--white-color)]">經歷&專長</span>
+    </h2>
+    <div class="sub-selection mt-0 lg:mt-[-10rem]">
+      <div class="mt-8 grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="col-start-1 lg:col-start-2 grid">
+          <div class="list-title list-title-w ">
+            WORK EXPERIENCE.
+          </div>
+          <div class="card-row py-4 lg:p-4 mt-4">
+            <div class="card-row-left w-3/5 md:w-2/5 pr-4 lg:pr-8">
+              <img class="object-cover rounded-lg aspect-square" src="/images/job-01.jpg" alt="">
+            </div>
+            <div class="card-row-right">
+              <p class="font-light text-xs mb-2 tracking-wide text-[color:var(--white-color)]">MAR 2017 - JULY 2019</p>
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Homeroom Teacher</p>
+              <p class="font-light text-sm mb-2 text-[color:var(--white-color)] mb-0">與朋友一起創立家教班，專門招收國際學校學生。主要以台北歐洲學校、道明國際學校，學生人數多達二十多位。</p>
+            </div>
+          </div>
+          <div class="card-row py-4 lg:p-4">
+            <div class="card-row-left w-3/5 md:w-2/5 pr-4 lg:pr-8">
+              <img class="object-cover rounded-lg aspect-square" src="/images/job-02.jpg" alt="">
+            </div>
+            <div class="card-row-right">
+              <p class="font-light text-xs mb-2 tracking-wide text-[color:var(--white-color)]">MAR 2020 - PRESENT</p>
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Website Designer</p>
+              <p class="font-light text-sm mb-2 text-[color:var(--white-color)] mb-0">與朋友一起創立家教班，專門招收國際學校學生。主要為台北歐洲學校、道明國際學校，學生人數多達二十多位。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-selection">
+      <div class="list-title list-title-w">
+        KNOWLEDGE & SKILL.
+      </div>
+      <div class="mt-8 grid grid-flow-row">
+        <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 lg:border-r lg:border-l border-[color:var(--white-color)]">
+          <div class="card-row py-4 lg:px-8">
+            <div class="w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-01.jpg" alt="">
+            </div>
+            <div class="w-full">
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">HTML & CSS</p>
+              <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">懂得運用HTML&CSS達到最佳化的RWD切版，也有使用Pug、Scss及Utility class開發的經驗。</p>
+            </div>
+          </div>
+          <div class="card-row py-4 lg:px-8">
+            <div class="w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-02.jpg" alt="">
+            </div>
+            <div class="w-full">
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">JS & JQuery</p>
+              <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">了解如何用JS&Jquery控制HTML&CSS，也會使用各種JS套件及客製化。</p>
+            </div>
+          </div>
+          <div class="card-row py-4 lg:px-8">
+            <div class="w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-03.jpg" alt="">
+            </div>
+            <div class="w-full">
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">UI Design</p>
+              <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">了解如何設計出符合使用者經驗的Flow chart，並且產出UI Prototype。</p>
+            </div>
+          </div>
+          <div class="card-row py-4 lg:px-8">
+            <div class="w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-04.gif" alt="">
+            </div>
+            <div class="w-full">
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Animation</p>
+              <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">懂得運用SVG+CSS創建出簡單的2D動畫。或是運用3D繪圖軟體輸出gif動畫。</p>
+            </div>
+          </div>
+          <div class="card-row py-4 lg:px-8">
+            <div class="w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-05.jpg" alt="">
+            </div>
+            <div class="w-full">
+              <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Google Analythics & SEO</p>
+              <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">了解Google的搜索排名機制，並且在撰寫HTML時達到最佳化。</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 border-t pt-8 lg:pt-0 mt-8 lg:border-t-0 lg:border-r lg:border-l items-start border-[color:var(--white-color)]">
+          <div class="card-row justify-between py-4 lg:px-8">
+            <div class="card-row-left w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/skill-01.jpg" alt="">
+            </div>
+            <div class="card-row-right w-full">
+              <div class="flex justify-between items-center pb-2">
+                <p class="font-medium text-xl text-[color:var(--white-color)]">Photoshop</p>
+                <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
+              </div>
+              <div class="card-process fadeup-process before:w-4/5"></div>
+            </div>
+          </div>
+          <div class="card-row justify-between py-4 lg:px-8">
+            <div class="card-row-left w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/skill-02.jpg" alt="">
+            </div>
+            <div class="card-row-right w-full">
+              <div class="flex justify-between items-center pb-2">
+                <p class="font-medium text-xl text-[color:var(--white-color)]">Illustrator</p>
+                <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
+              </div>
+              <div class="card-process fadeup-process before:w-4/5"></div>
+            </div>
+          </div>
+          <div class="card-row justify-between py-4 lg:px-8">
+            <div class="card-row-left w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/skill-03.jpg" alt="">
+            </div>
+            <div class="card-row-right w-full">
+              <div class="flex justify-between items-center pb-2">
+                <p class="font-medium text-xl text-[color:var(--white-color)]">Figma</p>
+                <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
+              </div>
+              <div class="card-process fadeup-process before:w-4/5"></div>
+            </div>
+          </div>
+          <div class="card-row justify-between py-4 lg:px-8">
+            <div class="card-row-left w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/skill-04.jpg" alt="">
+            </div>
+            <div class="card-row-right w-full">
+              <div class="flex justify-between items-center pb-2">
+                <p class="font-medium text-xl text-[color:var(--white-color)]">Cinama 4D</p>
+                <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
+              </div>
+              <div class="card-process fadeup-process before:w-4/5"></div>
+            </div>
+          </div>
+          <div class="card-row justify-between py-4 lg:px-8">
+            <div class="card-row-left w-40 lg:w-32 pr-4">
+              <img class="object-cover rounded-lg aspect-square" src="/images/skill-05.jpg" alt="">
+            </div>
+            <div class="card-row-right w-full">
+              <div class="flex justify-between items-center pb-2">
+                <p class="font-medium text-xl text-[color:var(--white-color)]">Adobe XD</p>
+                <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
+              </div>
+              <div class="card-process fadeup-process before:w-4/5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container main-selection">
+  <h2 class="relative flex flex-col-reverse lg:flex-row-reverse z-[2] pointer-events-none">
+    <span class="flex flex-col lg:flex-row">
+      <span class="main-title-no">03</span>
+      <span class="flex flex-col mt-4 ml-auto lg:ml-0">
+        <span class="main-title fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">What</span> </span>
+        <span class="main-title ml-[4rem] lg:ml-[6rem]  mt-[-2rem] lg:mt-[-3rem] fadeup-word-wrap after:bg-[color:var(--gray-color)]">
+          <span class="main-title-dash fadeup-line after:mb-11 after:mr-[0rem] lg:after:mr-[4rem]"></span> <span class="fadeup-word fadeup-word-2">did I</span> 
+        </span>
+        <span class="main-title fadeup-word-wrap ml-[4rem] lg:ml-[6rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
+      </span>
+    </span>
+    <span class="mr-auto text-xl flex-shrink-0 mb-4 lg:mb-0">作品&雜記</span>
+  </h2>
+  <div class="sub-selection relative mt-0 lg:mt-[-8rem] xl:px-5% pb-0">
+    <div class="mt-8 grid grid-flow-row grid-cols-12 gap-8">
+      <div class="col-start-1 col-end-13 lg:col-end-7 xl:col-end-9 grid">
+        <div class="list-title list-title-m mb-8">
+          WORK.
+          <a class='hidden lg:contents' href="./work">
+            <span class="button-1 ml-auto tracking-wide">MORE</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="relative grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:!p-4">
+      <div class="work-card work-card-1">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+        <div class="new-window">
+          <div class="pop-up">
+            <div class="pop-content">
+            <div class="close-btn"></div>
+              <div class="relative home-work-top-wrap">
+                <div class="home-work-top-1 home-work-top swiper-container">
+                  <div class="swiper-wrapper" id="lightgallery-1">
+                    <div class="swiper-slide" data-src="/images/work/001.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/001.gif">
+                      <p class="swiper-text">植栽</p>
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/002.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/002.gif">
+                      <p class="swiper-text">植栽2</p>
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/003.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/003.gif">
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/004.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/004.gif">
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-next-1 hidden lg:flex"></div>
+                  <div class="swiper-button-prev swiper-button-prev-1 hidden lg:flex"></div>
+                </div>
+                <div class="home-work-thumb-1 home-work-thumb swiper-container !p-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/001.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/002.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/003.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/004.gif">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card work-card-2">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+        <div class="new-window">
+          <div class="pop-up">
+            <div class="pop-content">
+            <div class="close-btn"></div>
+              <div class="relative home-work-top-wrap">
+                <div class="home-work-top-2 home-work-top swiper-container">
+                  <div class="swiper-wrapper" id="lightgallery-2">
+                    <div class="swiper-slide" data-src="/images/work/009.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/009.gif">
+                      <p class="swiper-text">植栽</p>
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/010.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/010.gif">
+                      <p class="swiper-text">植栽2</p>
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/011.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/011.gif">
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/012.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/012.gif">
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/013.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/013.gif">
+                    </div>
+                    <div class="swiper-slide" data-src="/images/work/014.gif">
+                      <img class="object-cover lg:rounded-lg aspect-picture-row h-full w-full lazy" data-src="/images/work/014.gif">
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-next-1 hidden lg:flex"></div>
+                  <div class="swiper-button-prev swiper-button-prev-1 hidden lg:flex"></div>
+                </div>
+                <div class="home-work-thumb-2 home-work-thumb swiper-container !p-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture cover-image-wrap">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/009.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture cover-image-wrap">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/010.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture cover-image-wrap">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/011.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture cover-image-wrap">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/012.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture cover-image-wrap">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/013.gif">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="picture">
+                          <img class="object-cover rounded-lg aspect-picture-row lazy" data-src="/images/work/014.gif">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+      </div>
+      <div class="work-card">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+      </div>
+      <div class="work-card">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+      </div>
+      <div class="work-card">
+        <div class="picture cover-image-wrap">
+          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+        </div>
+        <div class="my-4 text-xl">
+          植栽
+        </div>
+        <div class="line-hover"><span>Web Design</span></div>
+      </div>
+      
+  </div>
+  <a class='block lg:hidden mt-8' href="./work">
+    <span class="block button-1 mx-auto w-[200px] py-3 tracking-wide">MORE</span>
+  </a>
+  <div class="sub-selection relative lg:mt-[-2rem] pb-0">
+    <div class="list-title list-title-m mb-8 mt-16">
+      BLOG.
+      <a class='hidden lg:contents' href="./blog">
+      <span class="button-1 ml-auto tracking-wide">MORE</span>
+      </a>
+    </div>
+    <div class="relative">
+      <div id="home-blog" class="swiper-container !p-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-card">
+              <div class="picture cover-image-wrap">
+                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+              </div>
+              <div class="my-4 text-xl">
+                植栽
+              </div>
+              <div class="line-hover"><span>Web Design</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination-2"></div>
+      <div class="swiper-button-next swiper-button-next-2 hidden xl:flex"></div>
+      <div class="swiper-button-prev swiper-button-prev-2 hidden xl:flex"></div>
+    </div>
+    <a class='block lg:hidden mt-16' href="./blog">
+        <span class="block button-1 mx-auto w-[200px] py-3 tracking-wide">MORE</span>
+      </a>
+  </div>
+</div>
+</div>
+<div class="bg-[color:var(--deep-color)]">
+  <div class="container main-selection">
+    <h2 class="relative flex flex-col-reverse lg:flex-row z-[2]">
+      <span class="flex flex-col lg:flex-row">
+        <span class="main-title-no main-title-no-w text-right lg:text-left">04</span>
+        <span class="flex flex-col mt-4 mr-auto lg:mr-0">
+          <span class="main-title main-title-w fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">Contact</span> </span>
+        </span>
+      </span>
+      <span class="ml-auto flex-shrink-0 mb-4 lg:mb-0 text-xl text-[color:var(--white-color)]">聯絡我</span>
+    </h2>
+    <div class="mt-8 grid grid-flow-row lg:grid-cols-2">
+      <div class="lg:col-start-2 grid">
+        <p class="text-[color:var(--sub-color)] text-[24px] mb-4">
+          如果有什麼話想對我說的，歡迎用以下方式聯繫我
+        </p>
+        <ul>
+          <a href="mailto:johnnytsai81@g.ncu.edu.tw" target="_blank">
+            <li class="mail-btn"></li>
+          </a>
+          <a href="https://medium.com/%E8%B2%93%E7%A7%91%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E6%97%A5%E5%B8%B8" target="_blank">
+            <li class="medium-btn"></li>
+          </a>
+          <a href="https://github.com/johnnytsai81" target="_blank">
+            <li class="github-btn"></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</article><div id="paginator"></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
