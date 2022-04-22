@@ -6,7 +6,7 @@
   <link href="https://johnnytsai81.github.io/atom.xml" rel="self"/>
   
   <link href="https://johnnytsai81.github.io/"/>
-  <updated>2022-04-20T04:06:25.633Z</updated>
+  <updated>2022-04-20T04:06:25.634Z</updated>
   <id>https://johnnytsai81.github.io/</id>
   
   <author>
@@ -17,29 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://johnnytsai81.github.io/2022/04/20/hello-world/"/>
-    <id>https://johnnytsai81.github.io/2022/04/20/hello-world/</id>
-    <published>2022-04-20T04:06:25.633Z</published>
-    <updated>2022-04-20T04:06:25.633Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2010/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2010/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2010/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2010/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.634Z</updated>
     
@@ -66,8 +46,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2011/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.634Z</updated>
     
@@ -94,8 +74,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2012/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.635Z</updated>
     
@@ -122,8 +102,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2014/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.636Z</updated>
     
@@ -150,8 +130,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2013/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.635Z</updated>
     
@@ -178,8 +158,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2016/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2016/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2016/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2016/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.636Z</updated>
     
@@ -206,8 +186,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2015/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2015/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2015/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2015/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.636Z</updated>
     
@@ -234,8 +214,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2017/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2017/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.637Z</updated>
     
@@ -262,8 +242,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2018/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.637Z</updated>
     
@@ -290,8 +270,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2019/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2019/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.637Z</updated>
     
@@ -318,8 +298,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2020/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2020/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2020/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2020/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.637Z</updated>
     
@@ -346,8 +326,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2021/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%2021/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2021/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2021/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.638Z</updated>
     
@@ -374,8 +354,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%204/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%204/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.638Z</updated>
     
@@ -402,8 +382,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%203/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%203/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%203/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%203/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.638Z</updated>
     
@@ -432,8 +412,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%206/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.639Z</updated>
     
@@ -460,8 +440,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%205/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%205/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%205/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%205/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.638Z</updated>
     
@@ -488,8 +468,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%208/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.639Z</updated>
     
@@ -516,8 +496,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%207/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.639Z</updated>
     
@@ -544,8 +524,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%209/"/>
-    <id>https://johnnytsai81.github.io/2021/12/08/html%E6%B8%AC%E8%A9%A6%20copy%209/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%209/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%209/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.640Z</updated>
     
@@ -566,6 +546,28 @@
     
     
     <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html測試</title>
+    <link href="https://johnnytsai81.github.io/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/"/>
+    <id>https://johnnytsai81.github.io/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/</id>
+    <published>2021-12-08T04:17:39.000Z</published>
+    <updated>2022-04-20T04:06:25.640Z</updated>
+    
+    <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。<br>tag: </p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><div class='post-gallery'>    <img src='/images/key-visual.jpg' style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img></div><h3 id="Interdum-et-malesuada"><a href="#Interdum-et-malesuada" class="headerlink" title="Interdum et malesuada"></a>Interdum et malesuada</h3><p>fames ac ante ipsum primis in faucibus. blandit eget felis aliquam, rhoncus <a href="https://adult.noodlemagazine.com/watch/-183645685_456240086">varius</a> urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.</p><p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p><blockquote><p>你不一定要很厲害，才能開始；但你要開始，才能很厲害</p></blockquote><h2 id="List-Types"><a href="#List-Types" class="headerlink" title="List Types"></a>List Types</h2><p><img src="/images/key-visual.jpg" alt="title"><br><em>image_caption</em></p><h3 id="相對位置的方法"><a href="#相對位置的方法" class="headerlink" title="相對位置的方法"></a>相對位置的方法</h3><ol><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ol><hr><h2 id="指定的方法"><a href="#指定的方法" class="headerlink" title="指定的方法"></a>指定的方法</h2><h4 id="1-使用事件監聽器"><a href="#1-使用事件監聽器" class="headerlink" title="1. 使用事件監聽器"></a>1. 使用事件監聽器</h4><ul><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ul><hr><hr><h3 id="Checkbox-List-ul"><a href="#Checkbox-List-ul" class="headerlink" title="Checkbox List (ul)"></a>Checkbox List (ul)</h3><p><a href="https://www.youtube.com/">love</a></p><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** example **/</span></span><br><span class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fefefe</span>; <span class="comment">/*background color of the window and titlebar*/</span></span><br><span class="line">  <span class="attribute">font-family</span>: helvetica, sans-serif; <span class="comment">/*custom font*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>; <span class="comment">/*default font size*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">90%</span>; <span class="comment">/*adjust size of the wriring area*/</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1rem</span>; <span class="comment">/*basic font size*/</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#555</span>; <span class="comment">/*basic font color*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>😙</p><ul><li>This is a bullet in an un-ordered list</li><li>This is a bullet in an un-ordered list<ul><li>This is a sub-bullet</li><li>This is a sub-bullet</li></ul></li><li>This is a bullet in an un-ordered list</li></ul><ol><li>The fist item</li><li>The second item</li><li>This is a sub-bullet</li><li>This is also a sub bullet</li><li>The third item</li></ol><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><table><thead><tr><th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th></tr></thead><tbody><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr></tbody></table><blockquote><p>This is a callout box, it gets a fancy little box and border.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。&lt;br&gt;tag: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/post/head-cv-01.jpg&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;div class=&#39;po</summary>
+      
+    
+    
     
     
   </entry>

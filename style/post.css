@@ -19,7 +19,7 @@
 .post-page .post-content {
   display: grid;
   grid-template-columns: 1fr min(800px, 100%) 1fr;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   font-family: Lato, sans-serif;
 }
@@ -65,6 +65,9 @@
 
 .post-page img {
   border-radius: var(--radius-sm);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post-page .post-content>.post-gallery img {
@@ -79,6 +82,7 @@
   display: block;
   text-align: center;
   margin-top: -1rem;
+  margin-bottom: 1rem;
   color: var(--gray-color);
   font-size: 1rem;
   font-family: Lato, sans-serif;
@@ -156,26 +160,26 @@
 
 .post-page .page-title {
   position: relative;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   font-family: Lato, sans-serif;
 }
 
 @media (max-width: 1024px) {
   .post-page .page-title {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
   }
 }
 
 @media (max-width: 769px) {
   .post-page .page-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 576px) {
   .post-page .page-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -183,7 +187,7 @@
 .post-page .page-subtitle {
   position: relative;
   padding-bottom: 1rem;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: var(--iron-color);
   border-bottom: 1px solid var(--bone-color);
   font-family: Lato, sans-serif;
@@ -191,13 +195,13 @@
 
 @media (max-width: 1024px) {
   .post-page .page-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 576px) {
   .post-page .page-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -451,9 +455,8 @@ table tbody tr th {
 table tbody tr td {
   height: 100% !important;
   width: inherit;
-  padding: 10px 15px !important;
+  padding: 0px 15px 25px !important;
   border-left: 1px var(--bone-color) solid !important;
-  border-top: 1px var(--bone-color) solid !important;
   vertical-align: middle;
   color: var(--iron-color);
   font-size: 0.875rem;
@@ -497,7 +500,7 @@ pre {
 .highlight pre {
   border: 0;
   margin: 0;
-  padding: 20px 20px;
+  padding: 0px 5px;
   border-radius: 0 0 0 var(--radius-sm);
 }
 
@@ -540,7 +543,7 @@ pre {
 .highlight .code pre {
   background: var(--light-color);
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .gist table {
@@ -752,29 +755,28 @@ pre .javascript .function {
 
 .code-highlight {
   position: relative;
-  margin: 1rem 0 2rem;
+  margin: 0 0 1rem;
 }
 
 .code-highlight::before {
   content: attr(data-lang);
-  font-size: 1rem;
-  color: var(--white-color);
+  font-size: 0.75rem;
+  color: var(--gray-color);
   line-height: 30px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   position: absolute;
   top: 0px;
   left: 12px;
   z-index: 1;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1) 0s;
 }
 
-.code-highlight::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 30px;
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  background-color: var(--dark-color);
+@media (min-width: 1024px) {
+  .code-highlight:hover::before {
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1) 0s;
+  }
 }
 
 /* 複製按鈕區塊 */
@@ -811,7 +813,7 @@ pre .javascript .function {
   position: absolute;
   z-index: 1;
   display: inline-block;
-  background-color: var(--white-color);
+  background-color: var(--gray-color);
   -webkit-mask-image: url('/images/icon/copy.svg');
   mask-image: url('/images/icon/copy.svg');
   transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1) 0s;
@@ -823,7 +825,7 @@ pre .javascript .function {
 
 @media (min-width: 1024px) {
   .codecopy-btn:hover .icon-copy::before {
-    background-color: var(--bone-color);
+    background-color: var(--main-color);
     transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1) 0s;
   }
 }
