@@ -1,6 +1,7 @@
 $(document).ready(function () {
-
+	$('#loading').css('opacity', '0');
 	$('.loading-easein').addClass("fadein-end");
+
 	$('.banner-title').each(function () {
 		$(this).on('inview', function (event, isInView) {
 			if (isInView) {
@@ -45,11 +46,6 @@ $(document).ready(function () {
 	openMenu();
 	scrollDown();
 	copyCode();
-});
-
-
-$(window).bind('load', function () {
-	$('#loading').css('opacity', '0');
 });
 
 /* 幻燈片 */

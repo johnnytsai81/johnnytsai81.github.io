@@ -95,6 +95,11 @@
   }
 }
 
+.post-page .post-gallery img~em {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 /* 首頁代表圖隱藏 */
 .post-page .post-content>p:first-child {
   display: none;
@@ -269,7 +274,6 @@
 
 .post-page ul li {
   position: relative;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 2rem;
   margin-left: 1.75rem;
@@ -455,8 +459,9 @@ table tbody tr th {
 table tbody tr td {
   height: 100% !important;
   width: inherit;
-  padding: 0px 15px 25px !important;
+  padding: 10px 15px !important;
   border-left: 1px var(--bone-color) solid !important;
+  border-top: 1px var(--bone-color) solid !important;
   vertical-align: middle;
   color: var(--iron-color);
   font-size: 0.875rem;

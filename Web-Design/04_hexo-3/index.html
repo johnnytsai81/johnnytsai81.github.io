@@ -116,4 +116,44 @@ $ g.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo c //清除public資料夾的檔案</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://images2.imgbox.com/90/8e/UQW8KcxW_o.png" alt="如果出現這個畫面代表安裝成功了"><br><em>如果出現這個畫面代表安裝成功了</em></p>
-<h3 id="主題環境設定"><a href="#主題環境設定" class="headerlink" title="主題環境設定"></a>主題環境設定</h3></article><section class="jump-container my-6"><div class="flex justify-between"><!-- em is empty placeholder--><a class="button is-default" href="/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/" title="html測試"><span class="left-arrow"><span>html測試</span></span></a><a class="button is-default" href="/Web-Design/03_hexo-2/" title="用hexo打造屬於自己的部落格（二）-部署篇"><span class="right-arrow"><span>用hexo打造屬於自己的部落格（二）-部署篇</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
+<h3 id="主題環境設定"><a href="#主題環境設定" class="headerlink" title="主題環境設定"></a>主題環境設定</h3><p>Next的文件裡有說到，此主題不建議自行修改架構，所以全部的修改設定都放在themes&#x2F;_config.yml裡。</p>
+<p>首先你可以先挑選樣式，NexT有提供四種樣式可以選擇，把想選擇的樣式前的註解拿掉即可。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+
+<div class='post-gallery'>
+  <p>
+    <img src='https://images2.imgbox.com/06/c1/hXMIFFuA_o.png' style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>
+    <em>Muse</em>
+  </p>
+  <p>
+    <img src='https://images2.imgbox.com/21/fa/kC64ekup_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>
+    <em>Mist</em>
+  </p>
+  <p>
+    <img src='https://images2.imgbox.com/ed/b8/1oja8AcV_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>
+    <em>Pisces</em>
+  </p>
+  <p>
+    <img src='https://images2.imgbox.com/89/f9/AM7AdczX_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>
+    <em>Gemini</em>
+  </p>
+</div>
+
+<p>menu可以選擇header要放哪些類別，但開啟後不能馬上啟用，需要先建立目錄檔。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="comment">#home: / || fa fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || fa fa-tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || fa fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<p>這邊先以categories為範例（其他的類別就改成該類別的英文）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>執行以上命令後，會發現source資料夾多了一個categories&#x2F;index.md，點選並且新增type的內容。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">type: &quot;categories&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>這麼一來就建立好一個大類了。這時候只要新增一篇post並且填寫類別，程式就會自動去做分類了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page <span class="string">&quot;test&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">categories: Web-Design</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>這麼一來就完成最基本的環境設定，雖然NexT有提供很多擴充功能，但是他的layout是用Nunjucks開發（我不太熟悉），所以我最後沒有選擇用這個主題，而是選用Pug開發的主題去做修改。</p>
+<p>如果你對NexT主題風格很滿意，那你也可以考慮用NexT就好，更進階的功能網路上都有很多人分享，畢竟自己修改樣式還是很花時間的。</p>
+<p>下一篇會介紹Hexo的運作流程及架構，這會幫助你在修改樣式時更快上手</p>
+</article><section class="jump-container my-6"><div class="flex justify-between"><!-- em is empty placeholder--><a class="button is-default" href="/Web-Design/05_hexo-4/" title="用hexo打造屬於自己的部落格（四）-架構篇"><span class="left-arrow"><span>用hexo打造屬於自己的部落格（四）-架構篇</span></span></a><a class="button is-default" href="/Web-Design/03_hexo-2/" title="用hexo打造屬於自己的部落格（二）-部署篇"><span class="right-arrow"><span>用hexo打造屬於自己的部落格（二）-部署篇</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>

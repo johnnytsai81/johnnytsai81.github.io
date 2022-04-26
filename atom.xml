@@ -382,36 +382,6 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%203/"/>
-    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%203/</id>
-    <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.638Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
-&lt;h3 class=&quot;main-title&quot;&gt;
-    我是標題
-&lt;h3&gt;
-&lt;p&gt;
-    我是內文
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
-    
-    
-    <category term="second" scheme="https://johnnytsai81.github.io/tags/second/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html測試</title>
     <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
     <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</id>
     <published>2021-12-08T04:17:39.000Z</published>
@@ -569,6 +539,32 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>用hexo打造屬於自己的部落格（四）-架構篇</title>
+    <link href="https://johnnytsai81.github.io/Web-Design/05_hexo-4/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/05_hexo-4/</id>
+    <published>2021-12-05T04:17:39.000Z</published>
+    <updated>2022-04-26T17:11:26.800Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p><p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p><p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p><p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p><p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p><div class="table-outer"><table><thead><tr><th>位置</th><th>用途</th></tr></thead><tbody><tr><td>themes</td><td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td></tr><tr><td>themes/layout</td><td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td></tr><tr><td>themes/source</td><td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td></tr><tr><td>themes/languages</td><td>可因應所在地區改變指定文字的語言</td></tr><tr><td>themes/config.yml</td><td>主題的設定（header類別項目、留言區、其他套件等等...）</td></tr><tr><td>themes/package.json</td><td>會紀錄目前主題的版本及有用的hexo套件</td></tr><tr><td>source</td><td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td></tr><tr><td>public</td><td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td></tr><tr><td>node_modules</td><td>使用npm安裝的套件內容</td></tr><tr><td>package.json</td><td>紀錄hexo目前的版本及裝過的套件</td></tr><tr><td>deploy</td><td></td></tr></tbody></table></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/post/head-cv-02.jpg&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Hexo的運作流程&quot;&gt;&lt;a href=&quot;#Hexo</summary>
+      
+    
+    
+    
+    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    
+    
+    <category term="Blog" scheme="https://johnnytsai81.github.io/tags/Blog/"/>
     
   </entry>
   

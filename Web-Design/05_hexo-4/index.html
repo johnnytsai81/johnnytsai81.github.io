@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用hexo打造屬於自己的部落格（四）-架構篇</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/helper.css"><link rel="stylesheet" href="/style/common/prism-okaidia.min.css"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script src="/js/common.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
+  theme: {
+    fontFamily: {
+      helvblack: ['Helvetica-black', 'sans-serif'],
+      helvbold: ['Helvetica-bold', 'sans-serif'],
+      helvmedium: ['Helvetica-medium', 'sans-serif'],
+      helvlight: ['Helvetica-light', 'sans-serif'],
+      lato: ['Lato', 'sans-serif']
+    },
+    extend: {
+      spacing: {
+        '5%': '5%',
+        '10%': '10%',
+        '15%': '15%',
+        '20%': '20%'
+      },
+      boxShadow: {
+        'sm': '0.2px 0.2px 0.8px -10px rgb(40 10 0 / 1%), 0.4px 0.4px 2px -10px rgb(40 10 0 / 2%), 0.8px 0.8px 3.8px -10px rgb(40 10 0 / 3%), 1.3px 1.3px 6.7px -10px rgb(40 10 0 / 3%), 2.5px 2.5px 12.5px -10px rgb(40 10 0 / 4%), 6px 6px 30px -10px rgb(40 10 0 / 5%)',
+        'md': '1px 0.9px 2.3px -3px rgba(30,10,10,0.04), 2.4px 2.2px 5.5px -3px rgba(30,10,10,0.05), 4.5px 4.1px 10.4px -3px rgba(30,10,10,0.06), 8px 7.4px 18.5px -3px rgba(30,10,10,0.07), 15px 13.8px 34.7px -3px rgba(30,10,10,0.08), 36px 33px 83px -3px rgba(30,10,10,0.2)',
+        'lg': '0.2px 0.4px 0.8px -10px rgba(0,0,0,0.03), 0.4px 0.9px 2px -10px rgba(0,0,0,0.03), 0.8px 1.8px 3.8px -10px rgba(0,0,0,0.038), 1.3px 3.1px 6.7px -10px rgba(0,0,0,0.045), 2.5px 5.8px 12.5px -10px rgba(0,0,0,0.06), 6px 14px 30px -10px rgba(0,0,0,0.08)'
+      }
+    }
+  }
+}</script><style type="postcss">/* 全域 */
+body{
+  @apply font-lato
+}
+/* 標題欄 */
+.nav-title {
+  @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+}
+/* 首頁視覺標題 */
+.banner-title {
+  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black font-helvblack
+}
+/* 主標題 */
+.main-title{
+  @apply text-[90px] lg:text-[120px] font-black font-helvblack mt-[-2.75rem] leading-tight
+}
+.main-title-w{
+  @apply text-[color:var(--white-color)]
+}
+/* 編號數字 */
+.main-title-no{
+  @apply block text-xl mb-4 lg:mb-0 mr-5 font-medium tracking-wider
+}
+.main-title-no-w{
+  @apply text-[color:var(--white-color)] mr-0 lg:mr-5
+}
+/* 破折號 */
+.main-title-dash{
+  @apply inline-block after:w-[7.5rem] after:h-[2px] after:inline-block after:bg-[color:var(--iron-color)]
+}
+.main-title-dash-w{
+  @apply after:bg-[color:var(--white-color)]
+}
+/* 列表標題 */
+.list-title{
+  @apply flex items-center text-xl pl-4 pb-2 font-bold border-b before:w-4 before:h-4 before:rounded-full before:mr-4 before:mt-1
+}
+.list-title-m{
+  @apply text-[color:var(--main-color)] border-[color:var(--main-color)] before:bg-[color:var(--main-color)]
+}
+.list-title-w{
+  @apply text-[color:var(--white-color)] border-[color:var(--white-color)] before:bg-[color:var(--white-color)]
+}
+/* 主區塊padding & margin設定 */
+.main-selection{
+  @apply pt-[4rem] lg:pt-[10rem] pb-12 lg:pb-20 px-4 lg:px-0 mx-auto
+}
+/* 副區塊padding & margin設定 */
+.sub-selection{
+  @apply pb-5 mx-auto pt-10
+}
+/* 直式卡片 */
+.card-col{
+  @apply flex flex-col items-center
+}
+/* 橫式卡片 */
+.card-row{
+  @apply flex flex-row items-center
+}
+/* 卡片連結 */
+.card-link{
+  @apply absolute w-full h-full top-0 left-0 z-0
+}
+/* 進度表 */
+.card-process{
+  @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
+}</style><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。
+
+Hexo的運作流程如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。
+一開始我們在編輯好檔案或是修改好config後，會先在終端機打上hexo g，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。
+為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。
+轉譯好後我們可以選擇使用hexo s本機瀏覽或是hexo d推到網路上.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Web-Design"><div class="arrow-hover"><span>Web-Design</span></div></a></div></div><h1 class="page-title" id="#postTitle">用hexo打造屬於自己的部落格（四）-架構篇</h1><p class="page-subtitle">hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Blog"><div class="line-hover"><span>Blog</span></div></a></div><time datetime="2021-12-05T04:17:39.000Z">2021-12-05</time></div></div><div class="w-full"><article class="post-content"><p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p>
+<p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p>
+<h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p>
+<p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p>
+<p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p>
+<p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p>
+<p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>themes</td>
+<td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td>
+</tr>
+<tr>
+<td>themes/layout</td>
+<td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td>
+</tr>
+<tr>
+<td>themes/source</td>
+<td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td>
+</tr>
+<tr>
+<td>themes/languages</td>
+<td>可因應所在地區改變指定文字的語言</td>
+</tr>
+<tr>
+<td>themes/config.yml</td>
+<td>主題的設定（header類別項目、留言區、其他套件等等...）</td>
+</tr>
+<tr>
+<td>themes/package.json</td>
+<td>會紀錄目前主題的版本及有用的hexo套件</td>
+</tr>
+<tr>
+<td>source</td>
+<td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td>
+</tr>
+<tr>
+<td>public</td>
+<td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td>
+</tr>
+<tr>
+<td>node_modules</td>
+<td>使用npm安裝的套件內容</td>
+</tr>
+<tr>
+<td>package.json</td>
+<td>紀錄hexo目前的版本及裝過的套件</td>
+</tr>
+<tr>
+<td>deploy</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div></article><section class="jump-container my-6"><div class="flex justify-between"><!-- em is empty placeholder--><a class="button is-default" href="/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/" title="html測試"><span class="left-arrow"><span>html測試</span></span></a><a class="button is-default" href="/Web-Design/04_hexo-3/" title="用hexo打造屬於自己的部落格（三）-主題篇"><span class="right-arrow"><span>用hexo打造屬於自己的部落格（三）-主題篇</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
