@@ -46,6 +46,7 @@ $(document).ready(function () {
 	openMenu();
 	scrollDown();
 	copyCode();
+	addCategoryLink();
 });
 
 /* 幻燈片 */
@@ -89,9 +90,6 @@ function fadeOutWord() {
 	var visibleTime = 0;
 	var visibleTime = setInterval(function () {
 		if ($('#loading').css('opacity') == 0) {
-
-
-
 			clearInterval(visibleTime);
 		};
 	}, 100);
@@ -426,5 +424,13 @@ function copyCode() {
 		btn.addEventListener('click', e => {
 			e.preventDefault();
 		});
+	});
+}
+
+// 目錄列表可以點擊整個區塊
+function addCategoryLink() {
+	$(".category-list-item").on('click', function () {
+		window.location = $(this).find("a").attr("href");
+		return false;
 	});
 }

@@ -484,15 +484,8 @@
     }
 }
 
-.work-card .cover-image-wrap,
-.blog-card .cover-image-wrap {
-    overflow: hidden;
-    border-radius: 0.5rem;
-}
-
 .work-card .cover-image,
 .blog-card .cover-image {
-    transform: scale(1);
     transition: all 0.3s ease-in-out;
 }
 
@@ -502,12 +495,6 @@
     .blog-card:hover {
         border: 1px solid transparent;
         box-shadow: var(--shadow-lg);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .work-card:hover .cover-image,
-    .blog-card:hover .cover-image {
-        transform: scale(1.1);
         transition: all 0.3s ease-in-out;
     }
 }
