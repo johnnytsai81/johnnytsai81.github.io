@@ -24,25 +24,6 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
       <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
       <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/</url>
       
@@ -62,8 +43,27 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/</url>
+      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
+      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
+      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</url>
       
         <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
       
@@ -81,8 +81,8 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</url>
+      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
+      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/</url>
       
         <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
       
@@ -157,25 +157,6 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
       <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/"/>
       <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/</url>
       
@@ -233,34 +214,15 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/</url>
+      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
+      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</url>
       
         <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
       
       
       <categories>
           
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
+          <category> category_2 </category>
           
       </categories>
       
@@ -290,27 +252,8 @@
     
     <entry>
       <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</url>
+      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
+      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</url>
       
         <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
       
@@ -359,11 +302,49 @@
     
     
     <entry>
-      <title>用hexo打造屬於自己的部落格（四）-架構篇</title>
-      <link href="/Web-Design/05_hexo-4/"/>
-      <url>/Web-Design/05_hexo-4/</url>
+      <title>html測試</title>
+      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
+      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</url>
       
-        <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p><p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p><p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p><p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p><p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p><div class="table-outer"><table><thead><tr><th>位置</th><th>用途</th></tr></thead><tbody><tr><td>themes</td><td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td></tr><tr><td>themes/layout</td><td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td></tr><tr><td>themes/source</td><td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td></tr><tr><td>themes/languages</td><td>可因應所在地區改變指定文字的語言</td></tr><tr><td>themes/config.yml</td><td>主題的設定（header類別項目、留言區、其他套件等等...）</td></tr><tr><td>themes/package.json</td><td>會紀錄目前主題的版本及有用的hexo套件</td></tr><tr><td>source</td><td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td></tr><tr><td>public</td><td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td></tr><tr><td>node_modules</td><td>使用npm安裝的套件內容</td></tr><tr><td>package.json</td><td>紀錄hexo目前的版本及裝過的套件</td></tr><tr><td>deploy</td><td></td></tr></tbody></table></div>]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html測試</title>
+      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
+      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pug 模板繼承功能(Inheritance) block extends include 介紹及應用</title>
+      <link href="/Web-Design/06_pug-1/"/>
+      <url>/Web-Design/06_pug-1/</url>
+      
+        <content type="html"><![CDATA[<p>pug的模板繼承功能，可以透過block extends include去組合成一個完整的網頁。</p><p><img src="/images/post/head-cv-03.jpg" alt="$cover"></p><h3 id="block-x2F-extends-x2F-include-的層級關係"><a href="#block-x2F-extends-x2F-include-的層級關係" class="headerlink" title="block &#x2F; extends &#x2F; include 的層級關係"></a>block &#x2F; extends &#x2F; include 的層級關係</h3><p>模板引擎最大的重點在於這三種模板的應用，如果單用文字描述他們的功能可能有點難以理解是什麼意思，所以我畫了一張圖。</p><p><img src="https://images2.imgbox.com/d1/8c/yHX1GxLL_o.jpg"></p><p>extends 像一個大零件，大零件裡面可以放很多小零件或小插件。而小零件就是block，block可以自行覆蓋內容或是添加內容。而include比較像小插件，跟block比起來擴充性較差。</p><p>由圖可以發現他們的層序關係，extends裡面可以放extends、block及include，block裡面只能放include，include則是只能放程式不能放任何的模板。</p><p>我們現在先來示範一個最簡單的架構，一個只有header跟footer還有main的網頁</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    header</span><br><span class="line">        block header</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">    footer</span><br><span class="line">        block footer</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.pug</span><br><span class="line">extends base //欲連接的pug檔案位置</span><br><span class="line"></span><br><span class="line">block header</span><br><span class="line">    h1 我的網站名稱</span><br><span class="line">block main</span><br><span class="line">    h2 我的網站內容</span><br><span class="line">block footer</span><br><span class="line">    p 我的網站頁尾</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- index.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我的網站名稱<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我的網站內容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我的網站內容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>你會發現本來的一頁網站被拆成了兩份，base.pug是我的大零件他放了三個block，我可以自由的修改block裡面的內容（需要注意的是extends跟block是在同一個層級）。</p><p>這邊只應用了extends跟block，如果我確定我的header跟footer都是固定不變的，這就可以選擇用include的方式。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    header</span><br><span class="line">        include header</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">    footer</span><br><span class="line">        include footer</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.pug</span><br><span class="line">extends base //欲連接的pug檔案位置</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 我是首頁</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// header.pug</span><br><span class="line">h1 我是頁頭</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// footer.pug</span><br><span class="line">p 我是頁尾</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- index.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是頁頭<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我是標題<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是頁尾<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>這麼一來header跟footer只需要做一次可以用include的方式套用在全部的頁面了。</p><h3 id="覆寫或添加內容到block"><a href="#覆寫或添加內容到block" class="headerlink" title="覆寫或添加內容到block"></a>覆寫或添加內容到block</h3><p>接下來我們介紹一下block，block的應用方式比較多元，block裡面可以放程式，但是加了新的東西後舊的東西就會被自動被覆蓋掉，這邊我用一個簡單的例子：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">            h2 這是首頁</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// list.pug</span><br><span class="line">extends base</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 這是列表頁</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- list.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>這是列表頁<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果不想覆蓋原本的內容也可以用append跟prepend的方式添加block的內容，這邊舉一個例子：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">            h2 這是首頁</span><br><span class="line">    block script</span><br><span class="line">        script(src=&#x27;/jquery.js&#x27;)</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// list.pug</span><br><span class="line">extends base</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 這是列表頁</span><br><span class="line"></span><br><span class="line">block append script</span><br><span class="line">    script(src=&#x27;/list.js&#x27;)</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- list.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>這是列表頁<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&#x27;/jquery.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&#x27;/list.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>那block extends include的介紹就差不多到這邊，在實際應用差不多在三層左右，如果做太多層架構會變很複雜，反而會變得難以維護。</p>]]></content>
       
       
       <categories>
@@ -376,6 +357,35 @@
         <tags>
             
             <tag> Blog </tag>
+            
+            <tag> Pug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用hexo打造屬於自己的部落格（四）-架構篇</title>
+      <link href="/Web-Design/05_hexo-4/"/>
+      <url>/Web-Design/05_hexo-4/</url>
+      
+        <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p><p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p><p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p><p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p><p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p><p>這邊整理了一些比較重要的資料夾或檔案：</p><div class="table-outer"><table><thead><tr><th>位置</th><th>用途</th></tr></thead><tbody><tr><td>themes</td><td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td></tr><tr><td>themes/layout</td><td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td></tr><tr><td>themes/source</td><td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td></tr><tr><td>themes/languages</td><td>可因應所在地區改變指定文字的語言</td></tr><tr><td>themes/config.yml</td><td>主題的設定（header類別項目、留言區、其他套件等等...）</td></tr><tr><td>themes/package.json</td><td>會紀錄目前主題的版本及有用的hexo套件</td></tr><tr><td>source</td><td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td></tr><tr><td>public</td><td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td></tr><tr><td>node_modules</td><td>使用npm安裝的套件內容</td></tr><tr><td>package.json</td><td>紀錄hexo目前的版本及裝過的套件</td></tr><tr><td>deploy</td><td>部署的到網路的檔案</td></tr></tbody></table></div><h3 id="修改網頁的首頁"><a href="#修改網頁的首頁" class="headerlink" title="修改網頁的首頁"></a>修改網頁的首頁</h3><p>有時候我們想要新增一些自訂頁面，也就是不需要模板語言轉譯。如果首頁要變成自訂頁會比較麻煩些，因為要改一下config.yml的設定。</p><p><img src="https://images2.imgbox.com/15/c9/tIzjR09u_o.png"></p><p>點開config有一個Home page setting可以修改首頁的網址，這邊我修改成<code>/blog/</code>。這麼一來原本點開的首頁網址就會變成xxx.github.io&#x2F;blog，這樣我就可以放我的自訂頁在xxx.github.io。</p><p><img src="https://images2.imgbox.com/4b/5b/yYpxfDCe_o.png"></p><p>新增自訂首頁就是在source資料夾新增一個index.md即可，需要注意是的是副檔名只能用.md否則會出現錯誤。因為md可以兼容html語法，所以可以先用html編輯再複製過去（md無法收合在編輯上比較不方便）。</p><p>至於其他自訂頁就比較簡單了，只要在source新增一個資料夾裡面放index.md即可。</p><p>例如我想要新增一個&#x2F;work的自訂頁，用hexo新增一個新的page即可。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page work</span><br></pre></td></tr></table></figure><h3 id="layout與模板引擎"><a href="#layout與模板引擎" class="headerlink" title="layout與模板引擎"></a>layout與模板引擎</h3><p>網頁的架構主要都會放在themes&#x2F;你的主題&#x2F;layout裡面，每個主題所使用的模板引擎都不同，主流的有<a href="https://ejs.bootcss.com/">EJS</a> 、<a href="https://pugjs.org/api/getting-started.html">Pug</a> 、 <a href="'https://haml.info/'">haml</a>等。每一個模板引擎的語法都不太相同，所以選一個自己熟悉的即可，我個人是使用Pug。</p><p>layout的模板命名基本上會跟<a href="https://hexo.io/zh-tw/docs/variables">hexo的變數名稱</a>有所相關，僅供參考（不確定是否主題都會遵照此名稱）</p><div class="table-outer"><table><thead><tr><th>名稱</th><th>可能的用途</th></tr></thead><tbody><tr><td>index</td><td>首頁，也就是文章列表頁</td></tr><tr><td>category</td><td>分類頁，一個post可以有多個category</td></tr><tr><td>tag</td><td>標籤頁，一個post可以有多個tag</td></tr><tr><td>archive</td><td>匯整頁，有點類似年代表的方式紀錄文章更新歷程</td></tr><tr><td>page</td><td>自訂頁</td></tr><tr><td>post</td><td>文章</td></tr><tr><td>base</td><td>主體架構，包含了header跟footer（有些主題可能會拆開來寫）</td></tr><tr><td>search</td><td>搜尋</td></tr></tbody></table></div><p>除了熟悉layout的檔名對應的頁面跟功能後，還要了解模板引擎的插入概念，這樣就可以快速找到修改頁面的位置。<a href="/Web-Design/06_pug-1/">這邊</a>有詳細的介紹。</p><h3 id="hexo的變數"><a href="#hexo的變數" class="headerlink" title="hexo的變數"></a>hexo的變數</h3><p>一般來說只有修改位置的話基本上不需要動到變數。但如果想要在既有的頁面新增些數據或者新增功能頁，就必須靠變數來達成。因為hexo的操作手冊是使用EJS，所以你複製貼上會發現都沒有任何效果… 😅</p><p>因為你必須要改成pug能解讀的格式，以helper<a href="https://hexo.io/docs/helpers">這一頁</a>來舉例，這一頁有提供很多實用的變數，或是預設架構修改:</p><p><img src="https://images2.imgbox.com/83/cb/bHaMS1Zj_o.png"></p><p>他有提供顯示現在時間的功能，在pug就要寫成:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">= date(Date.now())</span><br></pre></td></tr></table></figure><p><code>=</code> 在pug代表必須被轉譯成javaScript，如果沒有加上 <code>=</code> pug就會以為是純文字。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web-Design </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -388,7 +398,7 @@
       <link href="/Web-Design/04_hexo-3/"/>
       <url>/Web-Design/04_hexo-3/</url>
       
-        <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="選擇主題"><a href="#選擇主題" class="headerlink" title="選擇主題"></a>選擇主題</h3><p>Hexo受歡迎的原因之一是因為豐富的主題，因為主題官方不會審核，所以在挑選的時候要注意幾點：</p><ul><li>選受歡迎的主題，因為受歡迎的主題通常表示內容在水準之上，以及作者會常常更新（修正bug或是能適應hexo的更新），遇到問題google也能得到比較多解答的機會</li><li>目前主題的功能是否有滿足部落格的需求，因為畫面自己切就好了，但是功能要做就不一定做得出來</li><li>打開網頁檢查器，檢查架構是否有符合html的規範，如果接手很亂的架構後期會改的很累（好的架構有助於部落格的seo）</li></ul><p>這邊我選擇<a href="https://theme-next.js.org/">NexT</a>主題當作示範，<a href="https://theme-next.js.org/docs/getting-started/">這邊</a>有安裝的說明文件。(有些主題說明文件寫得很簡略，新手根本不知道怎麼安裝😂)</p><p>首先用git的方式下載主題，在終端機輸入</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>然後把<code>_config</code>的theme改成next</p><p><img src="https://images2.imgbox.com/df/39/NRdXaFiO_o.png"></p><p>接著用本機預覽看看是否下載成功</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo c //清除public資料夾的檔案</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p><img src="https://images2.imgbox.com/90/8e/UQW8KcxW_o.png" alt="如果出現這個畫面代表安裝成功了"><br><em>如果出現這個畫面代表安裝成功了</em></p><h3 id="主題環境設定"><a href="#主題環境設定" class="headerlink" title="主題環境設定"></a>主題環境設定</h3><p>Next的文件裡有說到，此主題不建議自行修改架構，所以全部的修改設定都放在themes&#x2F;_config.yml裡。</p><p>首先你可以先挑選樣式，NexT有提供四種樣式可以選擇，把想選擇的樣式前的註解拿掉即可。</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure><div class='post-gallery'>  <p>    <img src='https://images2.imgbox.com/06/c1/hXMIFFuA_o.png' style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Muse</em>  </p>  <p>    <img src='https://images2.imgbox.com/21/fa/kC64ekup_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Mist</em>  </p>  <p>    <img src='https://images2.imgbox.com/ed/b8/1oja8AcV_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Pisces</em>  </p>  <p>    <img src='https://images2.imgbox.com/89/f9/AM7AdczX_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Gemini</em>  </p></div><p>menu可以選擇header要放哪些類別，但開啟後不能馬上啟用，需要先建立目錄檔。</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="comment">#home: / || fa fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || fa fa-tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || fa fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure><p>這邊先以categories為範例（其他的類別就改成該類別的英文）</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure><p>執行以上命令後，會發現source資料夾多了一個categories&#x2F;index.md，點選並且新增type的內容。</p><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">type: &quot;categories&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><p>這麼一來就建立好一個大類了。這時候只要新增一篇post並且填寫類別，程式就會自動去做分類了。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page <span class="string">&quot;test&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">categories: Web-Design</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><p>這麼一來就完成最基本的環境設定，雖然NexT有提供很多擴充功能，但是他的layout是用Nunjucks開發（我不太熟悉），所以我最後沒有選擇用這個主題，而是選用Pug開發的主題去做修改。</p><p>如果你對NexT主題風格很滿意，那你也可以考慮用NexT就好，更進階的功能網路上都有很多人分享，畢竟自己修改樣式還是很花時間的。</p><p>下一篇會介紹Hexo的運作流程及架構，這會幫助你在修改樣式時更快上手</p>]]></content>
+        <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="選擇主題"><a href="#選擇主題" class="headerlink" title="選擇主題"></a>選擇主題</h3><p>Hexo受歡迎的原因之一是因為豐富的主題，因為主題官方不會審核，所以在挑選的時候要注意幾點：</p><ul><li>選受歡迎的主題，因為受歡迎的主題通常表示內容在水準之上，以及作者會常常更新（修正bug或是能適應hexo的更新），遇到問題google也能得到比較多解答的機會</li><li>目前主題的功能是否有滿足部落格的需求，因為畫面自己切就好了，但是功能要做就不一定做得出來</li><li>如果會大幅度的修改主題架構，可以看一下themes&#x2F;你的主題&#x2F;layout所使用的模板引擎是否為自己所熟悉的</li></ul><p>這邊我選擇<a href="https://theme-next.js.org/">NexT</a>主題當作示範，<a href="https://theme-next.js.org/docs/getting-started/">這邊</a>有安裝的說明文件。(有些主題說明文件寫得很簡略，新手根本不知道怎麼安裝😂)</p><p>首先用git的方式下載主題，在終端機輸入</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>然後把<code>_config</code>的theme改成next</p><p><img src="https://images2.imgbox.com/df/39/NRdXaFiO_o.png"></p><p>接著用本機預覽看看是否下載成功</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo c //清除public資料夾的檔案</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p><img src="https://images2.imgbox.com/90/8e/UQW8KcxW_o.png" alt="如果出現這個畫面代表安裝成功了"><br><em>如果出現這個畫面代表安裝成功了</em></p><h3 id="主題環境設定"><a href="#主題環境設定" class="headerlink" title="主題環境設定"></a>主題環境設定</h3><p>Next的文件裡有說到，此主題不建議自行修改架構，所以全部的修改設定都放在themes&#x2F;_config.yml裡。</p><p>首先你可以先挑選樣式，NexT有提供四種樣式可以選擇，把想選擇的樣式前的註解拿掉即可。</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure><div class='post-gallery'>  <p>    <img src='https://images2.imgbox.com/06/c1/hXMIFFuA_o.png' style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Muse</em>  </p>  <p>    <img src='https://images2.imgbox.com/21/fa/kC64ekup_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Mist</em>  </p>  <p>    <img src='https://images2.imgbox.com/ed/b8/1oja8AcV_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Pisces</em>  </p>  <p>    <img src='https://images2.imgbox.com/89/f9/AM7AdczX_o.png'  style='aspect-ratio: 16 / 9; border:1px solid var(--bone-color)'></img>    <em>Gemini</em>  </p></div><p>menu可以選擇header要放哪些類別，但開啟後不能馬上啟用，需要先建立目錄檔。</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="comment">#home: / || fa fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || fa fa-tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || fa fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure><p>這邊先以categories為範例（其他的類別就改成該類別的英文）</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure><p>執行以上命令後，會發現source資料夾多了一個categories&#x2F;index.md，點選並且新增type的內容。</p><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">type: &quot;categories&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><p>這麼一來就建立好一個大類了。這時候只要新增一篇post並且填寫類別，程式就會自動去做分類了。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page <span class="string">&quot;test&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">date: 2021-12-25 22:45:49</span><br><span class="line"><span class="section">categories: Web-Design</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><p>這麼一來就完成最基本的環境設定，雖然NexT有提供很多擴充功能，但是他的layout是用Nunjucks開發（我不太熟悉），所以我最後沒有選擇用這個主題，而是選用Pug開發的主題去做修改。</p><p>如果你對NexT主題風格很滿意，那你也可以考慮用NexT就好，更進階的功能網路上都有很多人分享，畢竟自己修改樣式還是很花時間的。</p><p>下一篇會介紹Hexo的運作流程及架構，這會幫助你在修改樣式時更快上手</p>]]></content>
       
       
       <categories>
@@ -401,6 +411,8 @@
         <tags>
             
             <tag> Blog </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -427,6 +439,8 @@
             
             <tag> Blog </tag>
             
+            <tag> Hexo </tag>
+            
         </tags>
       
     </entry>
@@ -452,6 +466,8 @@
             
             <tag> Blog </tag>
             
+            <tag> Hexo </tag>
+            
         </tags>
       
     </entry>
@@ -463,7 +479,7 @@
       <link href="/Web-Design/01_lightgallery/"/>
       <url>/Web-Design/01_lightgallery/</url>
       
-        <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://www.lightgalleryjs.com/">version2</a>，但是需要付費獲得授權碼才能使用。但是基礎的幻燈片功能<a href="https://sachinchoolur.github.io/lightgallery.js/">version1</a>也很夠用了，所以文章主要討論的範圍皆為version1。</p><p>lightgallery 需要放css跟js兩個檔案，樣式的部分先用原生的css，之後再自己寫css覆蓋掉會快很多。</p><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>首先先設定最基礎的HTML架構及JS設定:</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img1.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb1.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img2.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb2.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(); <span class="comment">// 一個id只能套用一組幻燈片，如果一個頁面有多個幻燈片需要用不同的id</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>需要注意的是HTML的部分，官方的標準架構必須是 div &gt; a &gt; img ，如果用其他的排列方式會無法作用。</p><p>如果想要套自己的排版必須要加上 <code>data-src=&quot;&quot;</code> (圖片連結)  <code>data-poster=&quot;&quot;</code> (影片連結) 才會執行</p><p>例如：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-4&quot;</span> <span class="attr">data-src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;picture&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果想要新增功能 必須要自己建立一個function</p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">initlightGallery</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initlightGallery</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(&#123;</span><br><span class="line">    <span class="attr">autoplayControls</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">share</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">zoom</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">fullScreen</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">download</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">showThumbByDefault</span>: <span class="literal">false</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h3 id="參數設定"><a href="#參數設定" class="headerlink" title="參數設定"></a>參數設定</h3><p>這邊提供幾個常用的參數:</p><div class="table-outer"><table><thead><tr><th>參數</th><th>預設值</th><th>用途</th></tr></thead><tbody><tr><td>autoplayControls</td><td>true</td><td>可選擇是否出現自動播放的按鈕</td></tr><tr><td>share</td><td>true</td><td>可選擇是否出現分享按鈕</td></tr><tr><td>zoom</td><td>true</td><td>可選擇是否出現放大縮小按鈕</td></tr><tr><td>download</td><td>true</td><td>可選擇是否出現下載按鈕</td></tr><tr><td>showThumbByDefault</td><td>true</td><td>是否一開始就顯示預覽來源</td></tr><tr><td>exThumbImage</td><td>true</td><td>幻燈片內的預覽小圖來源，如果有修改過架構就必須加上這個參數，否則程式會抓不到圖片，一般來說設'data-src'抓一樣的圖即可</td></tr></tbody></table></div>]]></content>
+        <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://www.lightgalleryjs.com/">version2</a>，但是需要付費獲得授權碼才能使用。但是基礎的幻燈片功能<a href="https://sachinchoolur.github.io/lightgallery.js/">version1</a>也很夠用了，所以文章主要討論的範圍皆為version1。</p><p>lightgallery 需要放css跟js兩個檔案，樣式的部分先用原生的css，之後再自己寫css覆蓋掉會快很多。</p><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>首先先設定最基礎的HTML架構及JS設定:</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img1.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb1.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;img/img2.jpg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;img/thumb2.jpg&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(); <span class="comment">// 一個id只能套用一組幻燈片，如果一個頁面有多個幻燈片需要用不同的id</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>需要注意的是HTML的部分，官方的標準架構必須是 div &gt; a &gt; img ，如果用其他的排列方式會無法作用。</p><p>如果想要套自己的排版必須要加上 <code>data-src=&quot;&quot;</code> (圖片連結)  <code>data-poster=&quot;&quot;</code> (影片連結) 才會執行</p><p>例如：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span> <span class="attr">id</span>=<span class="string">&quot;lightgallery&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-4&quot;</span> <span class="attr">data-src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;picture&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./image/info_001.jpg&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果想要新增功能 必須要自己建立一個function</p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">initlightGallery</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initlightGallery</span>(<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#lightgallery&quot;</span>).<span class="title function_">lightGallery</span>(&#123;</span><br><span class="line">    <span class="attr">autoplayControls</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">share</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">zoom</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">fullScreen</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">download</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">showThumbByDefault</span>: <span class="literal">false</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h3 id="參數設定"><a href="#參數設定" class="headerlink" title="參數設定"></a>參數設定</h3><p>這邊提供幾個常用的參數:</p><div class="table-outer"><table><thead><tr><th>參數</th><th>預設值</th><th>用途</th></tr></thead><tbody><tr><td>autoplayControls</td><td>true</td><td>可選擇是否出現自動播放的按鈕</td></tr><tr><td>share</td><td>true</td><td>可選擇是否出現分享按鈕</td></tr><tr><td>zoom</td><td>true</td><td>可選擇是否出現放大縮小按鈕</td></tr><tr><td>download</td><td>true</td><td>可選擇是否出現下載按鈕</td></tr><tr><td>showThumbByDefault</td><td>true</td><td>是否一開始就顯示預覽來源</td></tr><tr><td>exThumbImage</td><td>true</td><td>幻燈片內的預覽小圖來源，如果有修改過架構就必須加上這個參數，否則程式會抓不到圖片，一般來說設 data-src 抓一樣的圖即可</td></tr></tbody></table></div>]]></content>
       
       
       <categories>

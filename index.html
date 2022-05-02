@@ -1,11 +1,7 @@
 <!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>Anthony Tsai's blog</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
-<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/helper.css"><link rel="stylesheet" href="/style/common/prism-okaidia.min.css"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script src="/js/common.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/helper.css"><link rel="stylesheet" href="/style/common/prism-okaidia.min.css"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
   theme: {
     fontFamily: {
-      helvblack: ['Helvetica-black', 'sans-serif'],
-      helvbold: ['Helvetica-bold', 'sans-serif'],
-      helvmedium: ['Helvetica-medium', 'sans-serif'],
-      helvlight: ['Helvetica-light', 'sans-serif'],
       lato: ['Lato', 'sans-serif']
     },
     extend: {
@@ -32,11 +28,11 @@ body{
 }
 /* 首頁視覺標題 */
 .banner-title {
-  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black font-helvblack
+  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black
 }
 /* 主標題 */
 .main-title{
-  @apply text-[90px] lg:text-[120px] font-black font-helvblack mt-[-2.75rem] leading-tight
+  @apply text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-tight
 }
 .main-title-w{
   @apply text-[color:var(--white-color)]
@@ -122,7 +118,7 @@ body{
       <span class="flex flex-col mt-4 ml-auto lg:ml-0">
         <span class="main-title fadeup-word-wrap"><span class="fadeup-word fadeup-word-1">Who</span></span>
         <span class="main-title ml-[6rem] ml-[3rem] lg:ml-[4rem] mt-[-4rem] fadeup-word-wrap after:bg-[color:var(--gray-color)]">
-          <span class="main-title-dash after:mb-7 after:mr-[1rem] lg:after:mr-[4rem] fadeup-line"></span><span class="fadeup-word fadeup-word-2">am</span>
+          <span class="main-title-dash after:mb-5 lg:after:mb-7 after:mr-[1rem] lg:after:mr-[4rem] fadeup-line"></span><span class="fadeup-word fadeup-word-2">am</span>
         </span>
         <span class="main-title ml-[6rem] lg:ml-[10rem] fadeup-word-wrap"><span class="fadeup-word fadeup-word-3">I?</span></span>
       </span>
@@ -194,10 +190,10 @@ body{
         <span class="main-title-no main-title-no-w text-right lg:text-left">02</span>
         <span class="flex flex-col mt-4 mr-auto lg:mr-0">
           <span class="main-title main-title-w fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">What</span> </span>
-          <span class="main-title main-title-w fadeup-word-wrap ml-[1rem] lg:ml-[6rem] mt-[-3rem] lg:mt-[-4rem]">
+          <span class="main-title main-title-w fadeup-word-wrap ml-[0rem] lg:ml-[6rem] mt-[-3rem] lg:mt-[-4rem]">
             <span class="main-title-dash main-title-dash-w fadeup-line after:mb-7 after:mr-[0rem] lg:after:mr-[4rem]"></span> <span class="fadeup-word fadeup-word-2">can I</span> 
           </span>
-          <span class="main-title fadeup-word-wrap main-title-w ml-[1rem] lg:ml-[4rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
+          <span class="main-title fadeup-word-wrap main-title-w ml-[0rem] lg:ml-[4rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
         </span>
       </span>
       <span class="ml-auto flex-shrink-0 mb-4 lg:mb-0 text-xl text-[color:var(--white-color)]">經歷&專長</span>
@@ -355,10 +351,10 @@ body{
       <span class="main-title-no">03</span>
       <span class="flex flex-col mt-4 ml-auto lg:ml-0">
         <span class="main-title fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">What</span> </span>
-        <span class="main-title ml-[4rem] lg:ml-[6rem]  mt-[-2rem] lg:mt-[-3rem] fadeup-word-wrap after:bg-[color:var(--gray-color)]">
-          <span class="main-title-dash fadeup-line after:mb-11 after:mr-[0rem] lg:after:mr-[4rem]"></span> <span class="fadeup-word fadeup-word-2">did I</span> 
+        <span class="main-title ml-[0rem] lg:ml-[6rem]  mt-[-2rem] lg:mt-[-3rem] fadeup-word-wrap after:bg-[color:var(--gray-color)]">
+          <span class="main-title-dash fadeup-line after:mb-8 lg:after:mb-11 after:mr-[0rem] lg:after:mr-[4rem]"></span> <span class="fadeup-word fadeup-word-2">did I</span> 
         </span>
-        <span class="main-title fadeup-word-wrap ml-[4rem] lg:ml-[6rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
+        <span class="main-title fadeup-word-wrap ml-[0rem] lg:ml-[7rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
       </span>
     </span>
     <span class="mr-auto text-xl flex-shrink-0 mb-4 lg:mb-0">作品&雜記</span>
@@ -374,10 +370,10 @@ body{
         </div>
       </div>
     </div>
-    <div class="relative grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:!p-4">
+    <div class="relative grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 lg:!p-4">
       <div class="work-card work-card-1">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -447,7 +443,7 @@ body{
       </div>
       <div class="work-card work-card-2">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -537,7 +533,7 @@ body{
       </div>
       <div class="work-card">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -546,7 +542,7 @@ body{
       </div>
       <div class="work-card">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -555,7 +551,7 @@ body{
       </div>
       <div class="work-card">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -564,7 +560,7 @@ body{
       </div>
       <div class="work-card">
         <div class="picture cover-image-wrap">
-          <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
         </div>
         <div class="my-4 text-xl">
           植栽
@@ -584,12 +580,12 @@ body{
       </a>
     </div>
     <div class="relative">
-      <div id="home-blog" class="swiper-container !p-4">
+      <div id="home-blog" class="swiper-container !p-4 !pb-8">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -600,7 +596,7 @@ body{
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -611,7 +607,7 @@ body{
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -622,7 +618,7 @@ body{
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -633,7 +629,7 @@ body{
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -644,7 +640,7 @@ body{
           <div class="swiper-slide">
             <div class="blog-card">
               <div class="picture cover-image-wrap">
-                <img class="cover-image object-cover rounded-lg aspect-picture-row" src="/images/key-visual.jpg">
+                <img class="cover-image object-cover rounded-md aspect-video-row" src="/images/key-visual.jpg">
               </div>
               <div class="my-4 text-xl">
                 植栽
@@ -654,9 +650,9 @@ body{
           </div>
         </div>
       </div>
-      <div class="swiper-pagination-2"></div>
-      <div class="swiper-button-next swiper-button-next-2 hidden xl:flex"></div>
-      <div class="swiper-button-prev swiper-button-prev-2 hidden xl:flex"></div>
+      <div class="swiper-pagination-2 -mt-4"></div>
+      <div class="swiper-button-next swiper-button-next-2 hidden xl:flex -mt-4"></div>
+      <div class="swiper-button-prev swiper-button-prev-2 hidden xl:flex -mt-4"></div>
     </div>
     <a class='block lg:hidden mt-16' href="./blog">
         <span class="block button-1 mx-auto w-[200px] py-3 tracking-wide">MORE</span>

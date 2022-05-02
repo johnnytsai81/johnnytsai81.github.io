@@ -19,9 +19,10 @@
 .post-page .post-content {
   display: grid;
   grid-template-columns: 1fr min(800px, 100%) 1fr;
-  font-size: 16px;
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: Lato, sans-serif;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 1024px) {
@@ -108,7 +109,7 @@
 
 /* 一般內文 */
 .post-page .post-content>p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* 分隔線 */
@@ -217,8 +218,8 @@
 /* 文章大標 */
 .post-page h2 {
   font-size: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   font-weight: 800;
 }
 
@@ -235,29 +236,29 @@
 }
 
 .post-page h3 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
+  font-size: 2.25rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .post-page h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 576px) {
   .post-page h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 }
 
 .post-page h4 {
   font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
@@ -274,7 +275,7 @@
 
 .post-page ul li {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 2rem;
   margin-left: 1.75rem;
 }
@@ -296,7 +297,7 @@
 .post-page ol li {
   list-style-type: decimal;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 2rem;
   margin-left: 1.5rem;
 }
@@ -355,41 +356,43 @@
 /*=============================================
 =                   table                     =
 =============================================*/
-table {
-  position: relative;
-  width: 100% !important;
-  word-wrap: break-word;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
+.table-outer {
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 992px) {
+table {
+  position: relative;
+  /* width: 100% !important;
+  word-wrap: break-word;
+  table-layout: fixed;
+  border-collapse: collapse; */
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1200px) {
   table {
     display: block;
     white-space: nowrap;
-    width: 100vw !important;
+    width: calc(100vw - 2rem) !important;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .table-outer {
     margin: auto;
-    height: auto !important;
-    max-height: none !important;
-    min-height: initial !important;
     overflow-x: auto;
     padding: 0 2px 0 0;
   }
 
   .table-outer::-webkit-scrollbar {
     background-color: var(--light-color);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
   }
 
   .table-outer::-webkit-scrollbar-thumb {
     background-color: var(--bone-color);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
   }
 }
 
@@ -406,6 +409,7 @@ table tbody tr {
 table thead th {
   height: 100% !important;
   width: inherit;
+  white-space: nowrap;
   padding: 10px 15px !important;
   font-size: 1rem;
   border-top: none;
@@ -464,7 +468,7 @@ table tbody tr td {
   border-top: 1px var(--bone-color) solid !important;
   vertical-align: middle;
   color: var(--iron-color);
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -485,6 +489,7 @@ table tbody tr td:first-of-type {
 
 .highlight table {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .highlight table td {
@@ -760,7 +765,7 @@ pre .javascript .function {
 
 .code-highlight {
   position: relative;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 
 .code-highlight::before {

@@ -1,37 +1,40 @@
-html{
-	font-size:16px;
-	overflow-y:scroll;
+html {
+  font-size: 16px;
+  overflow-y: scroll;
 }
 
-body{
-	line-height:1.2;
-	color: var(--dark-color);
-	font-size:1rem;
-	font-weight:400;
-	font-family: 'Lato',"Microsoft JhengHei", 微軟正黑體, "Microsoft YaHei", 微軟雅黑, SimHei, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC";
+body {
+  line-height: 1.2;
+  color: var(--dark-color);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Lato', "Microsoft JhengHei", 微軟正黑體, "Microsoft YaHei", 微軟雅黑, SimHei, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "SF Pro TC", "SF Pro Display", "SF Pro Icons", "PingFang TC";
 }
 
-header{
+header {
   position: relative;
   z-index: 1000;
 }
 
-main{
+main {
   min-height: calc(100vh - 116px);
 }
 
-a{
-	color: var(--dark-color);
-}
-a:hover, a:focus, a:active{
-	text-decoration: none !important;
-    outline: none !important;
-    color: inherit;
+a {
+  color: var(--dark-color);
 }
 
-:root{
-	/* 顏色 */
-	--main-color:#1860C3;
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  outline: none !important;
+  color: inherit;
+}
+
+:root {
+  /* 顏色 */
+  --main-color: #1860C3;
   --bright-color: #3D80CB;
   --deep-color: #394EA6;
   --sub-color: #FFBF6B;
@@ -39,43 +42,46 @@ a:hover, a:focus, a:active{
   --tissue-color: #FDEDED;
   --special-color: #C06981;
   --lady-color: #FFACBE;
-	--black-color:#111111;
-	--dark-color:#444444;
-	--iron-color: #777777;
-	--gray-color:#bbbbbb;
-	--bone-color: #e0e0e0;
+  --black-color: #111111;
+  --dark-color: #444444;
+  --iron-color: #777777;
+  --gray-color: #bbbbbb;
+  --bone-color: #e0e0e0;
   --light-color: #f6f5f3;
-	--white-color:#ffffff;
-	/* 圓角 */
-	--radius-lg: 20px;
-	--radius-md: 10px;
-	--radius-sm: 5px;
-  --shadow-sm: 0.2px 0.2px 0.8px -10px rgba(40,10,0,0.014), 0.4px 0.4px 2px -10px rgba(40,10,0,0.02), 0.8px 0.8px 3.8px -10px rgba(40,10,0,0.025), 1.3px 1.3px 6.7px -10px rgba(40,10,0,0.03), 2.5px 2.5px 12.5px -10px rgba(40,10,0,0.036), 6px 6px 30px -10px rgba(40,10,0,0.05);
-  --shadow-md: 1px 0.9px 2.3px -3px rgba(30,10,10,0.04), 2.4px 2.2px 5.5px -3px rgba(30,10,10,0.05), 4.5px 4.1px 10.4px -3px rgba(30,10,10,0.06), 8px 7.4px 18.5px -3px rgba(30,10,10,0.07), 15px 13.8px 34.7px -3px rgba(30,10,10,0.08), 36px 33px 83px -3px rgba(30,10,10,0.2);
-  --shadow-lg: 0.2px 0.4px 0.8px -10px rgba(0,0,0,0.03), 0.4px 0.9px 2px -10px rgba(0,0,0,0.03), 0.8px 1.8px 3.8px -10px rgba(0,0,0,0.038), 1.3px 3.1px 6.7px -10px rgba(0,0,0,0.045), 2.5px 5.8px 12.5px -10px rgba(0,0,0,0.06), 6px 14px 30px -10px rgba(0,0,0,0.08);
+  --white-color: #ffffff;
+  /* 圓角 */
+  --radius-lg: 20px;
+  --radius-md: 10px;
+  --radius-sm: 5px;
+  --shadow-sm: 0.2px 0.2px 0.8px -10px rgba(40, 10, 0, 0.014), 0.4px 0.4px 2px -10px rgba(40, 10, 0, 0.02), 0.8px 0.8px 3.8px -10px rgba(40, 10, 0, 0.025), 1.3px 1.3px 6.7px -10px rgba(40, 10, 0, 0.03), 2.5px 2.5px 12.5px -10px rgba(40, 10, 0, 0.036), 6px 6px 30px -10px rgba(40, 10, 0, 0.05);
+  --shadow-md: 1px 0.9px 2.3px -3px rgba(30, 10, 10, 0.04), 2.4px 2.2px 5.5px -3px rgba(30, 10, 10, 0.05), 4.5px 4.1px 10.4px -3px rgba(30, 10, 10, 0.06), 8px 7.4px 18.5px -3px rgba(30, 10, 10, 0.07), 15px 13.8px 34.7px -3px rgba(30, 10, 10, 0.08), 36px 33px 83px -3px rgba(30, 10, 10, 0.2);
+  --shadow-lg: 0 5px 20px rgb(0 0 0 / 16%);
 }
 
-p{
-    line-height: 1.6;
+p {
+  line-height: 1.6;
 }
 
-ul, li, ol{
-    list-style: none;
-    padding: unset;
+ul,
+li,
+ol {
+  list-style: none;
+  padding: unset;
 }
 
 /* 補cdn版本tailwindcss缺的程式 */
-.aspect-square{
+.aspect-square {
   aspect-ratio: 1 / 1;
 }
 
-.aspect-video-row{
+.aspect-video-row {
   aspect-ratio: 16 / 9;
 }
 
-.aspect-picture-row{
+.aspect-picture-row {
   aspect-ratio: 4 / 3;
 }
+
 /*=============================================
 =                      字體                    =
 =============================================*/
@@ -89,6 +95,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u-w4BMUTPHjxsIPx-mPCLC79U11vU.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -98,6 +105,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u-w4BMUTPHjxsIPx-oPCLC79U1.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -107,6 +115,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI9w2_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -116,6 +125,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI9w2_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -125,6 +135,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -134,6 +145,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -143,6 +155,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -152,6 +165,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -161,6 +175,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI3wi_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -170,6 +185,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI3wi_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -179,6 +195,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHh30AUi-qNiXg7eU0.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -188,6 +205,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHh30AXC-qNiXg7Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -197,6 +215,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -206,6 +225,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -215,6 +235,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -224,6 +245,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -233,6 +255,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -242,6 +265,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -251,6 +275,7 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -260,8 +285,3 @@ ul, li, ol{
   src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {font-family: "Helvetica-bold"; src: url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.eot"); src: url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.woff") format("woff"), url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a54e659b9ee7f19197420d01bc92dc9e.svg#Helvetica") format("svg"); }
-@font-face {font-family: "Helvetica-black"; src: url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.eot"); src: url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.woff") format("woff"), url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1ff95b1ff8fb906b63d36e68d0d07a07.svg#Helvetica") format("svg"); }
-@font-face {font-family: "Helvetica-medium"; src: url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.eot"); src: url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.woff") format("woff"), url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ea56dcda20f3b9983b44ea1345108249.svg#Helvetica") format("svg"); }
-@font-face {font-family: "Helvetica-light"; src: url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.eot"); src: url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.woff") format("woff"), url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8d8ceb7386bcccdf5dc13b3f223d20b2.svg#Helvetica") format("svg"); }

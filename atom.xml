@@ -46,6 +46,34 @@
   
   <entry>
     <title>html測試</title>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/</id>
+    <published>2021-12-08T04:17:39.000Z</published>
+    <updated>2022-04-20T04:06:25.635Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h3 class=&quot;main-title&quot;&gt;
+    我是標題
+&lt;h3&gt;
+&lt;p&gt;
+    我是內文
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="category_2" scheme="https://johnnytsai81.github.io/categories/category-2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html測試</title>
     <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
     <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/</id>
     <published>2021-12-08T04:17:39.000Z</published>
@@ -74,8 +102,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
-    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.635Z</updated>
     
@@ -106,34 +134,6 @@
     <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.636Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
-&lt;h3 class=&quot;main-title&quot;&gt;
-    我是標題
-&lt;h3&gt;
-&lt;p&gt;
-    我是內文
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="category_2" scheme="https://johnnytsai81.github.io/categories/category-2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
-    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</id>
-    <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.635Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
     
@@ -216,34 +216,6 @@
     <title>html測試</title>
     <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/"/>
     <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/</id>
-    <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.637Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
-&lt;h3 class=&quot;main-title&quot;&gt;
-    我是標題
-&lt;h3&gt;
-&lt;p&gt;
-    我是內文
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="category_2" scheme="https://johnnytsai81.github.io/categories/category-2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
-    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.637Z</updated>
     
@@ -354,10 +326,10 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/"/>
-    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%204/</id>
+    <link href="https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
+    <id>https://johnnytsai81.github.io/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</id>
     <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.638Z</updated>
+    <updated>2022-04-20T04:06:25.637Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
     
@@ -375,35 +347,7 @@
     
     
     
-    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
-    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</id>
-    <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.639Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
-&lt;h3 class=&quot;main-title&quot;&gt;
-    我是標題
-&lt;h3&gt;
-&lt;p&gt;
-    我是內文
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    <category term="category_2" scheme="https://johnnytsai81.github.io/categories/category-2/"/>
     
     
   </entry>
@@ -438,36 +382,8 @@
   
   <entry>
     <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
-    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</id>
-    <published>2021-12-08T04:17:39.000Z</published>
-    <updated>2022-04-20T04:06:25.639Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
-&lt;h3 class=&quot;main-title&quot;&gt;
-    我是標題
-&lt;h3&gt;
-&lt;p&gt;
-    我是內文
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>html測試</title>
-    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
-    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</id>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</id>
     <published>2021-12-08T04:17:39.000Z</published>
     <updated>2022-04-20T04:06:25.639Z</updated>
     
@@ -543,13 +459,97 @@
   </entry>
   
   <entry>
+    <title>html測試</title>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</id>
+    <published>2021-12-08T04:17:39.000Z</published>
+    <updated>2022-04-20T04:06:25.639Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h3 class=&quot;main-title&quot;&gt;
+    我是標題
+&lt;h3&gt;
+&lt;p&gt;
+    我是內文
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html測試</title>
+    <link href="https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</id>
+    <published>2021-12-08T04:17:39.000Z</published>
+    <updated>2022-04-20T04:06:25.639Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/post/bg-1.png&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h3 class=&quot;main-title&quot;&gt;
+    我是標題
+&lt;h3&gt;
+&lt;p&gt;
+    我是內文
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Pug 模板繼承功能(Inheritance) block extends include 介紹及應用</title>
+    <link href="https://johnnytsai81.github.io/Web-Design/06_pug-1/"/>
+    <id>https://johnnytsai81.github.io/Web-Design/06_pug-1/</id>
+    <published>2021-12-06T04:17:39.000Z</published>
+    <updated>2022-04-30T06:48:17.565Z</updated>
+    
+    <content type="html"><![CDATA[<p>pug的模板繼承功能，可以透過block extends include去組合成一個完整的網頁。</p><p><img src="/images/post/head-cv-03.jpg" alt="$cover"></p><h3 id="block-x2F-extends-x2F-include-的層級關係"><a href="#block-x2F-extends-x2F-include-的層級關係" class="headerlink" title="block &#x2F; extends &#x2F; include 的層級關係"></a>block &#x2F; extends &#x2F; include 的層級關係</h3><p>模板引擎最大的重點在於這三種模板的應用，如果單用文字描述他們的功能可能有點難以理解是什麼意思，所以我畫了一張圖。</p><p><img src="https://images2.imgbox.com/d1/8c/yHX1GxLL_o.jpg"></p><p>extends 像一個大零件，大零件裡面可以放很多小零件或小插件。而小零件就是block，block可以自行覆蓋內容或是添加內容。而include比較像小插件，跟block比起來擴充性較差。</p><p>由圖可以發現他們的層序關係，extends裡面可以放extends、block及include，block裡面只能放include，include則是只能放程式不能放任何的模板。</p><p>我們現在先來示範一個最簡單的架構，一個只有header跟footer還有main的網頁</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    header</span><br><span class="line">        block header</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">    footer</span><br><span class="line">        block footer</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.pug</span><br><span class="line">extends base //欲連接的pug檔案位置</span><br><span class="line"></span><br><span class="line">block header</span><br><span class="line">    h1 我的網站名稱</span><br><span class="line">block main</span><br><span class="line">    h2 我的網站內容</span><br><span class="line">block footer</span><br><span class="line">    p 我的網站頁尾</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- index.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我的網站名稱<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我的網站內容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我的網站內容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>你會發現本來的一頁網站被拆成了兩份，base.pug是我的大零件他放了三個block，我可以自由的修改block裡面的內容（需要注意的是extends跟block是在同一個層級）。</p><p>這邊只應用了extends跟block，如果我確定我的header跟footer都是固定不變的，這就可以選擇用include的方式。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    header</span><br><span class="line">        include header</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">    footer</span><br><span class="line">        include footer</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.pug</span><br><span class="line">extends base //欲連接的pug檔案位置</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 我是首頁</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// header.pug</span><br><span class="line">h1 我是頁頭</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// footer.pug</span><br><span class="line">p 我是頁尾</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- index.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是頁頭<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>我是標題<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是頁尾<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>這麼一來header跟footer只需要做一次可以用include的方式套用在全部的頁面了。</p><h3 id="覆寫或添加內容到block"><a href="#覆寫或添加內容到block" class="headerlink" title="覆寫或添加內容到block"></a>覆寫或添加內容到block</h3><p>接下來我們介紹一下block，block的應用方式比較多元，block裡面可以放程式，但是加了新的東西後舊的東西就會被自動被覆蓋掉，這邊我用一個簡單的例子：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">            h2 這是首頁</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// list.pug</span><br><span class="line">extends base</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 這是列表頁</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- list.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>這是列表頁<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果不想覆蓋原本的內容也可以用append跟prepend的方式添加block的內容，這邊舉一個例子：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// base.pug</span><br><span class="line">body</span><br><span class="line">    main</span><br><span class="line">        block main</span><br><span class="line">            h2 這是首頁</span><br><span class="line">    block script</span><br><span class="line">        script(src=&#x27;/jquery.js&#x27;)</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// list.pug</span><br><span class="line">extends base</span><br><span class="line"></span><br><span class="line">block main</span><br><span class="line">    h2 這是列表頁</span><br><span class="line"></span><br><span class="line">block append script</span><br><span class="line">    script(src=&#x27;/list.js&#x27;)</span><br></pre></td></tr></table></figure><p>輸出成html會變成：</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- list.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>這是列表頁<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&#x27;/jquery.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&#x27;/list.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><p>那block extends include的介紹就差不多到這邊，在實際應用差不多在三層左右，如果做太多層架構會變很複雜，反而會變得難以維護。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;pug的模板繼承功能，可以透過block extends include去組合成一個完整的網頁。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/post/head-cv-03.jpg&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;block-x2F-extend</summary>
+      
+    
+    
+    
+    <category term="Web-Design" scheme="https://johnnytsai81.github.io/categories/Web-Design/"/>
+    
+    
+    <category term="Blog" scheme="https://johnnytsai81.github.io/tags/Blog/"/>
+    
+    <category term="Pug" scheme="https://johnnytsai81.github.io/tags/Pug/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用hexo打造屬於自己的部落格（四）-架構篇</title>
     <link href="https://johnnytsai81.github.io/Web-Design/05_hexo-4/"/>
     <id>https://johnnytsai81.github.io/Web-Design/05_hexo-4/</id>
     <published>2021-12-05T04:17:39.000Z</published>
-    <updated>2022-04-26T17:11:26.800Z</updated>
+    <updated>2022-05-01T15:02:30.999Z</updated>
     
-    <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p><p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p><p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p><p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p><p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p><div class="table-outer"><table><thead><tr><th>位置</th><th>用途</th></tr></thead><tbody><tr><td>themes</td><td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td></tr><tr><td>themes/layout</td><td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td></tr><tr><td>themes/source</td><td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td></tr><tr><td>themes/languages</td><td>可因應所在地區改變指定文字的語言</td></tr><tr><td>themes/config.yml</td><td>主題的設定（header類別項目、留言區、其他套件等等...）</td></tr><tr><td>themes/package.json</td><td>會紀錄目前主題的版本及有用的hexo套件</td></tr><tr><td>source</td><td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td></tr><tr><td>public</td><td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td></tr><tr><td>node_modules</td><td>使用npm安裝的套件內容</td></tr><tr><td>package.json</td><td>紀錄hexo目前的版本及裝過的套件</td></tr><tr><td>deploy</td><td></td></tr></tbody></table></div>]]></content>
+    <content type="html"><![CDATA[<p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p><h3 id="Hexo的運作流程"><a href="#Hexo的運作流程" class="headerlink" title="Hexo的運作流程"></a>Hexo的運作流程</h3><p>如果想要對現有的主題進行大幅度的修改，首先要先了解hexo的架構及他的運作方法，這樣才知道要從哪裡開始進行修改。</p><p>一開始我們在編輯好檔案或是修改好config後，會先在終端機打上<code>hexo g</code>，用意是把模板語法轉譯成瀏覽器可以讀取的檔案。轉譯好的檔案會先放在public資料夾裡，你會看到裡面都是被轉譯好的html、css、js檔。</p><p>為什麼要進行轉譯的動作呢？因為我們做的網站不可能是一頁一個html手動完成的，這樣會非常的花費時間。所以模板語法可以幫助我們用拼圖的方式組合，重複的地方我們只需要做一次即可（像是header、footer等等）。</p><p>轉譯好後我們可以選擇使用<code>hexo s</code>本機瀏覽或是<code>hexo d</code>推到網路上，推到網路上前他會進行一次的備份並放在deploy資料夾，所以你會發現到public的資料夾內容跟deploy資料夾一樣。</p><p>一般來說我們會修改的地方有兩個，編輯架構或樣式請到themes&#x2F;layout及themes&#x2F;source，編輯文章內容請到source&#x2F;_posts。</p><p>這邊整理了一些比較重要的資料夾或檔案：</p><div class="table-outer"><table><thead><tr><th>位置</th><th>用途</th></tr></thead><tbody><tr><td>themes</td><td>用來放你的主題，點進去可以看到有主題名稱的資料夾</td></tr><tr><td>themes/layout</td><td>用來放主題的網頁架構，每個主題用語法都不一樣，但最後輸出到public都會變成HTML檔</td></tr><tr><td>themes/source</td><td>用來放網站的圖片、css(hexo也有支援sass轉譯)、js</td></tr><tr><td>themes/languages</td><td>可因應所在地區改變指定文字的語言</td></tr><tr><td>themes/config.yml</td><td>主題的設定（header類別項目、留言區、其他套件等等...）</td></tr><tr><td>themes/package.json</td><td>會紀錄目前主題的版本及有用的hexo套件</td></tr><tr><td>source</td><td>放置blog文章及自訂頁的地方（需要按照網址位置去做資料夾分類，ex:你想新增網址為/sitemap的自訂頁，那你就要新增sitemap資料夾裡面放index.md）</td></tr><tr><td>public</td><td>放置轉譯過的檔案，也可以轉譯後修改再deploy，但小心若使用`hexo clean`會把修改的東西清掉（`hexo g`只會把重複的檔案覆蓋掉，並不會清除沒重複的檔案）</td></tr><tr><td>node_modules</td><td>使用npm安裝的套件內容</td></tr><tr><td>package.json</td><td>紀錄hexo目前的版本及裝過的套件</td></tr><tr><td>deploy</td><td>部署的到網路的檔案</td></tr></tbody></table></div><h3 id="修改網頁的首頁"><a href="#修改網頁的首頁" class="headerlink" title="修改網頁的首頁"></a>修改網頁的首頁</h3><p>有時候我們想要新增一些自訂頁面，也就是不需要模板語言轉譯。如果首頁要變成自訂頁會比較麻煩些，因為要改一下config.yml的設定。</p><p><img src="https://images2.imgbox.com/15/c9/tIzjR09u_o.png"></p><p>點開config有一個Home page setting可以修改首頁的網址，這邊我修改成<code>/blog/</code>。這麼一來原本點開的首頁網址就會變成xxx.github.io&#x2F;blog，這樣我就可以放我的自訂頁在xxx.github.io。</p><p><img src="https://images2.imgbox.com/4b/5b/yYpxfDCe_o.png"></p><p>新增自訂首頁就是在source資料夾新增一個index.md即可，需要注意是的是副檔名只能用.md否則會出現錯誤。因為md可以兼容html語法，所以可以先用html編輯再複製過去（md無法收合在編輯上比較不方便）。</p><p>至於其他自訂頁就比較簡單了，只要在source新增一個資料夾裡面放index.md即可。</p><p>例如我想要新增一個&#x2F;work的自訂頁，用hexo新增一個新的page即可。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page work</span><br></pre></td></tr></table></figure><h3 id="layout與模板引擎"><a href="#layout與模板引擎" class="headerlink" title="layout與模板引擎"></a>layout與模板引擎</h3><p>網頁的架構主要都會放在themes&#x2F;你的主題&#x2F;layout裡面，每個主題所使用的模板引擎都不同，主流的有<a href="https://ejs.bootcss.com/">EJS</a> 、<a href="https://pugjs.org/api/getting-started.html">Pug</a> 、 <a href="'https://haml.info/'">haml</a>等。每一個模板引擎的語法都不太相同，所以選一個自己熟悉的即可，我個人是使用Pug。</p><p>layout的模板命名基本上會跟<a href="https://hexo.io/zh-tw/docs/variables">hexo的變數名稱</a>有所相關，僅供參考（不確定是否主題都會遵照此名稱）</p><div class="table-outer"><table><thead><tr><th>名稱</th><th>可能的用途</th></tr></thead><tbody><tr><td>index</td><td>首頁，也就是文章列表頁</td></tr><tr><td>category</td><td>分類頁，一個post可以有多個category</td></tr><tr><td>tag</td><td>標籤頁，一個post可以有多個tag</td></tr><tr><td>archive</td><td>匯整頁，有點類似年代表的方式紀錄文章更新歷程</td></tr><tr><td>page</td><td>自訂頁</td></tr><tr><td>post</td><td>文章</td></tr><tr><td>base</td><td>主體架構，包含了header跟footer（有些主題可能會拆開來寫）</td></tr><tr><td>search</td><td>搜尋</td></tr></tbody></table></div><p>除了熟悉layout的檔名對應的頁面跟功能後，還要了解模板引擎的插入概念，這樣就可以快速找到修改頁面的位置。<a href="/Web-Design/06_pug-1/">這邊</a>有詳細的介紹。</p><h3 id="hexo的變數"><a href="#hexo的變數" class="headerlink" title="hexo的變數"></a>hexo的變數</h3><p>一般來說只有修改位置的話基本上不需要動到變數。但如果想要在既有的頁面新增些數據或者新增功能頁，就必須靠變數來達成。因為hexo的操作手冊是使用EJS，所以你複製貼上會發現都沒有任何效果… 😅</p><p>因為你必須要改成pug能解讀的格式，以helper<a href="https://hexo.io/docs/helpers">這一頁</a>來舉例，這一頁有提供很多實用的變數，或是預設架構修改:</p><p><img src="https://images2.imgbox.com/83/cb/bHaMS1Zj_o.png"></p><p>他有提供顯示現在時間的功能，在pug就要寫成:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">= date(Date.now())</span><br></pre></td></tr></table></figure><p><code>=</code> 在pug代表必須被轉譯成javaScript，如果沒有加上 <code>=</code> pug就會以為是純文字。</p>]]></content>
     
     
       
@@ -565,6 +565,8 @@
     
     
     <category term="Blog" scheme="https://johnnytsai81.github.io/tags/Blog/"/>
+    
+    <category term="Hexo" scheme="https://johnnytsai81.github.io/tags/Hexo/"/>
     
   </entry>
   
