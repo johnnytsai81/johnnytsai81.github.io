@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>應該用哪一個切版？flex跟grid的優缺點比較</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
+  theme: {
+    fontFamily: {
+      lato: ['Lato', 'sans-serif']
+    },
+    extend: {
+      spacing: {
+        '5%': '5%',
+        '10%': '10%',
+        '15%': '15%',
+        '20%': '20%'
+      },
+      boxShadow: {
+        'sm': '0.2px 0.2px 0.8px -10px rgb(40 10 0 / 1%), 0.4px 0.4px 2px -10px rgb(40 10 0 / 2%), 0.8px 0.8px 3.8px -10px rgb(40 10 0 / 3%), 1.3px 1.3px 6.7px -10px rgb(40 10 0 / 3%), 2.5px 2.5px 12.5px -10px rgb(40 10 0 / 4%), 6px 6px 30px -10px rgb(40 10 0 / 5%)',
+        'md': '1px 0.9px 2.3px -3px rgba(30,10,10,0.04), 2.4px 2.2px 5.5px -3px rgba(30,10,10,0.05), 4.5px 4.1px 10.4px -3px rgba(30,10,10,0.06), 8px 7.4px 18.5px -3px rgba(30,10,10,0.07), 15px 13.8px 34.7px -3px rgba(30,10,10,0.08), 36px 33px 83px -3px rgba(30,10,10,0.2)',
+        'lg': '0.2px 0.4px 0.8px -10px rgba(0,0,0,0.03), 0.4px 0.9px 2px -10px rgba(0,0,0,0.03), 0.8px 1.8px 3.8px -10px rgba(0,0,0,0.038), 1.3px 3.1px 6.7px -10px rgba(0,0,0,0.045), 2.5px 5.8px 12.5px -10px rgba(0,0,0,0.06), 6px 14px 30px -10px rgba(0,0,0,0.08)'
+      }
+    }
+  }
+}</script><style type="postcss">/* 全域 */
+body{
+  @apply font-lato
+}
+/* 標題欄 */
+.nav-title {
+  @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+}
+/* 首頁視覺標題 */
+.banner-title {
+  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black
+}
+/* 主標題 */
+.main-title{
+  @apply text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-tight
+}
+.main-title-w{
+  @apply text-[color:var(--white-color)]
+}
+/* 編號數字 */
+.main-title-no{
+  @apply block text-xl mb-4 lg:mb-0 mr-5 font-medium tracking-wider
+}
+.main-title-no-w{
+  @apply text-[color:var(--white-color)] mr-0 lg:mr-5
+}
+/* 破折號 */
+.main-title-dash{
+  @apply inline-block after:w-[7.5rem] after:h-[2px] after:inline-block after:bg-[color:var(--iron-color)]
+}
+.main-title-dash-w{
+  @apply after:bg-[color:var(--white-color)]
+}
+/* 列表標題 */
+.list-title{
+  @apply flex items-center text-xl pl-4 pb-2 font-bold border-b before:w-4 before:h-4 before:rounded-full before:mr-4 before:mt-1
+}
+.list-title-m{
+  @apply text-[color:var(--main-color)] border-[color:var(--main-color)] before:bg-[color:var(--main-color)]
+}
+.list-title-w{
+  @apply text-[color:var(--white-color)] border-[color:var(--white-color)] before:bg-[color:var(--white-color)]
+}
+/* 主區塊padding & margin設定 */
+.main-selection{
+  @apply pt-[4rem] lg:pt-[10rem] pb-12 lg:pb-20 px-4 lg:px-0 mx-auto
+}
+/* 副區塊padding & margin設定 */
+.sub-selection{
+  @apply pb-5 mx-auto pt-10
+}
+/* 直式卡片 */
+.card-col{
+  @apply flex flex-col items-center
+}
+/* 橫式卡片 */
+.card-row{
+  @apply flex flex-row items-center
+}
+/* 卡片連結 */
+.card-link{
+  @apply absolute w-full h-full top-0 left-0 z-0
+}
+/* 進度表 */
+.card-process{
+  @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
+}</style><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="近來因為RWD的興起，flex跟grid的排版方式開始流行了起來。但是大部分的文章都在介紹如何使用，所以想寫一篇文章比較兩者的優勢，以及在什麼情況下用哪一個排版方式比較好。
+
+前言注意
+本篇適合已了解flex及grid用法的人閱讀，因為本篇不會介紹如何使用它們。
+
+
+如果要用一句話來描述兩者的差異，那就是Flex是擅長一維的排版，Grid擅長二維的排版。
+
+就像數學的座標軸一樣：
+
+如果資料的流向是只有x或只有y，那麼用flex會比較適合。
+如果流向是在x、y之間格狀的區塊，那麼用grid會比較適合。
+
+雖然是這麼說，但隨著CSS跟瀏覽器的進步，其實兩者之間的差異性也越來越小了。
+
+
+實戰範例一：列表（資料單向排列，資料本身沒有固定長度，且會換行）
+
+Flex
+
+列表雖然大部分都用li去做，但是flex也是.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Web-Design"><div class="arrow-hover"><span>Web-Design</span></div></a></div></div><h1 class="page-title" id="#postTitle">應該用哪一個切版？flex跟grid的優缺點比較</h1><p class="page-subtitle">近來因為RWD的興起，flex跟grid的排版方式開始流行了起來。但是大部分的文章都在介紹如何使用，所以想寫一篇文章比較兩者的優勢，以及在什麼情況下用哪一個排版方式比較好。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Flex"><div class="line-hover"><span>Flex</span></div></a><a class="mr-4" href="/tags/Grid"><div class="line-hover"><span>Grid</span></div></a></div><time datetime="2021-12-07T04:17:39.000Z">2021-12-07</time></div></div><div class="w-full"><article class="post-content"><p>近來因為RWD的興起，flex跟grid的排版方式開始流行了起來。但是大部分的文章都在介紹如何使用，所以想寫一篇文章比較兩者的優勢，以及在什麼情況下用哪一個排版方式比較好。</p>
+<p><img src="/images/post/head-cv-03.jpg" alt="$cover"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="admonition warning"><p class="admonition-title">注意
+</p><p>本篇適合已了解flex及grid用法的人閱讀，因為本篇不會介紹如何使用它們。</p>
+</div>
+
+<p><strong>如果要用一句話來描述兩者的差異，那就是<code>Flex</code>是擅長一維的排版，<code>Grid</code>擅長二維的排版。</strong></p>
+<blockquote>
+<p>就像數學的座標軸一樣：</p>
+<ul>
+<li>如果資料的流向是只有x或只有y，那麼用flex會比較適合。</li>
+<li>如果流向是在x、y之間格狀的區塊，那麼用grid會比較適合。</li>
+</ul>
+<p>雖然是這麼說，但隨著CSS跟瀏覽器的進步，其實兩者之間的差異性也越來越小了。</p>
+</blockquote>
+<p><img src="https://images2.imgbox.com/44/0e/ZzmssBo0_o.jpg"></p>
+<h2 id="實戰"><a href="#實戰" class="headerlink" title="實戰"></a>實戰</h2><h4 id="範例一：列表（資料單向排列，資料本身沒有固定長度，且會換行）"><a href="#範例一：列表（資料單向排列，資料本身沒有固定長度，且會換行）" class="headerlink" title="範例一：列表（資料單向排列，資料本身沒有固定長度，且會換行）"></a>範例一：列表（資料單向排列，資料本身沒有固定長度，且會換行）</h4><p><img src="https://images2.imgbox.com/5c/17/nwNQuk77_o.png"></p>
+<blockquote>
+<p><strong>Flex</strong></p>
+<ul>
+<li>列表雖然大部分都用<code>li</code>去做，但是<code>flex</code>也是可以很輕鬆做到的</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/VwQeXze?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<blockquote>
+<p><strong>Grid</strong></p>
+<ul>
+<li>如果沒有指定寬度，<code>grid</code>會自動平均分配空白的空間至滿版，且無法斷行。如果指定寬度，就有可能造成文字斷行不美觀的問題</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/zYRraYz?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<hr>
+<h4 id="範例二：卡片列表（資料單向排列，資料有固定長度，且會換行。資料不達一行時則置中）"><a href="#範例二：卡片列表（資料單向排列，資料有固定長度，且會換行。資料不達一行時則置中）" class="headerlink" title="範例二：卡片列表（資料單向排列，資料有固定長度，且會換行。資料不達一行時則置中）"></a>範例二：卡片列表（資料單向排列，資料有固定長度，且會換行。資料不達一行時則置中）</h4><p><img src="https://images2.imgbox.com/fb/06/LPfY3x6o_o.png"></p>
+<blockquote>
+<p><strong>Flex</strong></p>
+<ul>
+<li>相較於範例一，<code>flex</code>只需要在子層加上<code>flex</code>的比例即可，因為我有加<code>gap</code>所以在寬度上計算上會稍微複雜一些(基本的寬度為<code>100% / 3</code>、gap的寬度為 <code>2rem / 3</code>)。</li>
+<li>不滿一行置中的設定也是相當容易，用程式判斷並添加<code>justfy-content:center</code>即可。</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/BaYjVVj?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<blockquote>
+<p><strong>Grid</strong></p>
+<ul>
+<li>因為最早<code>gap</code>是<code>grid</code>特有的功能，所以不用特別計算寬度，但grid在沒有資料的情況下仍然會佔據空間導致無法達到水平置中的效果。</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/VwQeBaY?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<hr>
+<h4 id="範例三：不規則區塊（A為sidebar，B、C、D為資料區塊。當C沒有資料時，D可以選擇在原位置還是替補C的位置）"><a href="#範例三：不規則區塊（A為sidebar，B、C、D為資料區塊。當C沒有資料時，D可以選擇在原位置還是替補C的位置）" class="headerlink" title="範例三：不規則區塊（A為sidebar，B、C、D為資料區塊。當C沒有資料時，D可以選擇在原位置還是替補C的位置）"></a>範例三：不規則區塊（A為sidebar，B、C、D為資料區塊。當C沒有資料時，D可以選擇在原位置還是替補C的位置）</h4><p><img src="https://images2.imgbox.com/b7/6b/M05LEauI_o.jpg"></p>
+<blockquote>
+<p><strong>Flex</strong></p>
+<ul>
+<li>如果要切出A、B、C、D四個區塊，對<code>flex</code>稍微麻煩，需要橫向一層再包縱向一層。</li>
+<li>D替補C區塊的時候，仍然保持D區塊的高度</li>
+<li>D佔據C區塊的時候，<code>flex-grow</code>調高到1即可</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/MWQyeNL?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<blockquote>
+<p><strong>Grid</strong></p>
+<ul>
+<li>如果要切出A、B、C、D四個區塊，對<code>grid</code>來說輕而易舉，只需要一層就可以切出來。(<code>grid-template</code>裡輸入的<code>1fr</code>代表佔據比例跟<code>flex-grow</code>一樣，而auto就是遵循子層的高度)</li>
+<li>執得一提的是，D替補C區塊的時候，仍然是延續C區塊的高度，不會維持原本的高度。(這邊不討論用JS修改<code>grid-template-columns</code>的高度)</li>
+<li>如果要佔據C區塊則使用<code>grid-row: span 2;</code>即可</li>
+</ul>
+</blockquote>
+<iframe src="https://codepen.io/johnnytsai81/embed/MWQKqKM?height=300&theme-id=dark&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<hr>
+<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>其實在寫這篇文章之前我是比較常用grid框架的，因為我不喜歡太多層讓架構變很複雜，但是在完成三個例子後我發現，其實很多不太複雜的架構，用flex做會比grid彈性來得大(畢竟他的中文翻譯也較彈性盒子)。</p>
+<p>下面是我私心覺得的優缺點：</p>
+<h3 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h3><div class="admonition info"><p class="admonition-title">優點
+</p><ol>
+<li>CSS程式碼簡短，預設流向是橫的</li>
+<li>有多個區塊時，可以輕鬆的達到畫面置中的效果</li>
+<li>當前一個區塊是空的時，下一個可以很順利地替補上去</li>
+</ol>
+</div>
+
+<div class="admonition error"><p class="admonition-title">缺點
+</p><ol>
+<li>要換行需要另外打<code>flex-wrap:wrap</code>比較麻煩，雖然說grid所需的CSS程式碼更多一些就是</li>
+<li>使用flex-direction修改流向成直的，置中的設定會互相調換需要注意一下</li>
+<li>複雜的排版會需要很多層flex去達成，日後維護也會較麻煩</li>
+</ol>
+</div>
+
+<h3 id="Grid"><a href="#Grid" class="headerlink" title="Grid"></a>Grid</h3><div class="admonition info"><p class="admonition-title">優點
+</p><ol>
+<li>HTML程式碼簡短，CSS設定較集中，預設流向是直的</li>
+<li>因應不同裝置挪動區塊位置非常簡易</li>
+<li>可以無視資料流向延伸區塊位置</li>
+</ol>
+</div>
+
+<div class="admonition error"><p class="admonition-title">缺點
+</p><ol>
+<li>學習成本較高、需要打的CSS程式碼較多</li>
+<li>當前一個區塊是空的時，下一個替補的區塊會維持前一個區塊的大小</li>
+<li>在<code>grid-template</code>有兩個以上的區塊，則無法達到完全置中</li>
+</ol>
+</div>
+
+</article><section class="jump-container my-12"><div class="grid grid-flow-row gap-4 grid-cols-2"><!-- em is empty placeholder--><a class="button is-default" href="/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/" title="html測試"><span class="left-arrow"><span>html測試</span></span></a><a class="button is-default" href="/Web-Design/06_pug-1/" title="Pug 模板繼承功能(Inheritance) block extends include 介紹及應用"><span class="right-arrow"><span>Pug 模板繼承功能(Inheritance) block extends include 介紹及應用</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>

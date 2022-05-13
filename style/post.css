@@ -19,7 +19,7 @@
 .post-page .post-content {
   display: grid;
   grid-template-columns: 1fr min(800px, 100%) 1fr;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: Lato, sans-serif;
   margin-bottom: 3rem;
@@ -69,6 +69,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid var(--bone-color);
+}
+
+.post-page .post-content>p:nth-child(2) img {
+  border: unset;
 }
 
 .post-page .post-content>.post-gallery img {
@@ -109,16 +114,34 @@
 
 /* 一般內文 */
 .post-page .post-content>p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* 分隔線 */
 .post-page .post-content>hr {
   margin: 3rem auto;
-  height: 3px;
-  background-color: var(--bright-color);
+  height: 0.25rem;
+  background-color: var(--sub-color);
   border: none;
-  width: 20%;
+  width: 0.25rem;
+}
+
+.post-page .post-content>hr::before {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--sub-color);
+  left: calc(50% + 1.5rem);
+}
+
+.post-page .post-content>hr::after {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--sub-color);
+  right: calc(50% + 1.5rem);
 }
 
 /* 連結 */
@@ -168,6 +191,8 @@
   position: relative;
   font-size: 3rem;
   font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
   font-family: Lato, sans-serif;
 }
 
@@ -201,13 +226,13 @@
 
 @media (max-width: 1024px) {
   .post-page .page-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
 @media (max-width: 576px) {
   .post-page .page-subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
@@ -217,87 +242,69 @@
 
 /* 文章大標 */
 .post-page h2 {
-  font-size: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
   font-weight: 800;
 }
 
-@media (max-width: 1024px) {
-  .post-page h2 {
-    font-size: 2.5rem;
-  }
-}
-
 @media (max-width: 576px) {
   .post-page h2 {
-    font-size: 2rem;
-  }
-}
-
-.post-page h3 {
-  font-size: 2.25rem;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-@media (max-width: 1200px) {
-  .post-page h3 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .post-page h3 {
     font-size: 1.75rem;
   }
 }
 
-.post-page h4 {
+.post-page h3 {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-  .post-page h4 {
+@media (max-width: 576px) {
+  .post-page h3 {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 576px) {
-  .post-page h4 {
-    font-size: 1.125rem;
-  }
+/* 底線標題 */
+.post-page h4 {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-page ul {
+  margin-bottom: 1.25rem;
 }
 
 .post-page ul li {
   position: relative;
-  margin-bottom: 1.5rem;
   line-height: 2rem;
-  margin-left: 1.75rem;
+  margin-left: 1rem;
 }
 
 .post-page ul li::before {
   content: "";
   position: absolute;
   display: inline-block;
-  width: 1rem;
+  width: 0.25rem;
   clear: both;
-  height: 1rem;
-  background-image: url(/images/icon/li.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 0.5rem;
-  left: -1.5rem;
+  height: 0.25rem;
+  background-color: var(--main-color);
+  top: 14px;
+  left: -0.75rem;
 }
 
 .post-page ol li {
   list-style-type: decimal;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
   line-height: 2rem;
   margin-left: 1.5rem;
 }
@@ -309,48 +316,138 @@
   color: #EB5757;
   border-radius: 3px;
   font-size: 85%;
-  padding: 0.2em 0.4em;
+  padding: 0.2rem 0.2rem;
+  margin: 0 0.2rem;
 }
 
 /* callout區塊 */
 .post-page blockquote {
-  margin: 2rem 0 2rem 0;
-  text-align: center;
-  color: var(--dark-color);
-  padding: 1rem;
+  color: #606870;
+  border-left: 5px solid #cbd6df;
+  padding: 0rem 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.post-page blockquote::before,
-.post-page blockquote::after {
-  content: "";
-  display: block;
-  margin: 0px auto;
-  width: 3rem;
-  border-top: 2px solid var(--sub-color);
+.post-page blockquote>:first-child {
+  margin-top: 0.5rem;
 }
 
-.post-page blockquote p {
-  margin: 2rem auto;
-  max-width: 30ch;
-  font-size: 2.25rem;
-}
-
-@media (max-width: 1024px) {
-  .post-page blockquote p {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .post-page blockquote p {
-    font-size: 1.75rem;
-  }
+.post-page blockquote>:last-child {
+  margin-bottom: 0.5rem;
 }
 
 /* 收合區塊 */
 
 .post-page summary {
   cursor: pointer;
+}
+
+/* 崁入區塊 */
+.post-page iframe {
+  margin-bottom: 1.25rem;
+}
+
+
+/*=============================================
+=               admonition樣式                 =
+=============================================*/
+
+.admonition {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--bone-color);
+  margin-bottom: 1.25rem;
+}
+
+p.admonition-title {
+  position: relative;
+  border-radius: var(--radius-sm);
+  margin: -.6rem -.6rem .8em -.6rem !important;
+  padding: .4rem .6rem .4rem 2.5rem;
+  font-weight: 700;
+  background-color: var(--light-color);
+}
+
+.admonition-title::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--main-color);
+  -webkit-mask-image: url(/images/icon/info.svg);
+  mask-image: url(/images/icon/info.svg);
+  background-size: 100% 100%;
+  font-size: 0.875rem;
+  content: ' ';
+}
+
+.info>.admonition-title,
+.todo>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+}
+
+.warning>.admonition-title,
+.attention>.admonition-title,
+.caution>.admonition-title {
+  background-color: rgba(255, 145, 0, .1);
+}
+
+.failure>.admonition-title,
+.missing>.admonition-title,
+.fail>.admonition-title,
+.error>.admonition-title {
+  background-color: rgba(255, 82, 82, .1);
+}
+
+.admonition.info,
+.admonition.todo {
+  border-color: #00b8d4;
+}
+
+.admonition.warning,
+.admonition.attention,
+.admonition.caution {
+  border-color: var(--sub-color);
+}
+
+.admonition.failure,
+.admonition.missing,
+.admonition.fail,
+.admonition.error {
+  border-color: #ff5252;
+}
+
+.info>.admonition-title::before,
+.todo>.admonition-title::before {
+  background-color: #00b8d4;
+  -webkit-mask-image: url(/images/icon/check.svg);
+  mask-image: url(/images/icon/check.svg);
+}
+
+.warning>.admonition-title::before,
+.attention>.admonition-title::before,
+.caution>.admonition-title::before {
+  background-color: var(--sub-color);
+  -webkit-mask-image: url(/images/icon/warning.svg);
+  mask-image: url(/images/icon/warning.svg);
+}
+
+.failure>.admonition-title::before,
+.missing>.admonition-title::before,
+.fail>.admonition-title::before,
+.error>.admonition-title::before {
+  -webkit-mask-image: url(/images/icon/close.svg);
+  mask-image: url(/images/icon/close.svg);
+  background-color: #ff5252;
+}
+
+.admonition>:last-child {
+  margin-bottom: 0 !important;
 }
 
 /*=============================================
@@ -367,7 +464,7 @@ table {
   word-wrap: break-word;
   table-layout: fixed;
   border-collapse: collapse; */
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (max-width: 1200px) {
@@ -765,7 +862,7 @@ pre .javascript .function {
 
 .code-highlight {
   position: relative;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.25rem;
 }
 
 .code-highlight::before {
@@ -864,11 +961,17 @@ pre .javascript .function {
   transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
+.post-page .jump-container a:nth-of-type(1) {
+  grid-column: auto;
+}
+
+.post-page .jump-container a:nth-of-type(2) {
+  text-align: end;
+  grid-column: auto;
+}
+
 .post-page .jump-container .button span {
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .post-page .jump-container .button span span::before {
