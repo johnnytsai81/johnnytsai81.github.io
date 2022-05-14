@@ -88,46 +88,41 @@ body{
 
 前置作業安裝hexo必須要用終端機的方式下載，如果你是沒有使用過終端機可以參考下面的方法(以下是用Visual Studio Code做示範):
 先選擇想建立的資料夾位置並且開啟終端機
-安裝hexo前必須要安裝 Node.js 以及 npm，直接在終端機裡輸入程式
-node -vnpm -v
+安裝hexo前必須要安裝 Node.js 以及 npm。安裝好在終端機裡輸入
+查看node跟npm版本node -vnpm -v
 
 如果有出現版本就代表安裝成功
 如果是Mac的用戶需要另外安裝git
 git可以用檔案下載的方式安裝，安裝完成後在終端機輸入
-git --version
+查看git版本git --version
 
 如果有出現版本就代表安裝成功
 
-下載Hexo新建資料夾並且安裝hexo
-$ hexo init 新資料夾名稱$ cd 新資料夾名稱$ npm install
-安裝成功之後請先安裝基本的.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+下載Hexo新建資料夾並且安裝hexo$ hexo init 新資料夾名稱$ cd 新資料夾名稱$ npm inst.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
 </head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Web-Design"><div class="arrow-hover"><span>Web-Design</span></div></a></div></div><h1 class="page-title" id="#postTitle">用hexo打造屬於自己的部落格（一）-環境設置篇</h1><p class="page-subtitle">hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Blog"><div class="line-hover"><span>Blog</span></div></a><a class="mr-4" href="/tags/Hexo"><div class="line-hover"><span>Hexo</span></div></a></div><time datetime="2021-12-02T04:17:39.000Z">2021-12-02</time></div></div><div class="w-full"><article class="post-content"><p>hexo是一個可以快速建立blog的網誌框架，擁有豐富的主題、及外掛可以利用。</p>
 <p><img src="/images/post/head-cv-02.jpg" alt="$cover"></p>
 <h3 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h3><p>安裝hexo必須要用終端機的方式下載，如果你是沒有使用過終端機可以參考下面的方法(以下是用Visual Studio Code做示範):</p>
 <p><img src="https://images2.imgbox.com/ba/cb/yk81vEMU_o.png" alt="先選擇想建立的資料夾位置並且開啟終端機"><br><em>先選擇想建立的資料夾位置並且開啟終端機</em></p>
-<p>安裝hexo前必須要安裝 Node.js 以及 npm，直接在終端機裡輸入程式</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>安裝hexo前必須要安裝 <a target="_blank" rel="noopener" href="https://nodejs.org/zh-tw/download/">Node.js</a> 以及 npm。安裝好在終端機裡輸入</p>
+<h4 id="查看node跟npm版本"><a href="#查看node跟npm版本" class="headerlink" title="查看node跟npm版本"></a>查看node跟npm版本</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://images2.imgbox.com/1c/01/KZGH6mMK_o.png" alt="如果有出現版本就代表安裝成功"><br><em>如果有出現版本就代表安裝成功</em></p>
 <p>如果是Mac的用戶需要另外安裝<a target="_blank" rel="noopener" href="https://git-scm.com/">git</a></p>
 <p>git可以用檔案下載的方式安裝，安裝完成後在終端機輸入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<h4 id="查看git版本"><a href="#查看git版本" class="headerlink" title="查看git版本"></a>查看git版本</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://images2.imgbox.com/20/b2/0txVpmKR_o.png" alt="如果有出現版本就代表安裝成功"><br><em>如果有出現版本就代表安裝成功</em></p>
 <hr>
-<h3 id="下載Hexo"><a href="#下載Hexo" class="headerlink" title="下載Hexo"></a>下載Hexo</h3><p>新建資料夾並且安裝hexo</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init 新資料夾名稱</span><br><span class="line">$ cd 新資料夾名稱</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h3 id="下載Hexo"><a href="#下載Hexo" class="headerlink" title="下載Hexo"></a>下載Hexo</h3><h4 id="新建資料夾並且安裝hexo"><a href="#新建資料夾並且安裝hexo" class="headerlink" title="新建資料夾並且安裝hexo"></a>新建資料夾並且安裝hexo</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init 新資料夾名稱</span><br><span class="line">$ cd 新資料夾名稱</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>安裝成功之後請先安裝基本的外掛套件</p>
-<p>hexo-server 可以讓你在本地預覽</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
-<p>hexo-deployer-git 可以幫你把網站推上網路</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h4 id="安裝-hexo-server-可以讓你在本地預覽"><a href="#安裝-hexo-server-可以讓你在本地預覽" class="headerlink" title="安裝 hexo-server (可以讓你在本地預覽)"></a>安裝 hexo-server (可以讓你在本地預覽)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<h4 id="安裝hexo-deployer-git-可以幫你把網站推上網路"><a href="#安裝hexo-deployer-git-可以幫你把網站推上網路" class="headerlink" title="安裝hexo-deployer-git (可以幫你把網站推上網路)"></a>安裝hexo-deployer-git (可以幫你把網站推上網路)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p><img src="https://images2.imgbox.com/20/4f/jipdGtdk_o.png" alt="安裝成功後會出現會發現你建立的資料夾多了很多檔案"><br><em>安裝成功後會出現會發現你建立的資料夾多了很多檔案</em></p>
 <p>都安裝完後，你可以先測試是否可以成功運行hexo</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo g  //建立public資料</span><br><span class="line">$ hexo s  //本地預覽</span><br></pre></td></tr></table></figure>
+<h4 id="建立資料並且開啟本地預覽"><a href="#建立資料並且開啟本地預覽" class="headerlink" title="建立資料並且開啟本地預覽"></a>建立資料並且開啟本地預覽</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo g  //建立public資料</span><br><span class="line">$ hexo s  //本地預覽</span><br></pre></td></tr></table></figure>
 <p><img src="https://images2.imgbox.com/42/bb/a4QA0gUb_o.png" alt="按下localhost:4000/的連結便可以看到本機預覽的畫面"><br><em>按下localhost:4000&#x2F;的連結便可以看到本機預覽的畫面</em></p>
 <p><img src="https://images2.imgbox.com/8f/88/v9f5qdPP_o.png" alt="hexo預設模板的畫面"><br><em>hexo預設模板的畫面</em></p>
 <hr>
-<p>恭喜你！這樣就成功的建立出一個（非常陽春）的部落格了</p>
+<p>恭喜你！這樣就成功的建立出一個（非常陽春）的部落格了 ✌️ ✌️ ✌️</p>
 <p>那麼hexo第一篇就先介紹到這邊囉~</p>
-</article><section class="jump-container my-12"><div class="grid grid-flow-row gap-4 grid-cols-2"><!-- em is empty placeholder--><a class="button is-default" href="/Web-Design/03_hexo-2/" title="用hexo打造屬於自己的部落格（二）-部署篇"><span class="left-arrow"><span>用hexo打造屬於自己的部落格（二）-部署篇</span></span></a><a class="button is-default" href="/Web-Design/01_lightgallery/" title="lightgallery.js"><span class="right-arrow"><span>lightgallery.js</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
+</article><section class="jump-container my-12"><div class="grid grid-flow-row gap-4 grid-cols-2"><!-- em is empty placeholder--><a class="button is-default" href="/Web-Design/03_hexo-2/" title="用hexo打造屬於自己的部落格（二）-部署篇"><span class="left-arrow"><span class="title">下一篇</span><span>用hexo打造屬於自己的部落格（二）-部署篇</span></span></a><a class="button is-default" href="/Web-Design/01_lightgallery/" title="lightgallery.js"><span class="right-arrow"><span class="title">上一篇</span><span>lightgallery.js</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
