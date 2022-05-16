@@ -8,7 +8,7 @@
       <link href="/Web-Design/09_Swiper/"/>
       <url>/Web-Design/09_Swiper/</url>
       
-        <content type="html"><![CDATA[<p>Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它。因為他發展的久且可調整的變數極多，所以坑也很多…</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://swiperjs.com/">version8</a>，在v4之後就趨於穩定沒有太大變化。而且有很熱心的<a href="https://www.swiper.com.cn/api/index.html">中文api</a>網站寫的比英文版還詳細。</p><div class="admonition warning"><p class="admonition-title">tip</p><p>v7後把預設的<code>.swiper-container</code>名稱改成<code>.swiper</code>這點需要注意一下</p></div><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>這邊以v8為基準，建立出一個基本的輪播圖</p>]]></content>
+        <content type="html"><![CDATA[<p>Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它。因為他發展的久且可調整的變數極多，所以坑也很多…</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://swiperjs.com/">version8</a>，在v4之後就趨於穩定沒有太大變化。而且有很熱心的<a href="https://www.swiper.com.cn/api/index.html">中文api</a>網站寫的比英文版還詳細。</p><div class="admonition warning"><p class="admonition-title">tip</p><p>v7後把預設的<code>.swiper-container</code>名稱改成<code>.swiper</code>這點需要注意一下</p></div><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>這邊以v8為基準，建立出一個基本的輪播圖</p><iframe src="https://codepen.io/johnnytsai81/embed/abqpovo?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>]]></content>
       
       
       <categories>
