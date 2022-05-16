@@ -4,30 +4,11 @@
   
     
     <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2010/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2010/</url>
+      <title>Swiper.js</title>
+      <link href="/Web-Design/09_Swiper/"/>
+      <url>/Web-Design/09_Swiper/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%2011/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+        <content type="html"><![CDATA[<p>Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它。因為他發展的久且可調整的變數極多，所以坑也很多…</p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://swiperjs.com/">version8</a>，在v4之後就趨於穩定沒有太大變化。而且有很熱心的<a href="https://www.swiper.com.cn/api/index.html">中文api</a>網站寫的比英文版還詳細。</p><div class="admonition warning"><p class="admonition-title">tip</p><p>v7後把預設的<code>.swiper-container</code>名稱改成<code>.swiper</code>這點需要注意一下</p></div><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>這邊以v8為基準，建立出一個基本的輪播圖</p>]]></content>
       
       
       <categories>
@@ -37,206 +18,22 @@
       </categories>
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2012/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2013/</url>
+      <title>fullPage.js</title>
+      <link href="/Web-Design/08_fullPage/"/>
+      <url>/Web-Design/08_fullPage/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2014/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2015/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2015/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2016/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2016/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2017/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2019/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2018/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2020/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2020/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2021/"/>
-      <url>/category-2/html%E6%B8%AC%E8%A9%A6%20copy%2021/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> category_2 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%206/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
+        <content type="html"><![CDATA[<p>fullPage是一個能全螢幕滾動的外掛，會讓你的網站看起來很不一樣。但也因為他的效果會讓整個網站變成fixed，導致許多效果需要另外做調整。</p><p><img src="/images/post/head-cv-05.jpg" alt="$cover"></p><h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a href="https://alvarotrigo.com/fullPage/">version4</a>，除了解決了前幾個版本的bug，還多了<a href="https://alvarotrigo.com/fullPage/extensions/">擴充</a>功能(需要花錢購買)。如果不想有金鑰警告，也可以使用<a href="https://github.com/alvarotrigo/fullPage.js/tree/2.9.7">舊版</a>，但是有許多無法解決的坑所以不太建議。</p><div class="admonition info"><p class="admonition-title">tip</p><p>套件需要放css跟js兩個檔案</p></div><h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>首先先建立基本的框架，也就是只有單純的頁面跟下滑的效果</p><h4 id="範例一-基本款"><a href="#範例一-基本款" class="headerlink" title="範例一:基本款"></a>範例一:基本款</h4><iframe src="https://codepen.io/johnnytsai81/embed/rNJWYXd?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe><p>這邊解釋一下JS變數的功用:</p><div class="table-outer"><table><thead><tr><th>名稱</th><th>預設值</th><th>用途</th></tr></thead><tbody><tr><td>sectionSelector</td><td>section</td><td>修改html外層框架的class名稱</td></tr><tr><td>navigation</td><td>false</td><td>是否會出現右側導覽按鈕</td></tr><tr><td>verticalCentered</td><td>true</td><td>是否垂直置中</td></tr><tr><td>responsiveWidth</td><td>0</td><td>停止運作的斷點，如果為1024表示視窗寬度1024以下不會作用</td></tr><tr><td>credits</td><td>{enabled: true, label: 'Made with fullpage.js', position: 'right'}</td><td>創作者區塊，如果不想顯示就把這功能關掉</td></tr></tbody></table></div><div class="admonition info"><p class="admonition-title">tip</p><p>js的匿名函式可以有兩種寫法:</p><p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 寫法一</span></span><br><span class="line">    <span class="keyword">new</span> <span class="title function_">fullpage</span>(<span class="string">'#fullpage'</span>,{</span><br><span class="line">    });</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 寫法二</span></span><br><span class="line">    $(<span class="string">'#fullpage'</span>).<span class="title function_">fullpage</span>({</span><br><span class="line">    });</span><br></pre></td></tr></table></figure></p></div><p>如果要做成像一頁式網站的話，那就不能缺少選單及錨點。fullPage.js也能很輕鬆建立出錨點的功能。</p><h4 id="範例二-新增選單及錨點"><a href="#範例二-新增選單及錨點" class="headerlink" title="範例二:新增選單及錨點"></a>範例二:新增選單及錨點</h4><iframe src="https://codepen.io/johnnytsai81/embed/WNMozJr?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe><p>因為fullpage預設的header是absolute，但是網站一般習慣使用的header都是<code>relative</code>或是<code>fixed</code>，所以需要進行微調的動作。如果直接改position你會發現滾動的距離會算錯，所以要利用margin-top跟padding-top的搭配讓他算對滾動距離，最後在每個section加上z-index修飾一下即可。</p><p>這邊解釋一下JS變數的功用:</p><div class="table-outer"><table><thead><tr><th>名稱</th><th>預設值</th><th>用途</th></tr></thead><tbody><tr><td>menu</td><td>false</td><td>設定綁定選單的class名稱，需要用data-menuanchor跟anchors做綁定，綁定方法可以參考codepen</td></tr><tr><td>anchors</td><td>[]</td><td>定義錨點連結，有錨點後點按後可以快速定位到某一頁面，定義位置的時候不需要加#。(如果在指定的section加上active，就可以預設打開此頁)</td></tr></table></div><p>如果要做成一般網站的話，那就必須要有header跟footer，而且footer不會占到一整格。</p><h4 id="範例三-新增header及footer"><a href="#範例三-新增header及footer" class="headerlink" title="範例三:新增header及footer"></a>範例三:新增header及footer</h4><iframe src="https://codepen.io/johnnytsai81/embed/bGLBzLm?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe><p>footer在v4版本非常的簡便，只需要在設區塊的高度即可。(如果在v3版以下需要設定<code>fp-auto-height</code>，然後就有很多的坑在等你 🙂 🙂 🙂 )</p><h3 id="動畫設定"><a href="#動畫設定" class="headerlink" title="動畫設定"></a>動畫設定</h3><p>因為fullPage會把整個區塊變成position變成fixed，會讓監聽進入視窗的程式失效導致無法順利跳出動畫，這時候可以用ScrollMagic.js做輔助。</p><h4 id="範例四-加入ScrollMagic-js"><a href="#範例四-加入ScrollMagic-js" class="headerlink" title="範例四:加入ScrollMagic.js"></a>範例四:加入ScrollMagic.js</h4><iframe src="https://codepen.io/johnnytsai81/embed/YzepgaR?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe><div class="admonition info"><p class="admonition-title">為什麼要用ScrollMagic?</p><p>fullPage有內建會在當前的section加上active，但有一個問題是不論往上滑或往下滑到那個區塊都會發動一次動畫效果，一般來說只需要往下滑發動一次動畫效果即可，而ScrollMagic剛好可以達成。</p></div><p>ScrollMagic的使用方式也相當簡單(<a href="https://scrollmagic.io/examples/basic/class_toggles.html">了解更多</a>)，只要按照codepen的寫法填入對應section的id即可。</p><p>fullPage雖然也有變數可以監控 像是afterLoad、onLeave…等等，但如果沒有很複雜的動畫需求不建議使用…因為設定上相當麻煩。</p><p>那麼fullPage的介紹先到這裡，如果未來有嘗試到好用的功能再分享上來 😉 😉 😉</p>]]></content>
       
       
       <categories>
@@ -246,75 +43,11 @@
       </categories>
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%207/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%208/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%209/"/>
-      <url>/Web-Design/html%E6%B8%AC%E8%A9%A6%20copy%209/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/post/bg-1.png" alt="$cover"></p><h3 class="main-title">    我是標題<h3><p>    我是內文<p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web-Design </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html測試</title>
-      <link href="/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/"/>
-      <url>/uncategorized/html%E6%B8%AC%E8%A9%A6%20copy/</url>
-      
-        <content type="html"><![CDATA[<p>lightgallery 是可以是一個讓網站快速實現幻燈片的插件，而且套件使用方法很單純容易上手。<br>tag: </p><p><img src="/images/post/head-cv-01.jpg" alt="$cover"></p><div class='post-gallery'>    <img src='/images/key-visual.jpg' style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img>    <img src='/images/key-visual.jpg'  style='height:300px'></img></div><h3 id="Interdum-et-malesuada"><a href="#Interdum-et-malesuada" class="headerlink" title="Interdum et malesuada"></a>Interdum et malesuada</h3><p>fames ac ante ipsum primis in faucibus. blandit eget felis aliquam, rhoncus <a href="https://adult.noodlemagazine.com/watch/-183645685_456240086">varius</a> urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.</p><p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p><blockquote><p>你不一定要很厲害，才能開始；但你要開始，才能很厲害</p></blockquote><h2 id="List-Types"><a href="#List-Types" class="headerlink" title="List Types"></a>List Types</h2><p><img src="/images/key-visual.jpg" alt="title"><br><em>image_caption</em></p><h3 id="相對位置的方法"><a href="#相對位置的方法" class="headerlink" title="相對位置的方法"></a>相對位置的方法</h3><ol><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ol><hr><h2 id="指定的方法"><a href="#指定的方法" class="headerlink" title="指定的方法"></a>指定的方法</h2><h4 id="1-使用事件監聽器"><a href="#1-使用事件監聽器" class="headerlink" title="1. 使用事件監聽器"></a>1. 使用事件監聽器</h4><ul><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ul><hr><hr><h3 id="Checkbox-List-ul"><a href="#Checkbox-List-ul" class="headerlink" title="Checkbox List (ul)"></a>Checkbox List (ul)</h3><p><a href="https://www.youtube.com/">love</a></p><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** example **/</span></span><br><span class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fefefe</span>; <span class="comment">/*background color of the window and titlebar*/</span></span><br><span class="line">  <span class="attribute">font-family</span>: helvetica, sans-serif; <span class="comment">/*custom font*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>; <span class="comment">/*default font size*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">90%</span>; <span class="comment">/*adjust size of the wriring area*/</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1rem</span>; <span class="comment">/*basic font size*/</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#555</span>; <span class="comment">/*basic font color*/</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>😙</p><ul><li>This is a bullet in an un-ordered list</li><li>This is a bullet in an un-ordered list<ul><li>This is a sub-bullet</li><li>This is a sub-bullet</li></ul></li><li>This is a bullet in an un-ordered list</li></ul><ol><li>The fist item</li><li>The second item</li><li>This is a sub-bullet</li><li>This is also a sub bullet</li><li>The third item</li></ol><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><table><thead><tr><th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th></tr></thead><tbody><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr><tr><td>Division 1</td><td>Division 2</td><td>Division 3</td></tr></tbody></table><blockquote><p>This is a callout box, it gets a fancy little box and border.</p></blockquote>]]></content>
-      
-      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -337,9 +70,7 @@
       
         <tags>
             
-            <tag> Flex </tag>
-            
-            <tag> Grid </tag>
+            <tag> css </tag>
             
         </tags>
       

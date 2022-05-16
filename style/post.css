@@ -36,7 +36,7 @@
   grid-column: 2 / auto;
 }
 
-/* 多圖 */
+/* 多圖(2個一排) */
 .post-page .post-content>.post-gallery {
   width: 100%;
   max-width: 1400px;
@@ -53,11 +53,40 @@
   .post-page .post-content>.post-gallery {
     padding-left: 1rem;
     padding-right: 1rem;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .post-page .post-content>.post-gallery {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 }
 
 @media (max-width: 576px) {
   .post-page .post-content>.post-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post-page .post-content>.post-gallery.post-gallery-sm {
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+}
+
+@media (max-width: 1200px) {
+  .post-page .post-content>.post-gallery.post-gallery-sm {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 769px) {
+  .post-page .post-content>.post-gallery.post-gallery-sm {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .post-page .post-content>.post-gallery.post-gallery-sm {
     grid-template-columns: 1fr;
   }
 }
@@ -89,8 +118,8 @@
   text-align: center;
   margin-top: -1rem;
   margin-bottom: 1rem;
-  color: var(--gray-color);
-  font-size: 1rem;
+  color: var(--iron-color);
+  font-size: 13px;
   font-family: Lato, sans-serif;
   font-style: normal;
 }
@@ -145,7 +174,7 @@
 }
 
 /* 連結 */
-.post-page .post-content>p>a {
+.post-page .post-content p a {
   color: var(--main-color);
   cursor: pointer;
   position: relative;
@@ -157,7 +186,7 @@
   transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.post-page .post-content>p>a::before {
+.post-page .post-content p a::before {
   content: "";
   display: inline-block;
   transform-origin: 50% 100%;
@@ -173,12 +202,12 @@
 }
 
 @media (min-width: 1024px) {
-  .post-page .post-content>p>a:hover {
+  .post-page .post-content p a:hover {
     top: -2px;
     transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   }
 
-  .post-page .post-content>p>a:hover::before {
+  .post-page .post-content p a:hover::before {
     display: inline-block;
     transform: translate3d(0px, 3px, 0px) scale3d(1, 2, 1);
     background: var(--sub-color);
@@ -358,7 +387,7 @@
   border-radius: var(--radius-md);
   transition: all 0.3s ease-in-out;
   box-shadow: var(--shadow-sm);
-  border: 1px solid var(--bone-color);
+  border: 1px solid var(--main-color);
   margin-bottom: 1.25rem;
 }
 
@@ -368,7 +397,11 @@ p.admonition-title {
   margin: -.6rem -.6rem .8em -.6rem !important;
   padding: .4rem .6rem .4rem 2.5rem;
   font-weight: 700;
-  background-color: var(--light-color);
+  background-color: #bdd6f8;
+}
+
+.admonition>p {
+  margin-bottom: 1.25rem;
 }
 
 .admonition-title::before {
@@ -467,18 +500,20 @@ table {
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   table {
     display: block;
-    white-space: nowrap;
-    width: calc(100vw - 2rem) !important;
+
+    width: 100% !important;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .table-outer {
     margin: auto;
+    width: 100%;
     overflow-x: auto;
+    white-space: nowrap;
     padding: 0 2px 0 0;
   }
 
@@ -584,12 +619,13 @@ table tbody tr td:first-of-type {
 =                    code                     =
 =============================================*/
 
-.highlight table {
+.highlight>table {
   margin-bottom: 0;
   width: 100%;
+  display: table;
 }
 
-.highlight table td {
+.highlight>table td {
   border: none;
   background-color: unset;
   padding: 0;
@@ -951,56 +987,58 @@ pre .javascript .function {
   }
 }
 
+@media (max-width: 576px) {
+  .post-page .jump-container {
+    grid-template-columns: 1rem calc(100% - 2rem) 1rem;
+  }
+}
+
 .post-page .jump-container * {
   grid-column: 2 / auto;
 }
 
+.post-page .jump-container-wrap {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "left right";
+}
+
 .post-page .jump-container .button {
   position: relative;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  border: 1px solid var(--bone-color);
+  border-radius: var(--radius-sm);
+  padding: 1rem 2rem;
 }
 
-.post-page .jump-container a:nth-of-type(1) {
+.post-page .jump-container-wrap .left {
   grid-column: auto;
+  grid-area: left;
 }
 
-.post-page .jump-container a:nth-of-type(2) {
+.post-page .jump-container-wrap .right {
   text-align: end;
   grid-column: auto;
+  grid-area: right;
 }
 
 .post-page .jump-container .button span {
   position: relative;
 }
 
-.post-page .jump-container .button span span::before {
-  content: "";
-  display: inline-block;
-  transform-origin: 50% 100%;
-  background: var(--gray-color);
-  transition: clip-path 0.3s ease 0s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1) 0s;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: 105%;
-  left: 0px;
-  pointer-events: none;
-  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0px, 50% 0px, 50% 100%, 50% 100%, 0px 100%, 100% 100%, 100% 0%);
-}
-
 @media (min-width: 1024px) {
   .post-page .jump-container .button:hover {
-    top: -2px;
-    transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+    border: 1px solid var(--sub-color);
   }
+}
 
-  .post-page .jump-container .button:hover span span::before {
-    display: inline-block;
-    transform: translate3d(0px, 3px, 0px) scale3d(1, 2, 1);
-    background: var(--sub-color);
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0px, 50% 0px, 50% 100%, 50% 100%, 0px 100%, 100% 100%, 100% 0%);
-  }
+.post-page .jump-container .button .title {
+  display: block;
+  color: var(--main-color);
 }
 
 .post-page .jump-container .left-arrow::before {
@@ -1010,7 +1048,7 @@ pre .javascript .function {
   right: 100%;
   width: 1rem;
   height: 1rem;
-  transform: translate3d(0px, -50%, 0px);
+  transform: translate3d(-4px, -50%, 0px);
   position: absolute;
   z-index: 1;
   display: inline-block;
@@ -1027,7 +1065,7 @@ pre .javascript .function {
   left: 100%;
   width: 1rem;
   height: 1rem;
-  transform: translate3d(0px, -50%, 0px);
+  transform: translate3d(4px, -50%, 0px);
   position: absolute;
   z-index: 1;
   display: inline-block;
@@ -1039,12 +1077,12 @@ pre .javascript .function {
 
 @media (min-width: 1024px) {
   .post-page .jump-container .button:hover .left-arrow::before {
-    transform: translate3d(-5px, -50%, 0px);
+    transform: translate3d(-8px, -50%, 0px);
     transition: all 0.8s ease 0s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   }
 
   .post-page .jump-container .button:hover .right-arrow::before {
-    transform: translate3d(5px, -50%, 0px);
+    transform: translate3d(8px, -50%, 0px);
     transition: all 0.8s ease 0s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   }
 }
