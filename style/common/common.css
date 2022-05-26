@@ -141,6 +141,8 @@
     transition: opacity 0.3s ease 0.3s;
 }
 
+
+
 /* 箭頭2 （首頁blog箭頭） */
 .swiper-button-prev-2.swiper-button-prev,
 .swiper-button-next-2.swiper-button-next {
@@ -471,6 +473,7 @@
     padding: 1.5rem;
     border-radius: var(--radius-md);
     cursor: pointer;
+    height: 100%;
     transition: all 0.3s ease-in-out;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--bone-color);
@@ -498,6 +501,12 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
+/* 讓card強制同高 */
+.swiper-slide {
+    height: auto;
+}
+
 
 /*=============================================
 =                     icon                    =

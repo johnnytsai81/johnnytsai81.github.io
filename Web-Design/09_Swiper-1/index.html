@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用Swiper.js客制化輪播圖（ㄧ）基礎設定及轉場篇</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/jquery/swiper/css/swiper.min.css"><link rel="stylesheet" href="/jquery/light-gallery/css/lightgallery.min.css"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><script src="/js/tailwind.min.js"></script><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/light-gallery/js/lightgallery-all.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script type="tailwind-config">{
+  theme: {
+    fontFamily: {
+      lato: ['Lato', 'sans-serif']
+    },
+    extend: {
+      spacing: {
+        '5%': '5%',
+        '10%': '10%',
+        '15%': '15%',
+        '20%': '20%'
+      },
+      boxShadow: {
+        'sm': '0.2px 0.2px 0.8px -10px rgb(40 10 0 / 1%), 0.4px 0.4px 2px -10px rgb(40 10 0 / 2%), 0.8px 0.8px 3.8px -10px rgb(40 10 0 / 3%), 1.3px 1.3px 6.7px -10px rgb(40 10 0 / 3%), 2.5px 2.5px 12.5px -10px rgb(40 10 0 / 4%), 6px 6px 30px -10px rgb(40 10 0 / 5%)',
+        'md': '1px 0.9px 2.3px -3px rgba(30,10,10,0.04), 2.4px 2.2px 5.5px -3px rgba(30,10,10,0.05), 4.5px 4.1px 10.4px -3px rgba(30,10,10,0.06), 8px 7.4px 18.5px -3px rgba(30,10,10,0.07), 15px 13.8px 34.7px -3px rgba(30,10,10,0.08), 36px 33px 83px -3px rgba(30,10,10,0.2)',
+        'lg': '0.2px 0.4px 0.8px -10px rgba(0,0,0,0.03), 0.4px 0.9px 2px -10px rgba(0,0,0,0.03), 0.8px 1.8px 3.8px -10px rgba(0,0,0,0.038), 1.3px 3.1px 6.7px -10px rgba(0,0,0,0.045), 2.5px 5.8px 12.5px -10px rgba(0,0,0,0.06), 6px 14px 30px -10px rgba(0,0,0,0.08)'
+      }
+    }
+  }
+}</script><style type="postcss">/* 全域 */
+body{
+  @apply font-lato
+}
+/* 標題欄 */
+.nav-title {
+  @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+}
+/* 首頁視覺標題 */
+.banner-title {
+  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black
+}
+/* 主標題 */
+.main-title{
+  @apply text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-tight
+}
+.main-title-w{
+  @apply text-[color:var(--white-color)]
+}
+/* 編號數字 */
+.main-title-no{
+  @apply block text-xl mb-4 lg:mb-0 mr-5 font-medium tracking-wider
+}
+.main-title-no-w{
+  @apply text-[color:var(--white-color)] mr-0 lg:mr-5
+}
+/* 破折號 */
+.main-title-dash{
+  @apply inline-block after:w-[7.5rem] after:h-[2px] after:inline-block after:bg-[color:var(--iron-color)]
+}
+.main-title-dash-w{
+  @apply after:bg-[color:var(--white-color)]
+}
+/* 列表標題 */
+.list-title{
+  @apply flex items-center text-xl pl-4 pb-2 font-bold border-b before:w-4 before:h-4 before:rounded-full before:mr-4 before:mt-1
+}
+.list-title-m{
+  @apply text-[color:var(--main-color)] border-[color:var(--main-color)] before:bg-[color:var(--main-color)]
+}
+.list-title-w{
+  @apply text-[color:var(--white-color)] border-[color:var(--white-color)] before:bg-[color:var(--white-color)]
+}
+/* 主區塊padding & margin設定 */
+.main-selection{
+  @apply pt-[4rem] lg:pt-[10rem] pb-12 lg:pb-20 px-4 lg:px-0 mx-auto
+}
+/* 副區塊padding & margin設定 */
+.sub-selection{
+  @apply pb-5 mx-auto pt-10
+}
+/* 直式卡片 */
+.card-col{
+  @apply flex flex-col items-center
+}
+/* 橫式卡片 */
+.card-row{
+  @apply flex flex-row items-center
+}
+/* 卡片連結 */
+.card-link{
+  @apply absolute w-full h-full top-0 left-0 z-0
+}
+/* 進度表 */
+.card-process{
+  @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
+}</style><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它算是相當有名氣的。它有很多可調整的變數，所以坑也很多…
+
+版本選擇目前最新的版本為version8，在v4之後就趨於穩定沒有太大變化。而且有很熱心的中文api網站寫的比英文版還詳細。
+版本差異
+v7後把預設的.swiper-container名稱改成.swiper這點需要注意一下
+
+
+安裝
+需要放css跟js兩個檔案，可以先用原生的css，之後再自己寫css覆蓋樣式即可。 cdnjs連結
+
+
+基本設定這邊以v8為基準，建立出一個基本的輪播圖
+範例一:基本型
+
+初始化Swiper
+var swiper = new Swiper(&amp;quot;#mySwiper&amp;quot;, {    ...});
+
+#mySwiper可以自己替換成想控制的容器名稱。如果.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewBox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"></circle><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"></path><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"></circle></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Web-Design"><div class="arrow-hover"><span>Web-Design</span></div></a></div></div><h1 class="page-title" id="#postTitle">用Swiper.js客制化輪播圖（ㄧ）基礎設定及轉場篇</h1><p class="page-subtitle">Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它算是相當有名氣的。它有很多可調整的變數，所以坑也很多...</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/JS"><div class="line-hover"><span>JS</span></div></a></div><time datetime="2022-05-15T04:17:39.000Z">2022-05-15</time></div></div><div class="w-full"><article class="post-content"><p>Swiper是一個完全免費的輪播圖外掛，很多網站都有使用它算是相當有名氣的。它有很多可調整的變數，所以坑也很多…</p>
+<p><img src="/images/post/head-cv-06.jpg" alt="$cover"></p>
+<h3 id="版本選擇"><a href="#版本選擇" class="headerlink" title="版本選擇"></a>版本選擇</h3><p>目前最新的版本為<a target="_blank" rel="noopener" href="https://swiperjs.com/">version8</a>，在v4之後就趨於穩定沒有太大變化。而且有很熱心的<a target="_blank" rel="noopener" href="https://www.swiper.com.cn/api/index.html">中文api</a>網站寫的比英文版還詳細。</p>
+<div class="admonition warning"><p class="admonition-title">版本差異
+</p><p>v7後把預設的<code>.swiper-container</code>名稱改成<code>.swiper</code>這點需要注意一下</p>
+</div>
+
+<div class="admonition info"><p class="admonition-title">安裝
+</p><p>需要放css跟js兩個檔案，可以先用原生的css，之後再自己寫css覆蓋樣式即可。 <a target="_blank" rel="noopener" href="https://cdnjs.com/libraries/Swiper">cdnjs連結</a></p>
+</div>
+
+<h3 id="基本設定"><a href="#基本設定" class="headerlink" title="基本設定"></a>基本設定</h3><p>這邊以v8為基準，建立出一個基本的輪播圖</p>
+<h4 id="範例一-基本型"><a href="#範例一-基本型" class="headerlink" title="範例一:基本型"></a>範例一:基本型</h4><iframe src="https://codepen.io/johnnytsai81/embed/abqpovo?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<div class="admonition info"><p class="admonition-title">初始化Swiper
+</p><p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> swiper = <span class="keyword">new</span> <span class="title class_">Swiper</span>(<span class="string">&quot;#mySwiper&quot;</span>, {</span><br><span class="line">    ...</span><br><span class="line">});</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>#mySwiper</code>可以自己替換成想控制的容器名稱。如果同一頁使用多個輪播圖，那麼容器名稱不能都取一樣的</li>
+<li>建議用變數定義Swiper實體，在日後監聽事件上會比較方便</li>
+<li><code>...</code>是用來放Swiper的配置參數</li>
+</ul>
+</div>
+
+<div class="admonition info"><p class="admonition-title">Swiper的基本架構寫法
+</p><p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;mySwiper&quot;</span> <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-wrapper&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-slide&quot;</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-slide&quot;</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-pagination&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-button-next&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-button-prev&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>#mySwiper</code>是被控制的容器，要放在最外層，且要加上<code>.swiper</code>(如果你不想套用swiper內建的css就可以不加)</li>
+<li><code>.swiper-wrapper</code>是用來包覆輪播圖的區塊，放在裡面的物件都會包覆在<code>.swiper</code>裡面不會超出</li>
+<li><code>.swiper-slide</code>是用來放置輪播圖的區塊</li>
+<li><code>.swiper-pagination</code>是分頁按鈕，如果想要使用必須加在html裡，且在js中把參數打開</li>
+<li><code>.swiper-button-next</code> <code>.swiper-button-prev</code>是上一頁跟下一頁的按鈕，如果想要使用必須加在html裡，且在js中把參數打開</li>
+</ul>
+</div>
+
+<div class="admonition info"><p class="admonition-title">Swiper按鈕的微調
+</p><p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-top'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;mySwiper&quot;</span> <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-wrapper&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-slide&quot;</span>&gt;</span></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-slide&quot;</span>&gt;</span></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-pagination&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-button-next&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;swiper-button-prev&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>因為我個人不喜歡上下按鈕跟分頁按鈕混進輪播圖裡，所以我會把他們放在<code>swiper-wrapper</code>外面，最後再包一層<code>swiper-top</code>控制整個swiper的大小</li>
+</ul>
+</div>
+
+<p>這邊補充一下使用到的swiper參數及功用:</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>預設值</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slidesPerView</td>
+<td>1</td>
+<td>輪播圖一次顯示的幻燈片數量，也可以設定auto由畫面寬度決定一次要顯示幾個</td>
+</tr>
+<tr>
+<td>spaceBetween</td>
+<td>0</td>
+<td>如果一次顯示多個幻燈片，幻燈片之間的間隔大小</td>
+</tr>
+<tr>
+<td>breakpoints</td>
+<td>object</td>
+<td>因應斷點設置不同設定，如果以長度設定直接打上數字即可(EX:576 就是指視窗大於576的裝置)，也可以以長寬比例設定(EX:'@1.5' 就是指寬為長的1.5倍以上的裝置)</td>
+</tr>
+<tr>
+<td>navigation</td>
+<td>object</td>
+<td>開啟上下頁按鈕的功能，並決定想控制的按鈕。如果名稱設定<code>.swiper-button-next</code> <code>.swiper-button-prev</code>就可以直接套用官方css的樣式。如果你在同一個頁面使用多個swiper那麽按鈕名稱就不能完全一樣，會有互相干擾的情況。</td>
+</tr>
+<tr>
+<td>pagination</td>
+<td>object</td>
+<td>開啟分頁按鈕，使用方法跟上下頁按鈕一樣。如果名稱設定<code>.swiper-pagination</code>就可以直接套用官方css的樣式</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr>
+<h3 id="轉場效果設定"><a href="#轉場效果設定" class="headerlink" title="轉場效果設定"></a>轉場效果設定</h3><p>目前swiper v8有內建8種轉場效果，只要修改effect參數即可</p>
+<h4 id="範例二-設定轉場效果-fade"><a href="#範例二-設定轉場效果-fade" class="headerlink" title="範例二:設定轉場效果-fade"></a>範例二:設定轉場效果-fade</h4><iframe src="https://codepen.io/johnnytsai81/embed/YzeQRPw?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<ul>
+<li>在參數effect加上’fade’便可以開啟淡出效果，slidesPerView會強制變為1</li>
+<li>如果swiper的最外層沒有指定高度且裡面的圖片都不一樣大小，有可能發生圖片重疊的情況。這時候要在fadeEffect參數加上<code>crossFade:true</code></li>
+</ul>
+<h4 id="範例三-設定轉場效果-coverflow"><a href="#範例三-設定轉場效果-coverflow" class="headerlink" title="範例三:設定轉場效果-coverflow"></a>範例三:設定轉場效果-coverflow</h4><iframe src="https://codepen.io/johnnytsai81/embed/xxYrmvW?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<ul>
+<li>在參數effect加上’coverflow’便可以開啟3D翻轉效果，如果一次只想顯示一張幻燈片可以把<code>slidesPerView</code>參數加上小數點，才看得到3D的效果</li>
+<li>如果想要調整幻燈片之間的z軸的距離跟角度，要在coverflowEffect參數加上<code>depth: 想要的距離</code>跟<code>rotate: 想要的角度</code>，數值可為正或負</li>
+<li>如果想要調整幻燈片的變形程度，要在coverflowEffect參數加上<code>stretch: 想要的距離</code>，數值越大幻燈片靠的越近，可以用數字跟百分比單位</li>
+<li>預設兩側的幻燈片會有陰影，如果不想要陰影在coverflowEffect參數加上<code>slideShadows: false</code>即可。如果想修改陰影可以用css覆蓋掉<code>.swiper-slide-shadow</code>的樣式</li>
+</ul>
+<p>這邊補充一下使用到的swiper參數及功用:</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>預設值</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loop</td>
+<td>false</td>
+<td>讓輪播圖變成循環的。但事實上是swiper會複製一份達到無縫接軌的效果，被複製的swiper class會加上<code>swiper-slide-duplicate</code>，比較大的坑是複製出來的swiper無法被綁定</td>
+</tr>
+<tr>
+<td>centeredSlides</td>
+<td>false</td>
+<td>讓輪播圖置中，slidePerView數值的計算方式也會跟著改變，變成由最中間的幻燈片到另一側的數量</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="範例四-設定轉場效果-cards"><a href="#範例四-設定轉場效果-cards" class="headerlink" title="範例四:設定轉場效果-cards"></a>範例四:設定轉場效果-cards</h4><iframe src="https://codepen.io/johnnytsai81/embed/ZEryZzE?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<ul>
+<li>在參數effect加上’cards’便可以開啟卡片效果，建議把<code>slidesPerView</code>設為1，才能計算出正確的寬度</li>
+<li>如果想要調整移動卡片能拉動的最大角度，要在cardsEffect參數加上<code>rotate: 想要的角度</code>，數值只能為正數(負數效果跟正數一樣)</li>
+<li>預設疊在後方的卡片會有陰影，如果不想要陰影在cardsEffect參數加上<code>slideShadows: false</code>即可。如果想修改陰影可以用css覆蓋掉<code>.swiper-slide-shadow</code>的樣式</li>
+</ul>
+<h4 id="範例五-設定轉場效果-creative"><a href="#範例五-設定轉場效果-creative" class="headerlink" title="範例五:設定轉場效果-creative"></a>範例五:設定轉場效果-creative</h4><p>最後一個要介紹的effect是creative，他是一個相當有彈性的效果，你可以利用調整參數達到自訂的效果，demo有示範6種不同的組合</p>
+<iframe src="https://codepen.io/johnnytsai81/embed/rNJwbex?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<ul>
+<li><p>控制幻燈片的離場效果要在creativeEffect參數加上<code>prev:&#123;...&#125;</code>，控制進場效果則是<code>next:&#123;...&#125;</code><br>  prev、next可調整的參數:</p>
+  <div class="table-outer">
+  <table>
+  <thead>
+  <tr>
+  <th>名稱</th>
+  <th>用途</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>translate: [x軸,y軸,z軸]</td>
+  <td>調整移動的距離，如果參數是百分比必須要加上引號(EX: "25%")</td>
+  </tr>
+  <tr>
+  <td>rotate: [x軸,y軸,z軸]</td>
+  <td>調整旋轉的角色，單位為deg</td>
+  </tr>
+  <tr>
+  <td>opacity: </td>
+  <td>調整透明度，數值最大為1、最小為0</td>
+  </tr>
+  <tr>
+  <td>scale: </td>
+  <td>調整等比例的縮放大小，數值為倍率大小</td>
+  </tr>
+  <tr>
+  <td>shadow: true</td>
+  <td>是否有陰影，預設為false</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+</li>
+<li><p>調整移動的距離，要在prev、next參數加上<code>translate: [x軸,y軸,z軸]</code></p>
+</li>
+<li><p>如果想要有陰影，在prev、next參數加上<code>shadow: true</code>即可。如果想修改陰影可以用css覆蓋掉<code>.swiper-slide-shadow</code>的樣式</p>
+</li>
+</ul>
+<hr>
+<h3 id="自動輪播及速度設定"><a href="#自動輪播及速度設定" class="headerlink" title="自動輪播及速度設定"></a>自動輪播及速度設定</h3><p>決定好樣式後，也可以調整過場速度跟速率</p>
+<h4 id="範例五-設定自動輪播"><a href="#範例五-設定自動輪播" class="headerlink" title="範例五:設定自動輪播"></a>範例五:設定自動輪播</h4><iframe src="https://codepen.io/johnnytsai81/embed/gOvRVXQ?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>使用到的swiper參數及功用:</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>預設值</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>300</td>
+<td>控制切換幻燈片的速度，單位為毫秒</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>object</td>
+<td>開啟自動輪播。參數加上<code>delay: 想要的速度</code>可以決定切換的速度，單位為毫秒。預設是使用者按下按鈕或挪動幻燈片後autoplay就會失效，如果參數加上<code>disableOnInteraction: false</code>則不受影響。另外你也可以加上`pauseOnMouseEnter:true`避免使用者滑鼠移入時幻燈片跳到下一張</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>速率的部分要在該swiper的swiper-slide進行修改</p>
+<ul>
+<li><code>transition-timing-function</code> 修改速率，預設是ease</li>
+<li><code>transition-delay</code> 修改延遲的時間</li>
+</ul>
+<p>寫著寫著發現篇幅不小心寫太長了…所以略縮圖跟用監聽功能等下篇再寫了 😅 😅 😅</p>
+</article><section class="jump-container my-12"><div class="jump-container-wrap"><!-- em is empty placeholder--><em></em><a class="button right" href="/Web-Design/08_fullPage/" title="用fullPage.js建立出酷炫的全螢幕滾動網頁"><span class="right-arrow"><span class="title">上一篇</span><span>用fullPage.js建立出酷炫的全螢幕滾動網頁</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
