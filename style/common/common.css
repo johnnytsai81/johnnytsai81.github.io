@@ -42,9 +42,9 @@
 .swiper-button-next-1.swiper-button-next {
     width: 4rem;
     height: 4rem;
-    -webkit-transform: translateY(-2rem);
-    -ms-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
+    transform: translateY(-1rem);
     background-color: rgba(228, 228, 228, 0.3);
     transition: .3s ease all;
     z-index: 10;
@@ -507,6 +507,10 @@
     height: auto;
 }
 
+/* work裡的輪播圖避免影響圖片高度 */
+.work-card .swiper-slide {
+    height: 100%;
+}
 
 /*=============================================
 =                     icon                    =
@@ -914,6 +918,50 @@
     justify-content: center;
 }
 
+/* 六角形背景 */
+.hexa-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 60px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+
+.hexa-bg::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    width: 0;
+    border-bottom: 30px solid var(--main-color);
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.hexa-bg::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 0;
+    border-top: 30px solid var(--main-color);
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.hexa-bg.hexa-white {
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+
+.hexa-bg.hexa-white::before {
+    border-bottom: 30px solid var(--white-color);
+}
+
+.hexa-bg.hexa-white::after {
+    border-top: 30px solid var(--white-color);
+}
+
 /*=============================================
 =                    button                   =
 =============================================*/
@@ -1198,6 +1246,53 @@
     transform: translate(0);
 }
 
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.fadeInUp.fadein-end {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.2s cubic-bezier(.23, 1, .32, 1);
+}
+
+.zoomIn {
+    opacity: 0;
+    transform: scale(0.6);
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1);
+}
+
+.zoomIn.fadein-end {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1);
+}
+
+.zoomIn-1.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1);
+}
+
+.zoomIn-2.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1) 0.2s;
+}
+
+.zoomIn-3.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1) 0.4s;
+}
+
+.zoomIn-4.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1) 0.6s;
+}
+
+.zoomIn-5.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1) 0.8s;
+}
+
+.zoomIn-6.fadein-end {
+    transition: 0.4s cubic-bezier(.23, 1, .32, 1) 1s;
+}
+
 .fadeup-line {
     display: inline-block;
     opacity: 0;
@@ -1229,7 +1324,7 @@
 }
 
 .fadeup-process::before {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -1240,11 +1335,7 @@
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
-    -webkit-transition: opacity 1s cubic-bezier(.23, 1, .32, 1), -webkit-transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s;
-    transition: opacity 1s cubic-bezier(.23, 1, .32, 1), -webkit-transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s;
-    -o-transition: opacity 1s cubic-bezier(.23, 1, .32, 1), transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s;
-    transition: opacity 1s cubic-bezier(.23, 1, .32, 1), transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s;
-    transition: opacity 1s cubic-bezier(.23, 1, .32, 1), transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s, -webkit-transform 1s cubic-bezier(.23, 1, .32, 1) 0.15s;
+    transition: transform 1.5s cubic-bezier(.23, 1, .32, 1) 0.15s, -webkit-transform 1.5s cubic-bezier(.23, 1, .32, 1) 0.15s;
 }
 
 .fadein-img {
@@ -1671,27 +1762,27 @@ content: "";
 }
 
 /*=============================================
-=                  hexo svg                  =
+=                 首頁方塊動畫                  =
 =============================================*/
-@-webkit-keyframes hexa {
-    0% {
+@keyframes hexa1 {
+    10% {
         color: #fff
     }
 
-    20% {
-        color: #2a4ba9
-    }
-
-    80% {
-        color: #2a4ba9
-    }
-
-    100% {
+    30% {
         color: #fff
+    }
+
+    50% {
+        color: #2a4ba9
+    }
+
+    90% {
+        color: #2a4ba9
     }
 }
 
-@keyframes hexa {
+@keyframes hexa2 {
     0% {
         color: #fff
     }
@@ -1704,7 +1795,7 @@ content: "";
         color: #2a4ba9
     }
 
-    80% {
+    70% {
         color: #2a4ba9
     }
 
@@ -1717,649 +1808,669 @@ content: "";
     }
 }
 
-.c-hexa {
-    color: #2a4ba9;
+
+.hexa-animation {
     display: block;
-    left: 50px;
     opacity: 0;
     position: absolute;
-    bottom: -200px;
     width: 750px;
     z-index: -1;
 }
 
-.c-hexa:before {
+.hexa-animation-1 {
+    color: #2a4ba9;
+    top: -200px;
+    left: 50px;
+}
+
+.hexa-animation-2 {
+    color: #2a4ba9;
+    bottom: -200px;
+    left: 50px;
+}
+
+.hexa-animation:before {
     content: "";
     display: block;
     padding-top: 500px;
 }
 
-.c-hexa .js-svg,
-.c-hexa svg {
+.hexa-animation .js-svg,
+.hexa-animation svg {
     display: block;
     height: 100%;
     left: 0;
-    opacity: .15;
+    opacity: .175;
     position: absolute;
     top: 0;
     width: 100%
 }
 
-.c-hexa .js-svg>*,
-.c-hexa svg>* {
-    -webkit-animation-duration: 5s;
+.hexa-animation .js-svg>*,
+.hexa-animation svg>* {
+    -webkit-animation-duration: 8s;
     animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-name: hexa;
-    animation-name: hexa;
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
     opacity: 0
 }
 
-.c-hexa .js-svg>:first-child,
-.c-hexa svg>:first-child {
+.hexa-animation.hexa-animation-1 .js-svg>*,
+.hexa-animation.hexa-animation-1 svg>* {
+    -webkit-animation-name: hexa1;
+    animation-name: hexa1;
+}
+
+.hexa-animation.hexa-animation-2 .js-svg>*,
+.hexa-animation.hexa-animation-2 svg>* {
+    -webkit-animation-name: hexa2;
+    animation-name: hexa2;
+}
+
+.hexa-animation .js-svg>:first-child,
+.hexa-animation svg>:first-child {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
     -webkit-transition: opacity .25s 0s;
     transition: opacity .25s 0s
 }
 
-.c-hexa .js-svg>:nth-child(2),
-.c-hexa svg>:nth-child(2) {
+.hexa-animation .js-svg>:nth-child(2),
+.hexa-animation svg>:nth-child(2) {
     -webkit-animation-delay: .05s;
     animation-delay: .05s;
     -webkit-transition: opacity .25s .05s;
     transition: opacity .25s .05s
 }
 
-.c-hexa .js-svg>:nth-child(3),
-.c-hexa svg>:nth-child(3) {
+.hexa-animation .js-svg>:nth-child(3),
+.hexa-animation svg>:nth-child(3) {
     -webkit-animation-delay: .1s;
     animation-delay: .1s;
     -webkit-transition: opacity .25s .1s;
     transition: opacity .25s .1s
 }
 
-.c-hexa .js-svg>:nth-child(4),
-.c-hexa svg>:nth-child(4) {
+.hexa-animation .js-svg>:nth-child(4),
+.hexa-animation svg>:nth-child(4) {
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
     -webkit-transition: opacity .25s .15s;
     transition: opacity .25s .15s
 }
 
-.c-hexa .js-svg>:nth-child(5),
-.c-hexa svg>:nth-child(5) {
+.hexa-animation .js-svg>:nth-child(5),
+.hexa-animation svg>:nth-child(5) {
     -webkit-animation-delay: .2s;
     animation-delay: .2s;
     -webkit-transition: opacity .25s .2s;
     transition: opacity .25s .2s
 }
 
-.c-hexa .js-svg>:nth-child(6),
-.c-hexa svg>:nth-child(6) {
+.hexa-animation .js-svg>:nth-child(6),
+.hexa-animation svg>:nth-child(6) {
     -webkit-animation-delay: .25s;
     animation-delay: .25s;
     -webkit-transition: opacity .25s .25s;
     transition: opacity .25s .25s
 }
 
-.c-hexa .js-svg>:nth-child(7),
-.c-hexa svg>:nth-child(7) {
+.hexa-animation .js-svg>:nth-child(7),
+.hexa-animation svg>:nth-child(7) {
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
     -webkit-transition: opacity .25s .3s;
     transition: opacity .25s .3s
 }
 
-.c-hexa .js-svg>:nth-child(8),
-.c-hexa svg>:nth-child(8) {
+.hexa-animation .js-svg>:nth-child(8),
+.hexa-animation svg>:nth-child(8) {
     -webkit-animation-delay: .35s;
     animation-delay: .35s;
     -webkit-transition: opacity .25s .35s;
     transition: opacity .25s .35s
 }
 
-.c-hexa .js-svg>:nth-child(9),
-.c-hexa svg>:nth-child(9) {
+.hexa-animation .js-svg>:nth-child(9),
+.hexa-animation svg>:nth-child(9) {
     -webkit-animation-delay: .4s;
     animation-delay: .4s;
     -webkit-transition: opacity .25s .4s;
     transition: opacity .25s .4s
 }
 
-.c-hexa .js-svg>:nth-child(10),
-.c-hexa svg>:nth-child(10) {
+.hexa-animation .js-svg>:nth-child(10),
+.hexa-animation svg>:nth-child(10) {
     -webkit-animation-delay: .45s;
     animation-delay: .45s;
     -webkit-transition: opacity .25s .45s;
     transition: opacity .25s .45s
 }
 
-.c-hexa .js-svg>:nth-child(11),
-.c-hexa svg>:nth-child(11) {
+.hexa-animation .js-svg>:nth-child(11),
+.hexa-animation svg>:nth-child(11) {
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
     -webkit-transition: opacity .25s .5s;
     transition: opacity .25s .5s
 }
 
-.c-hexa .js-svg>:nth-child(12),
-.c-hexa svg>:nth-child(12) {
+.hexa-animation .js-svg>:nth-child(12),
+.hexa-animation svg>:nth-child(12) {
     -webkit-animation-delay: .55s;
     animation-delay: .55s;
     -webkit-transition: opacity .25s .55s;
     transition: opacity .25s .55s
 }
 
-.c-hexa .js-svg>:nth-child(13),
-.c-hexa svg>:nth-child(13) {
+.hexa-animation .js-svg>:nth-child(13),
+.hexa-animation svg>:nth-child(13) {
     -webkit-animation-delay: .6s;
     animation-delay: .6s;
     -webkit-transition: opacity .25s .6s;
     transition: opacity .25s .6s
 }
 
-.c-hexa .js-svg>:nth-child(14),
-.c-hexa svg>:nth-child(14) {
+.hexa-animation .js-svg>:nth-child(14),
+.hexa-animation svg>:nth-child(14) {
     -webkit-animation-delay: .65s;
     animation-delay: .65s;
     -webkit-transition: opacity .25s .65s;
     transition: opacity .25s .65s
 }
 
-.c-hexa .js-svg>:nth-child(15),
-.c-hexa svg>:nth-child(15) {
+.hexa-animation .js-svg>:nth-child(15),
+.hexa-animation svg>:nth-child(15) {
     -webkit-animation-delay: .7s;
     animation-delay: .7s;
     -webkit-transition: opacity .25s .7s;
     transition: opacity .25s .7s
 }
 
-.c-hexa .js-svg>:nth-child(16),
-.c-hexa svg>:nth-child(16) {
+.hexa-animation .js-svg>:nth-child(16),
+.hexa-animation svg>:nth-child(16) {
     -webkit-animation-delay: .75s;
     animation-delay: .75s;
     -webkit-transition: opacity .25s .75s;
     transition: opacity .25s .75s
 }
 
-.c-hexa .js-svg>:nth-child(17),
-.c-hexa svg>:nth-child(17) {
+.hexa-animation .js-svg>:nth-child(17),
+.hexa-animation svg>:nth-child(17) {
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
     -webkit-transition: opacity .25s .8s;
     transition: opacity .25s .8s
 }
 
-.c-hexa .js-svg>:nth-child(18),
-.c-hexa svg>:nth-child(18) {
+.hexa-animation .js-svg>:nth-child(18),
+.hexa-animation svg>:nth-child(18) {
     -webkit-animation-delay: .85s;
     animation-delay: .85s;
     -webkit-transition: opacity .25s .85s;
     transition: opacity .25s .85s
 }
 
-.c-hexa .js-svg>:nth-child(19),
-.c-hexa svg>:nth-child(19) {
+.hexa-animation .js-svg>:nth-child(19),
+.hexa-animation svg>:nth-child(19) {
     -webkit-animation-delay: .9s;
     animation-delay: .9s;
     -webkit-transition: opacity .25s .9s;
     transition: opacity .25s .9s
 }
 
-.c-hexa .js-svg>:nth-child(20),
-.c-hexa svg>:nth-child(20) {
+.hexa-animation .js-svg>:nth-child(20),
+.hexa-animation svg>:nth-child(20) {
     -webkit-animation-delay: .95s;
     animation-delay: .95s;
     -webkit-transition: opacity .25s .95s;
     transition: opacity .25s .95s
 }
 
-.c-hexa .js-svg>:nth-child(21),
-.c-hexa svg>:nth-child(21) {
+.hexa-animation .js-svg>:nth-child(21),
+.hexa-animation svg>:nth-child(21) {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-transition: opacity .25s 1s;
     transition: opacity .25s 1s
 }
 
-.c-hexa .js-svg>:nth-child(22),
-.c-hexa svg>:nth-child(22) {
+.hexa-animation .js-svg>:nth-child(22),
+.hexa-animation svg>:nth-child(22) {
     -webkit-animation-delay: 1.05s;
     animation-delay: 1.05s;
     -webkit-transition: opacity .25s 1.05s;
     transition: opacity .25s 1.05s
 }
 
-.c-hexa .js-svg>:nth-child(23),
-.c-hexa svg>:nth-child(23) {
+.hexa-animation .js-svg>:nth-child(23),
+.hexa-animation svg>:nth-child(23) {
     -webkit-animation-delay: 1.1s;
     animation-delay: 1.1s;
     -webkit-transition: opacity .25s 1.1s;
     transition: opacity .25s 1.1s
 }
 
-.c-hexa .js-svg>:nth-child(24),
-.c-hexa svg>:nth-child(24) {
+.hexa-animation .js-svg>:nth-child(24),
+.hexa-animation svg>:nth-child(24) {
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
     -webkit-transition: opacity .25s 1.15s;
     transition: opacity .25s 1.15s
 }
 
-.c-hexa .js-svg>:nth-child(25),
-.c-hexa svg>:nth-child(25) {
+.hexa-animation .js-svg>:nth-child(25),
+.hexa-animation svg>:nth-child(25) {
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
     -webkit-transition: opacity .25s 1.2s;
     transition: opacity .25s 1.2s
 }
 
-.c-hexa .js-svg>:nth-child(26),
-.c-hexa svg>:nth-child(26) {
+.hexa-animation .js-svg>:nth-child(26),
+.hexa-animation svg>:nth-child(26) {
     -webkit-animation-delay: 1.25s;
     animation-delay: 1.25s;
     -webkit-transition: opacity .25s 1.25s;
     transition: opacity .25s 1.25s
 }
 
-.c-hexa .js-svg>:nth-child(27),
-.c-hexa svg>:nth-child(27) {
+.hexa-animation .js-svg>:nth-child(27),
+.hexa-animation svg>:nth-child(27) {
     -webkit-animation-delay: 1.3s;
     animation-delay: 1.3s;
     -webkit-transition: opacity .25s 1.3s;
     transition: opacity .25s 1.3s
 }
 
-.c-hexa .js-svg>:nth-child(28),
-.c-hexa svg>:nth-child(28) {
+.hexa-animation .js-svg>:nth-child(28),
+.hexa-animation svg>:nth-child(28) {
     -webkit-animation-delay: 1.35s;
     animation-delay: 1.35s;
     -webkit-transition: opacity .25s 1.35s;
     transition: opacity .25s 1.35s
 }
 
-.c-hexa .js-svg>:nth-child(29),
-.c-hexa svg>:nth-child(29) {
+.hexa-animation .js-svg>:nth-child(29),
+.hexa-animation svg>:nth-child(29) {
     -webkit-animation-delay: 1.4s;
     animation-delay: 1.4s;
     -webkit-transition: opacity .25s 1.4s;
     transition: opacity .25s 1.4s
 }
 
-.c-hexa .js-svg>:nth-child(30),
-.c-hexa svg>:nth-child(30) {
+.hexa-animation .js-svg>:nth-child(30),
+.hexa-animation svg>:nth-child(30) {
     -webkit-animation-delay: 1.45s;
     animation-delay: 1.45s;
     -webkit-transition: opacity .25s 1.45s;
     transition: opacity .25s 1.45s
 }
 
-.c-hexa .js-svg>:nth-child(31),
-.c-hexa svg>:nth-child(31) {
+.hexa-animation .js-svg>:nth-child(31),
+.hexa-animation svg>:nth-child(31) {
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
     -webkit-transition: opacity .25s 1.5s;
     transition: opacity .25s 1.5s
 }
 
-.c-hexa .js-svg>:nth-child(32),
-.c-hexa svg>:nth-child(32) {
+.hexa-animation .js-svg>:nth-child(32),
+.hexa-animation svg>:nth-child(32) {
     -webkit-animation-delay: 1.55s;
     animation-delay: 1.55s;
     -webkit-transition: opacity .25s 1.55s;
     transition: opacity .25s 1.55s
 }
 
-.c-hexa .js-svg>:nth-child(33),
-.c-hexa svg>:nth-child(33) {
+.hexa-animation .js-svg>:nth-child(33),
+.hexa-animation svg>:nth-child(33) {
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
     -webkit-transition: opacity .25s 1.6s;
     transition: opacity .25s 1.6s
 }
 
-.c-hexa .js-svg>:nth-child(34),
-.c-hexa svg>:nth-child(34) {
+.hexa-animation .js-svg>:nth-child(34),
+.hexa-animation svg>:nth-child(34) {
     -webkit-animation-delay: 1.65s;
     animation-delay: 1.65s;
     -webkit-transition: opacity .25s 1.65s;
     transition: opacity .25s 1.65s
 }
 
-.c-hexa .js-svg>:nth-child(35),
-.c-hexa svg>:nth-child(35) {
+.hexa-animation .js-svg>:nth-child(35),
+.hexa-animation svg>:nth-child(35) {
     -webkit-animation-delay: 1.7s;
     animation-delay: 1.7s;
     -webkit-transition: opacity .25s 1.7s;
     transition: opacity .25s 1.7s
 }
 
-.c-hexa .js-svg>:nth-child(36),
-.c-hexa svg>:nth-child(36) {
+.hexa-animation .js-svg>:nth-child(36),
+.hexa-animation svg>:nth-child(36) {
     -webkit-animation-delay: 1.75s;
     animation-delay: 1.75s;
     -webkit-transition: opacity .25s 1.75s;
     transition: opacity .25s 1.75s
 }
 
-.c-hexa .js-svg>:nth-child(37),
-.c-hexa svg>:nth-child(37) {
+.hexa-animation .js-svg>:nth-child(37),
+.hexa-animation svg>:nth-child(37) {
     -webkit-animation-delay: 1.8s;
     animation-delay: 1.8s;
     -webkit-transition: opacity .25s 1.8s;
     transition: opacity .25s 1.8s
 }
 
-.c-hexa .js-svg>:nth-child(38),
-.c-hexa svg>:nth-child(38) {
+.hexa-animation .js-svg>:nth-child(38),
+.hexa-animation svg>:nth-child(38) {
     -webkit-animation-delay: 1.85s;
     animation-delay: 1.85s;
     -webkit-transition: opacity .25s 1.85s;
     transition: opacity .25s 1.85s
 }
 
-.c-hexa .js-svg>:nth-child(39),
-.c-hexa svg>:nth-child(39) {
+.hexa-animation .js-svg>:nth-child(39),
+.hexa-animation svg>:nth-child(39) {
     -webkit-animation-delay: 1.9s;
     animation-delay: 1.9s;
     -webkit-transition: opacity .25s 1.9s;
     transition: opacity .25s 1.9s
 }
 
-.c-hexa .js-svg>:nth-child(40),
-.c-hexa svg>:nth-child(40) {
+.hexa-animation .js-svg>:nth-child(40),
+.hexa-animation svg>:nth-child(40) {
     -webkit-animation-delay: 1.95s;
     animation-delay: 1.95s;
     -webkit-transition: opacity .25s 1.95s;
     transition: opacity .25s 1.95s
 }
 
-.c-hexa .js-svg>:nth-child(41),
-.c-hexa svg>:nth-child(41) {
+.hexa-animation .js-svg>:nth-child(41),
+.hexa-animation svg>:nth-child(41) {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-transition: opacity .25s 2s;
     transition: opacity .25s 2s
 }
 
-.c-hexa .js-svg>:nth-child(42),
-.c-hexa svg>:nth-child(42) {
+.hexa-animation .js-svg>:nth-child(42),
+.hexa-animation svg>:nth-child(42) {
     -webkit-animation-delay: 2.05s;
     animation-delay: 2.05s;
     -webkit-transition: opacity .25s 2.05s;
     transition: opacity .25s 2.05s
 }
 
-.c-hexa .js-svg>:nth-child(43),
-.c-hexa svg>:nth-child(43) {
+.hexa-animation .js-svg>:nth-child(43),
+.hexa-animation svg>:nth-child(43) {
     -webkit-animation-delay: 2.1s;
     animation-delay: 2.1s;
     -webkit-transition: opacity .25s 2.1s;
     transition: opacity .25s 2.1s
 }
 
-.c-hexa .js-svg>:nth-child(44),
-.c-hexa svg>:nth-child(44) {
+.hexa-animation .js-svg>:nth-child(44),
+.hexa-animation svg>:nth-child(44) {
     -webkit-animation-delay: 2.15s;
     animation-delay: 2.15s;
     -webkit-transition: opacity .25s 2.15s;
     transition: opacity .25s 2.15s
 }
 
-.c-hexa .js-svg>:nth-child(45),
-.c-hexa svg>:nth-child(45) {
+.hexa-animation .js-svg>:nth-child(45),
+.hexa-animation svg>:nth-child(45) {
     -webkit-animation-delay: 2.2s;
     animation-delay: 2.2s;
     -webkit-transition: opacity .25s 2.2s;
     transition: opacity .25s 2.2s
 }
 
-.c-hexa .js-svg>:nth-child(46),
-.c-hexa svg>:nth-child(46) {
+.hexa-animation .js-svg>:nth-child(46),
+.hexa-animation svg>:nth-child(46) {
     -webkit-animation-delay: 2.25s;
     animation-delay: 2.25s;
     -webkit-transition: opacity .25s 2.25s;
     transition: opacity .25s 2.25s
 }
 
-.c-hexa .js-svg>:nth-child(47),
-.c-hexa svg>:nth-child(47) {
+.hexa-animation .js-svg>:nth-child(47),
+.hexa-animation svg>:nth-child(47) {
     -webkit-animation-delay: 2.3s;
     animation-delay: 2.3s;
     -webkit-transition: opacity .25s 2.3s;
     transition: opacity .25s 2.3s
 }
 
-.c-hexa .js-svg>:nth-child(48),
-.c-hexa svg>:nth-child(48) {
+.hexa-animation .js-svg>:nth-child(48),
+.hexa-animation svg>:nth-child(48) {
     -webkit-animation-delay: 2.35s;
     animation-delay: 2.35s;
     -webkit-transition: opacity .25s 2.35s;
     transition: opacity .25s 2.35s
 }
 
-.c-hexa .js-svg>:nth-child(49),
-.c-hexa svg>:nth-child(49) {
+.hexa-animation .js-svg>:nth-child(49),
+.hexa-animation svg>:nth-child(49) {
     -webkit-animation-delay: 2.4s;
     animation-delay: 2.4s;
     -webkit-transition: opacity .25s 2.4s;
     transition: opacity .25s 2.4s
 }
 
-.c-hexa .js-svg>:nth-child(50),
-.c-hexa svg>:nth-child(50) {
+.hexa-animation .js-svg>:nth-child(50),
+.hexa-animation svg>:nth-child(50) {
     -webkit-animation-delay: 2.45s;
     animation-delay: 2.45s;
     -webkit-transition: opacity .25s 2.45s;
     transition: opacity .25s 2.45s
 }
 
-.c-hexa .js-svg>:nth-child(51),
-.c-hexa svg>:nth-child(51) {
+.hexa-animation .js-svg>:nth-child(51),
+.hexa-animation svg>:nth-child(51) {
     -webkit-animation-delay: 2.5s;
     animation-delay: 2.5s;
     -webkit-transition: opacity .25s 2.5s;
     transition: opacity .25s 2.5s
 }
 
-.c-hexa .js-svg>:nth-child(52),
-.c-hexa svg>:nth-child(52) {
+.hexa-animation .js-svg>:nth-child(52),
+.hexa-animation svg>:nth-child(52) {
     -webkit-animation-delay: 2.55s;
     animation-delay: 2.55s;
     -webkit-transition: opacity .25s 2.55s;
     transition: opacity .25s 2.55s
 }
 
-.c-hexa .js-svg>:nth-child(53),
-.c-hexa svg>:nth-child(53) {
+.hexa-animation .js-svg>:nth-child(53),
+.hexa-animation svg>:nth-child(53) {
     -webkit-animation-delay: 2.6s;
     animation-delay: 2.6s;
     -webkit-transition: opacity .25s 2.6s;
     transition: opacity .25s 2.6s
 }
 
-.c-hexa .js-svg>:nth-child(54),
-.c-hexa svg>:nth-child(54) {
+.hexa-animation .js-svg>:nth-child(54),
+.hexa-animation svg>:nth-child(54) {
     -webkit-animation-delay: 2.65s;
     animation-delay: 2.65s;
     -webkit-transition: opacity .25s 2.65s;
     transition: opacity .25s 2.65s
 }
 
-.c-hexa .js-svg>:nth-child(55),
-.c-hexa svg>:nth-child(55) {
+.hexa-animation .js-svg>:nth-child(55),
+.hexa-animation svg>:nth-child(55) {
     -webkit-animation-delay: 2.7s;
     animation-delay: 2.7s;
     -webkit-transition: opacity .25s 2.7s;
     transition: opacity .25s 2.7s
 }
 
-.c-hexa .js-svg>:nth-child(56),
-.c-hexa svg>:nth-child(56) {
+.hexa-animation .js-svg>:nth-child(56),
+.hexa-animation svg>:nth-child(56) {
     -webkit-animation-delay: 2.75s;
     animation-delay: 2.75s;
     -webkit-transition: opacity .25s 2.75s;
     transition: opacity .25s 2.75s
 }
 
-.c-hexa .js-svg>:nth-child(57),
-.c-hexa svg>:nth-child(57) {
+.hexa-animation .js-svg>:nth-child(57),
+.hexa-animation svg>:nth-child(57) {
     -webkit-animation-delay: 2.8s;
     animation-delay: 2.8s;
     -webkit-transition: opacity .25s 2.8s;
     transition: opacity .25s 2.8s
 }
 
-.c-hexa .js-svg>:nth-child(58),
-.c-hexa svg>:nth-child(58) {
+.hexa-animation .js-svg>:nth-child(58),
+.hexa-animation svg>:nth-child(58) {
     -webkit-animation-delay: 2.85s;
     animation-delay: 2.85s;
     -webkit-transition: opacity .25s 2.85s;
     transition: opacity .25s 2.85s
 }
 
-.c-hexa .js-svg>:nth-child(59),
-.c-hexa svg>:nth-child(59) {
+.hexa-animation .js-svg>:nth-child(59),
+.hexa-animation svg>:nth-child(59) {
     -webkit-animation-delay: 2.9s;
     animation-delay: 2.9s;
     -webkit-transition: opacity .25s 2.9s;
     transition: opacity .25s 2.9s
 }
 
-.c-hexa .js-svg>:nth-child(60),
-.c-hexa svg>:nth-child(60) {
+.hexa-animation .js-svg>:nth-child(60),
+.hexa-animation svg>:nth-child(60) {
     -webkit-animation-delay: 2.95s;
     animation-delay: 2.95s;
     -webkit-transition: opacity .25s 2.95s;
     transition: opacity .25s 2.95s
 }
 
-.c-hexa .js-svg>:nth-child(61),
-.c-hexa svg>:nth-child(61) {
+.hexa-animation .js-svg>:nth-child(61),
+.hexa-animation svg>:nth-child(61) {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
     -webkit-transition: opacity .25s 3s;
     transition: opacity .25s 3s
 }
 
-.c-hexa .js-svg>:nth-child(62),
-.c-hexa svg>:nth-child(62) {
+.hexa-animation .js-svg>:nth-child(62),
+.hexa-animation svg>:nth-child(62) {
     -webkit-animation-delay: 3.05s;
     animation-delay: 3.05s;
     -webkit-transition: opacity .25s 3.05s;
     transition: opacity .25s 3.05s
 }
 
-.c-hexa .js-svg>:nth-child(63),
-.c-hexa svg>:nth-child(63) {
+.hexa-animation .js-svg>:nth-child(63),
+.hexa-animation svg>:nth-child(63) {
     -webkit-animation-delay: 3.1s;
     animation-delay: 3.1s;
     -webkit-transition: opacity .25s 3.1s;
     transition: opacity .25s 3.1s
 }
 
-.c-hexa .js-svg>:nth-child(64),
-.c-hexa svg>:nth-child(64) {
+.hexa-animation .js-svg>:nth-child(64),
+.hexa-animation svg>:nth-child(64) {
     -webkit-animation-delay: 3.15s;
     animation-delay: 3.15s;
     -webkit-transition: opacity .25s 3.15s;
     transition: opacity .25s 3.15s
 }
 
-.c-hexa .js-svg>:nth-child(65),
-.c-hexa svg>:nth-child(65) {
+.hexa-animation .js-svg>:nth-child(65),
+.hexa-animation svg>:nth-child(65) {
     -webkit-animation-delay: 3.2s;
     animation-delay: 3.2s;
     -webkit-transition: opacity .25s 3.2s;
     transition: opacity .25s 3.2s
 }
 
-.c-hexa .js-svg>:nth-child(66),
-.c-hexa svg>:nth-child(66) {
+.hexa-animation .js-svg>:nth-child(66),
+.hexa-animation svg>:nth-child(66) {
     -webkit-animation-delay: 3.25s;
     animation-delay: 3.25s;
     -webkit-transition: opacity .25s 3.25s;
     transition: opacity .25s 3.25s
 }
 
-.c-hexa .js-svg>:nth-child(67),
-.c-hexa svg>:nth-child(67) {
+.hexa-animation .js-svg>:nth-child(67),
+.hexa-animation svg>:nth-child(67) {
     -webkit-animation-delay: 3.3s;
     animation-delay: 3.3s;
     -webkit-transition: opacity .25s 3.3s;
     transition: opacity .25s 3.3s
 }
 
-.c-hexa .js-svg>:nth-child(68),
-.c-hexa svg>:nth-child(68) {
+.hexa-animation .js-svg>:nth-child(68),
+.hexa-animation svg>:nth-child(68) {
     -webkit-animation-delay: 3.35s;
     animation-delay: 3.35s;
     -webkit-transition: opacity .25s 3.35s;
     transition: opacity .25s 3.35s
 }
 
-.c-hexa .js-svg>:nth-child(69),
-.c-hexa svg>:nth-child(69) {
+.hexa-animation .js-svg>:nth-child(69),
+.hexa-animation svg>:nth-child(69) {
     -webkit-animation-delay: 3.4s;
     animation-delay: 3.4s;
     -webkit-transition: opacity .25s 3.4s;
     transition: opacity .25s 3.4s
 }
 
-.c-hexa .js-svg>:nth-child(70),
-.c-hexa svg>:nth-child(70) {
+.hexa-animation .js-svg>:nth-child(70),
+.hexa-animation svg>:nth-child(70) {
     -webkit-animation-delay: 3.45s;
     animation-delay: 3.45s;
     -webkit-transition: opacity .25s 3.45s;
     transition: opacity .25s 3.45s
 }
 
-.c-hexa .js-svg>:nth-child(71),
-.c-hexa svg>:nth-child(71) {
+.hexa-animation .js-svg>:nth-child(71),
+.hexa-animation svg>:nth-child(71) {
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
     -webkit-transition: opacity .25s 3.5s;
     transition: opacity .25s 3.5s
 }
 
-.c-hexa .js-svg>:nth-child(72),
-.c-hexa svg>:nth-child(72) {
+.hexa-animation .js-svg>:nth-child(72),
+.hexa-animation svg>:nth-child(72) {
     -webkit-animation-delay: 3.55s;
     animation-delay: 3.55s;
     -webkit-transition: opacity .25s 3.55s;
     transition: opacity .25s 3.55s
 }
 
-.c-hexa .js-svg>:nth-child(73),
-.c-hexa svg>:nth-child(73) {
+.hexa-animation .js-svg>:nth-child(73),
+.hexa-animation svg>:nth-child(73) {
     -webkit-animation-delay: 3.6s;
     animation-delay: 3.6s;
     -webkit-transition: opacity .25s 3.6s;
     transition: opacity .25s 3.6s
 }
 
-.c-hexa .js-svg>:nth-child(74),
-.c-hexa svg>:nth-child(74) {
+.hexa-animation .js-svg>:nth-child(74),
+.hexa-animation svg>:nth-child(74) {
     -webkit-animation-delay: 3.65s;
     animation-delay: 3.65s;
     -webkit-transition: opacity .25s 3.65s;
     transition: opacity .25s 3.65s
 }
 
-.c-hexa .js-svg>:nth-child(75),
-.c-hexa svg>:nth-child(75) {
+.hexa-animation .js-svg>:nth-child(75),
+.hexa-animation svg>:nth-child(75) {
     -webkit-animation-delay: 3.7s;
     animation-delay: 3.7s;
     -webkit-transition: opacity .25s 3.7s;
     transition: opacity .25s 3.7s
 }
 
-.c-hexa.is-act,
-.c-hexa.is-act .js-svg>*,
-.c-hexa.is-act svg>* {
+.hexa-animation.is-act,
+.hexa-animation.is-act .js-svg>*,
+.hexa-animation.is-act svg>* {
     opacity: 1
 }

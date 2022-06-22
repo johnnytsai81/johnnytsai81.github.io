@@ -41,10 +41,12 @@ $(document).ready(function () {
 	initlightGallery();
 	fadeInImg();
 	fadeUpWord();
+	fadeInUp();
 	fadeOutWord();
 	deleteDash();
 	openMenu();
 	scrollDown();
+	zoomIn();
 	copyCode();
 	addCategoryLink();
 });
@@ -73,6 +75,27 @@ function fadeInImg() {
 	});
 }
 
+//區塊向上滑的效果
+function fadeInUp() {
+	$('.fadeInUp').each(function () {
+		$(this).on('inview', function (event, isInView) {
+			if (isInView) {
+				$(this).addClass("fadein-end");
+			}
+		});
+	});
+}
+
+//放大的效果
+function zoomIn() {
+	$('.zoomIn').each(function () {
+		$(this).on('inview', function (event, isInView) {
+			if (isInView) {
+				$(this).addClass("fadein-end");
+			}
+		});
+	});
+}
 
 // 輪播圖字往上出現的效果
 function fadeUpWord() {
