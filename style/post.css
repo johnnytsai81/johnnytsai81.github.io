@@ -400,10 +400,6 @@ p.admonition-title {
   background-color: #bdd6f8;
 }
 
-.admonition>p {
-  margin-bottom: 1.25rem;
-}
-
 .admonition-title::before {
   position: absolute;
   top: 50%;

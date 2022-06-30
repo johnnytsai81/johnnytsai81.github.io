@@ -31,12 +31,12 @@ $(document).ready(function () {
 	// 彈出式視窗
 	cardInit();
 
-	$('.work-card-1').one('click', function () {
-		galleryStart1();
-	});
-	$('.work-card-2').one('click', function () {
-		galleryStart2();
-	});
+	// $('.work-card-1').one('click', function () {
+	// 	galleryStart1();
+	// });
+	// $('.work-card-2').one('click', function () {
+	// 	galleryStart2();
+	// });
 	galleryBlog();
 	initlightGallery();
 	fadeInImg();
