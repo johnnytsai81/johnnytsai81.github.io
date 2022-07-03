@@ -1,36 +1,9 @@
 $(document).ready(function () {
-	$('#loading').css('opacity', '0');
-	$('.loading-easein').addClass("fadein-end");
-
-	$('.banner-title').each(function () {
-		$(this).on('inview', function (event, isInView) {
-			if (isInView) {
-				$(this).children('span').addClass("fadein-end");
-			}
-		});
-	});
-	// 延遲載入
-	const watcher = new IntersectionObserver(onEnterView)
-	const lazyImages = document.querySelectorAll('img.lazy')
-	for (let image of lazyImages) {
-		watcher.observe(image) // 開始監視
-	}
-
-	function onEnterView(entries, observer) {
-		for (let entry of entries) {
-			if (entry.isIntersecting) {
-				// 監視目標進入畫面
-				const img = entry.target
-				img.setAttribute('src', img.dataset.src) // 把值塞回 src
-				img.removeAttribute('data-src')
-				observer.unobserve(img) // 取消監視
-			}
-		}
-	}
-
-	// 彈出式視窗
+	loadingPage();
+	mainTitle();
+	lazyImg();
+	lazyVideo();
 	cardInit();
-
 	// $('.work-card-1').one('click', function () {
 	// 	galleryStart1();
 	// });
@@ -50,6 +23,57 @@ $(document).ready(function () {
 	copyCode();
 	addCategoryLink();
 });
+
+// 過場效果
+function loadingPage() {
+	$('#loading').css('opacity', '0');
+	$('.loading-easein').addClass("fadein-end");
+}
+
+// 首頁標題動畫效果
+function mainTitle() {
+	$('.banner-title').each(function () {
+		$(this).on('inview', function (event, isInView) {
+			if (isInView) {
+				$(this).children('span').addClass("fadein-end");
+			}
+		});
+	});
+}
+
+// 圖片延遲載入
+function lazyImg() {
+	const watcher = new IntersectionObserver(onEnterView)
+	const lazyImages = document.querySelectorAll('img.lazy')
+	for (let image of lazyImages) {
+		watcher.observe(image) // 開始監視
+	}
+
+	function onEnterView(entries, observer) {
+		for (let entry of entries) {
+			if (entry.isIntersecting) {
+				// 監視目標進入畫面
+				const img = entry.target
+				img.setAttribute('src', img.dataset.src) // 把值塞回 src
+				img.removeAttribute('data-src')
+				observer.unobserve(img) // 取消監視
+			}
+		}
+	}
+}
+
+// 影片延遲載入
+function lazyVideo() {
+	$('video.lazy').each(function () {
+		$(this).on('inview', function (event, isInView) {
+			if (isInView) {
+				var dataSrc = $(this).attr('data-src');
+				$(this).attr('src', dataSrc);
+				$(this).removeAttr('data-src')
+			}
+		});
+	});
+}
 
 /* 幻燈片 */
 function initlightGallery() {
