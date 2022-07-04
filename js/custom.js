@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	loadingPage();
 	mainTitle();
 	lazyImg();
 	lazyVideo();
@@ -24,11 +23,11 @@ $(document).ready(function () {
 	addCategoryLink();
 });
 
-// 過場效果
-function loadingPage() {
+$(window).on('load', function () {
+	// 過場效果
 	$('#loading').css('opacity', '0');
 	$('.loading-easein').addClass("fadein-end");
-}
+});
 
 // 首頁標題動畫效果
 function mainTitle() {
