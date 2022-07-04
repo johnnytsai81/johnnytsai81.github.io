@@ -449,6 +449,14 @@
     margin-right: auto;
 }
 
+@media (max-width: 1024px) {
+    .pop-content .key-visual {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* 影片加上mock外框 */
 .pop-content .mockup {
     position: relative;
@@ -457,6 +465,13 @@
     overflow: hidden;
     width: 769px;
     height: 615px;
+}
+
+@media (max-width: 1024px) {
+    .pop-content .mockup {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .pop-content .mockup::before {
@@ -481,6 +496,12 @@
     display: flex;
     flex-direction: column;
     padding: 6rem 5rem 6rem 5rem;
+}
+
+@media (max-width: 769px) {
+    .pop-content .section {
+        padding: 3rem 2rem 3rem 2rem;
+    }
 }
 
 /* 灰色底色區塊 */
@@ -512,6 +533,12 @@
 
 .pop-content .section:last-of-type {
     padding: 6rem 5rem 8rem 5rem;
+}
+
+@media (max-width: 769px) {
+    .pop-content .section:last-of-type {
+        padding: 3rem 2rem 5rem 2rem;
+    }
 }
 
 /* 標題區塊 */
@@ -549,6 +576,12 @@
 .pop-content .content-card .title {
     font-size: 2.25rem;
     font-weight: 900;
+}
+
+@media (max-width: 769px) {
+    .pop-content .content-card .title {
+        font-size: 1.75rem;
+    }
 }
 
 .pop-content .content-card .title .number {
