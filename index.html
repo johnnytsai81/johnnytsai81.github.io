@@ -28,11 +28,11 @@ body{
 }
 /* 首頁視覺標題 */
 .banner-title {
-  @apply block text-right lg:text-left text-[36px] lg:text-[48px] lg:inline-block font-black
+  @apply block text-right lg:text-left text-[28px] md:text-[36px] lg:text-[48px] lg:inline-block font-black
 }
 /* 主標題 */
 .main-title{
-  @apply text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-tight
+  @apply text-[75px] md:text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-normal lg:leading-tight
 }
 .main-title-w{
   @apply text-[color:var(--white-color)]
@@ -97,16 +97,14 @@ body{
 }
 </style>
 
-<div class="relative block h-screen mt-[-64px] lg:mt-[-78px] flex flex-wrap flex-col lg:flex-row">
-  <div class="flex w-full lg:w-1/2 h-1/3 lg:h-full flex-col justify-center self-center pt-[100px] lg:pt-0 px-4 lg:pl-5% pb-4 lg:pb-0">
+<div class="relative block h-screen mt-[-64px] lg:mt-[-78px] flex flex-wrap flex-col overflow-x-hidden lg:flex-row">
+  <div class="flex w-full lg:w-1/2 h-1/2 md:h-1/3 lg:h-full flex-col justify-center self-center pt-[64px] lg:pt-0 px-4 lg:pl-5% pb-4 lg:pb-0">
     <h2 class="banner-title fadeup-word-wrap text-[color:var(--main-color)] lg:mb-10"><span class="fadeout-word fadeout-word-1">HI, I am a</span></h2>
     <h2 class="banner-title fadeup-word-wrap text-[color:var(--sub-color)]"><span class="fadeout-word fadeout-word-2">CREATIVE WEBSITE</span></h2>
     <h2 class="banner-title fadeup-word-wrap text-[color:var(--sub-color)]"><span class="fadeout-word fadeout-word-3">& UI Designer</span></h2>
   </div>
-  <div class="relative w-full lg:w-1/2 h-2/3 lg:h-full px-4 lg:px-0 overflow-hidden">
-    <video class="object-cover w-full h-full" playsinline autoplay loop muted>
-      <source src="/images/blog_kv.mp4" type="video/mp4">
-    </video>
+  <div class="relative w-full lg:w-1/2 h-1/2 md:h-2/3 lg:h-full px-4 lg:px-0 overflow-hidden">
+    <video class="object-cover w-full h-full" src="/images/blog_kv.mp4" type="video/mp4" playsinline autoplay loop muted></video>
     <!-- <img class="w-full h-full object-cover" src="/images/main-visual.jpg" alt=""> -->
   </div>
   <div class="absolute scroll-btn-wrap pointer-events-auto bottom-4 lg:bottom-12 pl-8 lg:pl-5%">
@@ -406,9 +404,9 @@ body{
         <span class="main-title ml-[6rem] lg:ml-[10rem] fadeup-word-wrap"><span class="fadeup-word fadeup-word-3">I?</span></span>
       </span>
     </span>
-    <span class="hexa-bg mr-auto text-xl flex-shrink-0 mb-4 lg:mb-0">關於我</span>
+    <span class="hexa-bg mr-auto text-lg flex-shrink-0 mb-4 lg:mb-0">關於我</span>
   </h2>
-  <div class="relative flex flex-col fadeInUp lg:flex-row items-center justify-between lg:mt-[-4rem]">
+  <div class="relative flex flex-col fadeInUp lg:flex-row items-center justify-between mt-[-4rem]">
     <div class="order-2 lg:order-1 px-0 md:px-5% lg:px-0 lg:pl-15% mx-auto">
       <h3 class="banner-title text-left text-[color:var(--main-color)] font-bold mb-4 lg:mb-10">
         超級新鮮的 Website Designer 
@@ -427,7 +425,7 @@ body{
       </p>
     </div>
     <div class="order-1 lg:order-2 mx-auto lg:w-2/3 px-0 md:px-5% lg:pr-15% mb-4  mt-4 lg:mt-0 lg:mb-0 flex-col card-col">
-      <img class="order-1 lg:order-1 object-cover rounded-lg w-1/2 lg:w-full" style="aspect-ratio: 3 / 4;" src="/images/main-cv.jpg" alt="">
+      <video class="order-1 lg:order-1 object-cover rounded-lg w-2/3 md:w-1/2 lg:w-full" style="aspect-ratio: 3 / 4;" src="/images/blog_cv.mp4" type="video/mp4" playsinline autoplay loop muted></video>
       <div class="order-2 lg:order-2 w-1/2 lg:w-full">
         <p class="text-xl font-bold text-center mb-2 text-[color:var(--main-color)] mt-6">Anthony Tsai</p>
         <p class="text-sm font-light text-center mb-0 text-[color:var(--iron-color)]">WEBSITE / UI DESIGNER</p>
@@ -438,7 +436,7 @@ body{
     <div class="list-title list-title-m">
       MY HOBBY.
     </div>
-    <div class="mt-8 grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-8 lg:px-8">
+    <div class="mt-8 grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-4 md:gap-8 lg:px-8">
       <div class="card-col zoomIn zoomIn-1">
         <img class="object-cover rounded-lg aspect-square" src="/images/hobby-07.jpg" alt="">
         <p class="text-sm font-medium mt-4 text-[color:var(--iron-color)]">植栽</p>
@@ -479,7 +477,7 @@ body{
           <span class="main-title fadeup-word-wrap main-title-w ml-[0rem] lg:ml-[4rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
         </span>
       </span>
-      <span class="ml-auto flex-shrink-0 mb-4 hexa-bg hexa-white lg:mb-0 text-xl text-[color:var(--white-color)]">經歷&專長</span>
+      <span class="ml-auto flex-shrink-0 mb-4 hexa-bg hexa-white lg:mb-0 text-lg text-[color:var(--white-color)]">經歷&專長</span>
     </h2>
     <div class="sub-selection mt-0 lg:mt-[-10rem]">
       <div class="mt-8 grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-8">
@@ -488,20 +486,20 @@ body{
             WORK EXPERIENCE.
           </div>
           <div class="card-row py-4 fadeInUp lg:p-4 mt-4">
-            <div class="card-row-left w-3/5 md:w-2/5 pr-4 lg:pr-8">
+            <div class="w-3/5 md:w-2/5 pr-4 lg:pr-8">
               <img class="object-cover rounded-lg aspect-square" src="/images/job-01.jpg" alt="">
             </div>
-            <div class="card-row-right">
+            <div class="">
               <p class="font-light text-xs mb-2 tracking-wide text-[color:var(--white-color)]">MAR 2017 - JULY 2019</p>
               <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Homeroom Teacher</p>
               <p class="font-light text-sm mb-2 text-[color:var(--white-color)] mb-0">與朋友一起創立家教班，專門招收國際學校學生。主要以台北歐洲學校、道明國際學校，學生人數多達二十多位。</p>
             </div>
           </div>
           <div class="card-row py-4 fadeInUp lg:p-4">
-            <div class="card-row-left w-3/5 md:w-2/5 pr-4 lg:pr-8">
+            <div class="w-3/5 md:w-2/5 pr-4 lg:pr-8">
               <img class="object-cover rounded-lg aspect-square" src="/images/job-02.jpg" alt="">
             </div>
-            <div class="card-row-right">
+            <div class="">
               <p class="font-light text-xs mb-2 tracking-wide text-[color:var(--white-color)]">MAR 2020 - PRESENT</p>
               <p class="font-medium text-xl mb-2 text-[color:var(--sub-color)]">Website Designer</p>
               <p class="font-light text-sm mb-2 text-[color:var(--white-color)] mb-0">與朋友一起創立家教班，專門招收國際學校學生。主要為台北歐洲學校、道明國際學校，學生人數多達二十多位。</p>
@@ -517,7 +515,7 @@ body{
       <div class="mt-8 grid grid-flow-row">
         <div class="grid grid-flow-row grid-cols-1 fadeInUp lg:grid-cols-3 lg:border-r lg:border-l border-[color:var(--white-color)]">
           <div class="card-row py-4 lg:px-8">
-            <div class="w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-01.jpg" alt="">
             </div>
             <div class="w-full">
@@ -526,7 +524,7 @@ body{
             </div>
           </div>
           <div class="card-row py-4 lg:px-8">
-            <div class="w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-02.jpg" alt="">
             </div>
             <div class="w-full">
@@ -535,7 +533,7 @@ body{
             </div>
           </div>
           <div class="card-row py-4 lg:px-8">
-            <div class="w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-03.jpg" alt="">
             </div>
             <div class="w-full">
@@ -544,7 +542,7 @@ body{
             </div>
           </div>
           <div class="card-row py-4 lg:px-8">
-            <div class="w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-04.gif" alt="">
             </div>
             <div class="w-full">
@@ -553,7 +551,7 @@ body{
             </div>
           </div>
           <div class="card-row py-4 lg:px-8">
-            <div class="w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/knowledge-05.jpg" alt="">
             </div>
             <div class="w-full">
@@ -564,10 +562,10 @@ body{
         </div>
         <div class="grid grid-flow-row grid-cols-1 fadeInUp lg:grid-cols-3 border-t pt-8 lg:pt-0 mt-8 lg:border-t-0 lg:border-r lg:border-l items-start border-[color:var(--white-color)]">
           <div class="card-row fadeInUp justify-between py-4 lg:px-8">
-            <div class="card-row-left w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/skill-01.jpg" alt="">
             </div>
-            <div class="card-row-right w-full">
+            <div class="w-full">
               <div class="flex justify-between items-center pb-2">
                 <p class="font-medium text-xl text-[color:var(--white-color)]">Photoshop</p>
                 <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
@@ -576,10 +574,10 @@ body{
             </div>
           </div>
           <div class="card-row justify-between py-4 lg:px-8">
-            <div class="card-row-left w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/skill-02.jpg" alt="">
             </div>
-            <div class="card-row-right w-full">
+            <div class="w-full">
               <div class="flex justify-between items-center pb-2">
                 <p class="font-medium text-xl text-[color:var(--white-color)]">Illustrator</p>
                 <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
@@ -588,10 +586,10 @@ body{
             </div>
           </div>
           <div class="card-row justify-between py-4 lg:px-8">
-            <div class="card-row-left w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/skill-03.jpg" alt="">
             </div>
-            <div class="card-row-right w-full">
+            <div class="w-full">
               <div class="flex justify-between items-center pb-2">
                 <p class="font-medium text-xl text-[color:var(--white-color)]">Figma</p>
                 <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
@@ -600,10 +598,10 @@ body{
             </div>
           </div>
           <div class="card-row justify-between py-4 lg:px-8">
-            <div class="card-row-left w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/skill-04.jpg" alt="">
             </div>
-            <div class="card-row-right w-full">
+            <div class="w-full">
               <div class="flex justify-between items-center pb-2">
                 <p class="font-medium text-xl text-[color:var(--white-color)]">Cinama 4D</p>
                 <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
@@ -612,10 +610,10 @@ body{
             </div>
           </div>
           <div class="card-row justify-between py-4 lg:px-8">
-            <div class="card-row-left w-40 lg:w-32 pr-4">
+            <div class="w-36 lg:w-32 pr-4">
               <img class="object-cover rounded-lg aspect-square" src="/images/skill-05.jpg" alt="">
             </div>
-            <div class="card-row-right w-full">
+            <div class="w-full">
               <div class="flex justify-between items-center pb-2">
                 <p class="font-medium text-xl text-[color:var(--white-color)]">Adobe XD</p>
                 <p class="font-light text-sm mb-0 text-[color:var(--white-color)]">精通</p>
@@ -640,7 +638,7 @@ body{
         <span class="main-title fadeup-word-wrap ml-[0rem] lg:ml-[7rem]"> <span class="fadeup-word fadeup-word-3">do?</span> </span>
       </span>
     </span>
-    <span class="mr-auto text-xl flex-shrink-0 mb-4 hexa-bg lg:mb-0">作品&雜記</span>
+    <span class="mr-auto text-lg flex-shrink-0 mb-4 hexa-bg lg:mb-0">作品&雜記</span>
   </h2>
   <div class="sub-selection relative mt-0 lg:mt-[-8rem] xl:px-5% pb-0">
     <div class="mt-8 grid grid-flow-row grid-cols-12 gap-8">
@@ -666,7 +664,7 @@ body{
             <div class="close-btn"></div>
               <div class="relative section section-iron">
                 <div class="intro-card">
-                  <img class="relative h-[54px] w-[450px] mr-auto ml-auto mb-4 lazy" data-src="/images/work/01-logo.svg">
+                  <img class="relative w-full mr-auto ml-auto mb-4 lazy lg:h-[54px] lg:w-[450px]" data-src="/images/work/01-logo.svg">
                   <p class="mr-auto ml-auto">UI Design / Motion Graphic Design</p>
                 </div>
                 <img class="relative key-visual object-cover fadeInUp lg:rounded-lg lazy" data-src="/images/work/01-kv2.gif">
@@ -754,7 +752,7 @@ body{
             <div class="close-btn"></div>
               <div class="relative section section-iron">
                 <div class="intro-card">
-                  <img class="relative h-[82px] w-[469px] mr-auto ml-auto mb-4 lazy" data-src="/images/work/03-logo.png">
+                  <img class="relative w-full mr-auto ml-auto mb-4 lazy lg:h-[82px] lg:w-[469px]" data-src="/images/work/03-logo.png">
                   <p class="mr-auto ml-auto">Web Design</p>
                 </div>
                 <img class="relative key-visual object-cover fadeInUp lg:rounded-lg lazy" data-src="/images/work/03-kv2.jpg">
@@ -793,12 +791,53 @@ body{
       </div>
       <div class="work-card">
         <div class="picture">
-          <img class="cover-image object-cover rounded-md aspect-work-row" src="/images/key-visual.jpg">
+          <img class="cover-image object-cover rounded-md aspect-work-row lazy" data-src="/images/work/04-kv1.jpg">
         </div>
-        <div class="my-4 text-xl">
-          植栽
+        <div class="my-4 text-xl">My Website</div>
+        <div class="line-hover"><span>Web Design / 3D Graphic Design</span></div>
+        <div class="new-window">
+          <div class="pop-up">
+            <div class="pop-content">
+            <div class="close-btn"></div>
+              <div class="relative section section-iron">
+                <div class="intro-card">
+                  <img class="relative w-full mr-auto ml-auto mb-4 lazy lg:h-[82px] lg:w-[469px]" data-src="/images/work/03-logo.png">
+                  <p class="mr-auto ml-auto">Web Design</p>
+                </div>
+                <img class="relative key-visual object-cover fadeInUp lg:rounded-lg lazy" data-src="/images/work/03-kv2.jpg">
+              </div>
+              <div class="relative section section-white">
+                <div class="content-card left">
+                  <div class="title"><span class="number">01</span>專案簡介</div>
+                  <div class="content">我習慣把新學到的知識放在Notion裡分享給同事互相交流，如果我能發佈在網路上跟更多人交流就更好了，所以才想搭建我的個人網站。我的網站主要分為兩個區塊，第一個是自我介紹，第二個是知識分享。</div>
+                </div>
+              </div>
+              <div class="relative section section-iron">
+                <div class="content-card left">
+                  <div class="title"><span class="number">02</span>設計風格</div>
+                  <div class="content">我的個人喜好可愛風格、明亮的色彩。因為想要聚焦在圖片跟文字，所以沒有用太多的特效，主要靠3D人物去表現動態效果。</div>
+                  <div class="content">自我介紹的區塊主要是用一頁式網站的做法，讓使用者滑到底時就能看完全部的內容，所以做了一些避免跳出頁面的處理(彈跳式視窗、navbar不置頂)</div>
+                </div>
+                <div class="mockup fadeInUp my-8">
+                  <video class="relative key-visual object-cover lazy lg:rounded-lg" data-src="/images/work/03-work1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                </div>
+                <div class="content-card center">
+                  <div class="content">知識分享的區塊有框架及markdown的語法限制所以沒辦法做太大的變化，考慮到手機搜尋到的使用者，也針對行動裝置做了優化。</div>
+                </div>
+                <div class="mockup fadeInUp my-8">
+                  <video class="relative key-visual object-cover lazy lg:rounded-lg" data-src="/images/work/03-work2.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                </div>
+              </div>
+              <div class="relative section section-white">
+                <div class="content-card left">
+                  <div class="title"><span class="number">03</span>視覺規範</div>
+                  <div class="content">為了建立和藹可親的感覺，所以網站使用了大量的圓角，字型也選擇Nunito去做搭配。色彩方面以logo的紅色主色，搭配紅色的漸層避免主色太過搶眼。</div>
+                </div>
+                <img class="relative key-visual fadeInUp object-cover lg:rounded-lg lazy" data-src="/images/work/03-work3.jpg">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="line-hover"><span>Web Design</span></div>
       </div>
       <div class="work-card">
         <div class="picture">
@@ -947,7 +986,7 @@ body{
           <span class="main-title main-title-w fadeup-word-wrap"> <span class="fadeup-word fadeup-word-1">Contact</span> </span>
         </span>
       </span>
-      <span class="ml-auto flex-shrink-0 mb-4 hexa-bg hexa-white lg:mb-0 text-xl text-[color:var(--white-color)]">聯絡我</span>
+      <span class="ml-auto flex-shrink-0 mb-4 hexa-bg hexa-white lg:mb-0 text-lg text-[color:var(--white-color)]">聯絡我</span>
     </h2>
     <div class="mt-8 grid grid-flow-row lg:grid-cols-2">
       <div class="lg:col-start-2 grid">
