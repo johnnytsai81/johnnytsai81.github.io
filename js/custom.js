@@ -480,3 +480,10 @@ function addCategoryLink() {
 		return false;
 	});
 }
+
+// 載入雲端字型
+WebFontConfig = {
+	google: {
+		families: ['Lato:300,400,500,700,900']
+	}
+};
