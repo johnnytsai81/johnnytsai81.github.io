@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全域 */
+@layer components {
+    body {
+        @apply font-lato
+    }
+
+    /* 標題欄 */
+    .nav-title {
+        @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+    }
+
+    /* 首頁視覺標題 */
+    .banner-title {
+        @apply block text-right lg:text-left text-[28px] md:text-[36px] lg:text-[48px] lg:inline-block font-black
+    }
+
+    /* 主標題 */
+    .main-title {
+        @apply text-[75px] md:text-[90px] lg:text-[120px] font-black mt-[-2.75rem] leading-normal lg:leading-tight
+    }
+    
+    .main-title-w {
+        @apply text-[color:var(--white-color)]
+    }
+    
+    /* 編號數字 */
+    .main-title-no {
+        @apply block text-xl mb-4 lg:mb-0 mr-5 font-medium tracking-wider
+    }
+    
+    .main-title-no-w {
+        @apply text-[color:var(--white-color)] mr-0 lg:mr-5
+    }
+    
+    /* 破折號 */
+    .main-title-dash {
+        @apply inline-block after:w-[7.5rem] after:h-[2px] after:inline-block after:bg-[color:var(--iron-color)]
+    }
+    
+    .main-title-dash-w {
+        @apply after:bg-[color:var(--white-color)]
+    }
+    
+    /* 列表標題 */
+    .list-title {
+        @apply flex items-center text-xl pl-4 pb-2 font-bold border-b before:w-4 before:h-4 before:rounded-full before:mr-4 before:mt-1
+    }
+    
+    .list-title-m {
+        @apply text-[color:var(--main-color)] border-[color:var(--main-color)] before:bg-[color:var(--main-color)]
+    }
+    
+    .list-title-w {
+        @apply text-[color:var(--white-color)] border-[color:var(--white-color)] before:bg-[color:var(--white-color)]
+    }
+    
+    /* 主區塊padding & margin設定 */
+    .main-selection {
+        @apply pt-[4rem] lg:pt-[10rem] pb-12 lg:pb-20 px-4 lg:px-0 mx-auto
+    }
+    
+    /* 副區塊padding & margin設定 */
+    .sub-selection {
+        @apply pb-5 mx-auto pt-10
+    }
+    
+    /* 直式卡片 */
+    .card-col {
+        @apply flex flex-col items-center
+    }
+    
+    /* 橫式卡片 */
+    .card-row {
+        @apply flex flex-row items-center
+    }
+    
+    /* 卡片連結 */
+    .card-link {
+        @apply absolute w-full h-full top-0 left-0 z-0
+    }
+    
+    /* 進度表 */
+    .card-process {
+        @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
+    }
+}
