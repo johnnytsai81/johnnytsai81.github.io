@@ -10,7 +10,6 @@ $(document).ready(function () {
 	// 	galleryStart2();
 	// });
 	galleryBlog();
-	initlightGallery();
 	fadeInImg();
 	fadeUpWord();
 	fadeInUp();
