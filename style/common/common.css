@@ -1700,8 +1700,12 @@
         transition: all 0.3s ease-in-out;
         box-shadow: var(--shadow-sm);
         border: 1px solid var(--bone-color);
-        background-size: 0.75rem;
-        background: url('/images/icon/arrow-down.svg');
+        background-size: 0.5rem !important;
+        /* background-repeat: no-repeat; */
+        /* top: 50%; */
+        background: no-repeat url(/images/icon/arrow-down.svg);
+        appearance: none;
+        background-position: center right 1rem;
     }
 }
 
