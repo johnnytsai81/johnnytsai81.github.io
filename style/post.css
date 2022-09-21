@@ -494,6 +494,7 @@ table {
   table-layout: fixed;
   border-collapse: collapse; */
   margin-bottom: 1.25rem;
+  width: -webkit-fill-available;
 }
 
 @media (max-width: 992px) {

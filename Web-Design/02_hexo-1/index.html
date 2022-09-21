@@ -28,7 +28,7 @@ git可以用檔案下載的方式安裝，安裝完成後在終端機輸入
 
 <p><img src="https://images2.imgbox.com/20/b2/0txVpmKR_o.png" alt="如果有出現版本就代表安裝成功"><br><em>如果有出現版本就代表安裝成功</em></p>
 <hr>
-<h3 id="下載Hexo"><a href="#下載Hexo" class="headerlink" title="下載Hexo"></a>下載Hexo</h3><h4 id="新建資料夾並且安裝hexo"><a href="#新建資料夾並且安裝hexo" class="headerlink" title="新建資料夾並且安裝hexo"></a>新建資料夾並且安裝hexo</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init 新資料夾名稱</span><br><span class="line">$ cd 新資料夾名稱</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h2 id="下載Hexo"><a href="#下載Hexo" class="headerlink" title="下載Hexo"></a>下載Hexo</h2><h4 id="新建資料夾並且安裝hexo"><a href="#新建資料夾並且安裝hexo" class="headerlink" title="新建資料夾並且安裝hexo"></a>新建資料夾並且安裝hexo</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init 新資料夾名稱</span><br><span class="line">$ cd 新資料夾名稱</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>安裝成功之後請先安裝基本的外掛套件</p>
 <h4 id="安裝-hexo-server-可以讓你在本地預覽"><a href="#安裝-hexo-server-可以讓你在本地預覽" class="headerlink" title="安裝 hexo-server (可以讓你在本地預覽)"></a>安裝 hexo-server (可以讓你在本地預覽)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
 <h4 id="安裝hexo-deployer-git-可以幫你把網站推上網路"><a href="#安裝hexo-deployer-git-可以幫你把網站推上網路" class="headerlink" title="安裝hexo-deployer-git (可以幫你把網站推上網路)"></a>安裝hexo-deployer-git (可以幫你把網站推上網路)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -38,7 +38,7 @@ git可以用檔案下載的方式安裝，安裝完成後在終端機輸入
 <p><img src="https://images2.imgbox.com/42/bb/a4QA0gUb_o.png" alt="按下localhost:4000/的連結便可以看到本機預覽的畫面"><br><em>按下localhost:4000&#x2F;的連結便可以看到本機預覽的畫面</em></p>
 <p><img src="https://images2.imgbox.com/8f/88/v9f5qdPP_o.png" alt="hexo預設模板的畫面"><br><em>hexo預設模板的畫面</em></p>
 <hr>
-<h3 id="註冊GitHub"><a href="#註冊GitHub" class="headerlink" title="註冊GitHub"></a>註冊GitHub</h3><p>建立好你的網站後，會需要有放網站的地方。如果沒有特殊需求的話，<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/">GitHub</a>是一個很好的免費平台。</p>
+<h2 id="註冊GitHub"><a href="#註冊GitHub" class="headerlink" title="註冊GitHub"></a>註冊GitHub</h2><p>建立好你的網站後，會需要有放網站的地方。如果沒有特殊需求的話，<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/">GitHub</a>是一個很好的免費平台。</p>
 <p>首先你需要註冊一個github帳號。</p>
 <p><img src="https://images2.imgbox.com/30/db/Mywag7ZY_o.png" alt="註冊好後先點擊右上角的your repositories"><br><em>註冊好後先點擊右上角的your repositories</em></p>
 <p><img src="https://images2.imgbox.com/97/44/y8WhG2Fh_o.png" alt="點擊右上角的new開啟新專案"><br><em>點擊右上角的new開啟新專案</em></p>
@@ -51,13 +51,13 @@ git可以用檔案下載的方式安裝，安裝完成後在終端機輸入
 <p>下面的選項要選擇public，如果點選private，hexo會無法上傳到該repository。最後點按create repository就建立好了。</p>
 <p><img src="https://images2.imgbox.com/1e/37/ed1bT8AA_o.png"></p>
 <hr>
-<h3 id="修改Hexo設定檔"><a href="#修改Hexo設定檔" class="headerlink" title="修改Hexo設定檔"></a>修改Hexo設定檔</h3><p>首先先點按<code>_config.yml</code>(如果下載過主題的人小心不要點錯點到themes裡的<code>_config.yml</code>)</p>
+<h2 id="修改Hexo設定檔"><a href="#修改Hexo設定檔" class="headerlink" title="修改Hexo設定檔"></a>修改Hexo設定檔</h2><p>首先先點按<code>_config.yml</code>(如果下載過主題的人小心不要點錯點到themes裡的<code>_config.yml</code>)</p>
 <p><img src="https://images2.imgbox.com/9e/7b/GZ7GX1cX_o.png"></p>
 <p>把<code>_config.yml</code>裡的url填上blog的網址和deploy的方式，這邊repo的網址比較複雜要小心不要填錯。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">url: https://你的用戶名稱.github.io</span><br><span class="line">  ...</span><br><span class="line">  ...</span><br><span class="line">  ...</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/你的用戶名稱/你的用戶名稱.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>接著在終端機使用hexo指令，把現有的網站資料部署上去。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>接著在終端機使用hexo指令，把現有的網站資料部署上去。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g  //建立public資料</span><br><span class="line">$ hexo d  //部署上去</span><br></pre></td></tr></table></figure>
 <p>部署完成後大概等5~15分鐘後就可以看自己的網站有沒有成功的上傳上去嘍。</p>
 <p>下一篇我們會介紹如何套用blog的主題~ 🙌 🙌 🙌</p>
