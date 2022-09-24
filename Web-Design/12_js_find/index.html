@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用JS抓取元素(Javascript篇)</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><meta name="google-site-verification" content="csMqM_jSDHR5JB6bx5sbYtDim3pnfXztxvWKHSykzRA"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><link rel="stylesheet" href="/style/app.css"><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script defer src="/js/webfont.js"></script><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="最近已經慢慢習慣用JS寫程式，在看到JQuery突然覺得有點陌生所以才想寫這篇文章複習一下兩者的差別
+
+在初學JQuery時期覺得抓取DOM是很容易的事情，畢竟JQuery把很多很繁雜的過程都簡化了，只要用css的寫法程式都能很順利的完成，但是在JS卻不是這麼一回事…
+document.getElementById如果元素有id特性，那document.getElementById是最常用，且不會出意外的方法了。
+&amp;lt;div id=&amp;#x27;elem&amp;#x27;&amp;gt;Element&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;  // 抓取該元素  const elem = document.getElementById(&amp;#x27;elem&amp;#x27;);&amp;lt;/script&amp;gt;
+
+只.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Web-Design"><div class="arrow-hover"><span>Web-Design</span></div></a></div></div><h1 class="page-title" id="#postTitle">用JS抓取元素(Javascript篇)</h1><p class="page-subtitle">最近已經慢慢習慣用JS寫程式，在看到JQuery突然覺得有點陌生所以才想寫這篇文章複習一下兩者的差別</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/JS"><div class="line-hover"><span>JS</span></div></a></div><time datetime="2022-09-22T04:17:39.000Z">2022-09-22</time></div></div><div class="w-full"><article class="post-content"><p>最近已經慢慢習慣用JS寫程式，在看到JQuery突然覺得有點陌生所以才想寫這篇文章複習一下兩者的差別</p>
+<p><img src="/images/post/head-cv-08.jpg" alt="$cover"></p>
+<p>在初學JQuery時期覺得抓取DOM是很容易的事情，畢竟JQuery把很多很繁雜的過程都簡化了，只要用css的寫法程式都能很順利的完成，但是在JS卻不是這麼一回事…</p>
+<h2 id="document-getElementById"><a href="#document-getElementById" class="headerlink" title="document.getElementById"></a>document.getElementById</h2><p>如果元素有<code>id</code>特性，那<code>document.getElementById</code>是最常用，且不會出意外的方法了。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&#x27;elem&#x27;</span>&gt;</span>Element<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="comment">// 抓取該元素</span></span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">const</span> elem = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;elem&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="admonition warning"><p class="admonition-title">只有 document.getElementById，沒有 xxx.getElementById
+</p><p><code>getElementById</code>的方法只能用在document上，它會查找整個文件並尋找指定的<code>id</code></p>
+</div>
+
+<hr>
+<h2 id="querySelectorAll"><a href="#querySelectorAll" class="headerlink" title="querySelectorAll"></a>querySelectorAll</h2><p>最通用的方法是<code>elem.querySeletorAll()</code>，他會抓到所有跟css選擇器匹配的所有元素（偽元素也可以歐！）</p>
+<h4 id="範例-所有符合條件的class會變色"><a href="#範例-所有符合條件的class會變色" class="headerlink" title="範例:所有符合條件的class會變色"></a>範例:所有符合條件的class會變色</h4><iframe src="https://codepen.io/johnnytsai81/embed/dyezKwK?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<div class="admonition warning"><p class="admonition-title">在使用querySelectorAll需要搭配for迴圈或陣列
+</p><p>如果你直接寫 <code>elem.style.backgroundColor = &quot;red&quot;</code> 會發生 <strong>Uncaught TypeError: Cannot set properties of undefined (setting 'color')</strong> 的錯誤。</p>
+<p>如果不明白的話，先使用console檢查看看原因
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> elem = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'ul &gt; li:last-child'</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(elem)</span><br></pre></td></tr></table></figure>
+<img src="https://images2.imgbox.com/44/20/b2fvIvqI_o.png" alt></p>
+<p>這時你會發現格式是NodeList(類陣列)，NodeList狀態下只能抓到指定順位無法抓取多個(EX:<code>elem[0].style.backgroundColor = &quot;red&quot;</code>)</p>
+<p>所以我們要使用Array.from()轉換成陣列才行
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> elem = <span class="title class_">Array</span>.<span class="title function_">from</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'ul &gt; li:last-child'</span>))</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(elem)</span><br></pre></td></tr></table></figure>
+<img src="https://images2.imgbox.com/1c/31/JVVFkHEd_o.png" alt></p>
+<p>最後在用<code>forEach()</code>問題就解決了 🙌</p>
+</div>
+
+<hr>
+<h2 id="matches"><a href="#matches" class="headerlink" title="matches"></a>matches</h2><p><code>matches()</code>不會抓取任何內容，它只會檢查是否符合指定的css並傳回<code>true</code>或<code>false</code>，所以他很適合放在判斷式裡。</p>
+<h4 id="範例-有active的class會變色"><a href="#範例-有active的class會變色" class="headerlink" title="範例:有active的class會變色"></a>範例:有active的class會變色</h4><iframe src="https://codepen.io/johnnytsai81/embed/poVrxvX?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<hr>
+<h2 id="closest"><a href="#closest" class="headerlink" title="closest"></a>closest</h2><p><code>closest()</code>會自動選擇與自己最近的父元素(包含自身)且符合條件的元素，我個人覺得搭配按鈕監聽是很好用的一種方法，因為監聽會包含所有子元素有時候會讓<code>event.target</code>的位置難以控制。</p>
+<h4 id="範例-點按button的任何區塊都會加active的class在button上"><a href="#範例-點按button的任何區塊都會加active的class在button上" class="headerlink" title="範例:點按button的任何區塊都會加active的class在button上"></a>範例:點按button的任何區塊都會加active的class在button上</h4><iframe src="https://codepen.io/johnnytsai81/embed/qBYXJLx?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<hr>
+<h2 id="getElementsBy"><a href="#getElementsBy" class="headerlink" title="getElementsBy*"></a>getElementsBy*</h2><p>這種方法已經不太常用，因為querySelector功能更強大。但是getElementsBy*可以抓到動態元素querySelector只能抓靜態，所以有時候還是得要用它才行。</p>
+<h4 id="範例-用getElementsBy-可以抓到第二個div"><a href="#範例-用getElementsBy-可以抓到第二個div" class="headerlink" title="範例:用getElementsBy*可以抓到第二個div"></a>範例:用getElementsBy*可以抓到第二個div</h4><iframe src="https://codepen.io/johnnytsai81/embed/bGMowVR?height=300&theme-id=dark&default-tab=html,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>如果使用querySelectorAll只能抓到第一個div，可以把註解拿掉看看結果</p>
+<div class="admonition warning"><p class="admonition-title">它回傳的是一個集合(HTMLCollection)，不是一個元素
+</p><p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Error</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">'input'</span>).<span class="property">value</span> = <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+這是行不通的，因為它需要的是一個input的<strong>集合</strong>，而不是給其中一個元素。
+所以我們應該要透過迴圈或是給它對應的索引值來獲取元素，如下所示：</p>
+<p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 指定的索引值</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">'input'</span>)[<span class="number">0</span>].<span class="property">value</span> = <span class="number">5</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></p>
+<p>結果展示
+<iframe src="https://codepen.io/johnnytsai81/embed/OJZxdjw?height=300&amp;theme-id=dark&amp;default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe></p>
+<p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 迴圈</span></span><br><span class="line"><span class="keyword">const</span> elem = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">'input'</span>)</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; elem.<span class="property">length</span>; i++) {</span><br><span class="line">  elem[i].<span class="property">value</span> = i + <span class="number">1</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure></p>
+<p>結果展示
+<iframe src="https://codepen.io/johnnytsai81/embed/eYrGbMb?height=300&amp;theme-id=dark&amp;default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe></p>
+</div>
+
+<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>有6個主要的方法可以在DOM中搜尋元素節點</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>搜尋方式</th>
+<th>抓取動態元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>querySelector</td>
+<td>CSS-selector</td>
+<td>-</td>
+</tr>
+<tr>
+<td>querySelectorAll</td>
+<td>CSS-selector</td>
+<td>-</td>
+</tr>
+<tr>
+<td>getElementById</td>
+<td>id</td>
+<td>-</td>
+</tr>
+<tr>
+<td>getElementsByName</td>
+<td>name</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>getElementsByTagName</td>
+<td>tag</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>getElementsByClassName</td>
+<td>class</td>
+<td>✔</td>
+</tr>
+</tbody>
+</table>
+</div></article><section class="jump-container my-12"><div class="jump-container-wrap"><!-- em is empty placeholder--><em></em><a class="button right" href="/Web-Design/11_alpha-camp-1/" title="ALPHA camp 2-2~2-3 自學經驗回顧"><span class="right-arrow"><span class="title">上一篇</span><span>ALPHA camp 2-2~2-3 自學經驗回顧</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>
