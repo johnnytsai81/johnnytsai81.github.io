@@ -2,90 +2,108 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/11_alpha-camp-1/</loc>
+    <loc>https://johnnytsai81.github.io/Courses/13_alpha-camp-2/</loc>
     
-    <lastmod>2022-09-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/12_js_find/</loc>
-    
-    <lastmod>2022-09-24</lastmod>
+    <lastmod>2023-01-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/10_Swiper-2/</loc>
+    <loc>https://johnnytsai81.github.io/CSS/07_flex_vs_grid/</loc>
     
-    <lastmod>2022-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/01_lightgallery/</loc>
-    
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/02_hexo-1/</loc>
+    <loc>https://johnnytsai81.github.io/JavaScript/12_js_find/</loc>
     
-    <lastmod>2022-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/03_hexo-2/</loc>
-    
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/04_hexo-3/</loc>
+    <loc>https://johnnytsai81.github.io/Blog/04_hexo-3/</loc>
     
-    <lastmod>2022-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/06_pug-1/</loc>
-    
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/08_fullPage/</loc>
+    <loc>https://johnnytsai81.github.io/Blog/03_hexo-2/</loc>
     
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/09_Swiper-1/</loc>
+    <loc>https://johnnytsai81.github.io/Blog/02_hexo-1/</loc>
     
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/Plugin/01_lightgallery/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/HTML/06_pug-1/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/Courses/11_alpha-camp-1/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/Plugin/08_fullPage/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/Plugin/10_Swiper-2/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/Plugin/09_Swiper-1/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -118,62 +136,67 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://johnnytsai81.github.io/Web-Design/07_flex_vs_grid/</loc>
-    
-    <lastmod>2022-05-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://johnnytsai81.github.io/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://johnnytsai81.github.io/tags/JS/</loc>
-    <lastmod>2022-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnnytsai81.github.io/tags/Blog/</loc>
-    <lastmod>2022-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://johnnytsai81.github.io/tags/Hexo/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://johnnytsai81.github.io/tags/Pug/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/tags/css/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <loc>https://johnnytsai81.github.io/tags/Slider/</loc>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://johnnytsai81.github.io/tags/Frontend/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <loc>https://johnnytsai81.github.io/tags/Scroll/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/tags/ALPHA-Camp/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/tags/Slide/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/tags/Flex/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/tags/Grid/</loc>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -181,8 +204,43 @@
 
   
   <url>
-    <loc>https://johnnytsai81.github.io/categories/Web-Design/</loc>
-    <lastmod>2022-09-24</lastmod>
+    <loc>https://johnnytsai81.github.io/categories/Courses/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/categories/JavaScript/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/categories/Plugin/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/categories/CSS/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/categories/HTML/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://johnnytsai81.github.io/categories/Blog/</loc>
+    <lastmod>2023-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
