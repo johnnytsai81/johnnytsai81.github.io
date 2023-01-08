@@ -6,7 +6,7 @@
   <link href="https://johnnytsai81.github.io/atom.xml" rel="self"/>
   
   <link href="https://johnnytsai81.github.io/"/>
-  <updated>2023-01-01T14:30:33.079Z</updated>
+  <updated>2023-01-08T07:50:22.920Z</updated>
   <id>https://johnnytsai81.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ALPHA Camp 學期3 自學經驗回顧</title>
+    <link href="https://johnnytsai81.github.io/Courses/14_alpha-camp-3/"/>
+    <id>https://johnnytsai81.github.io/Courses/14_alpha-camp-3/</id>
+    <published>2023-01-08T04:49:39.000Z</published>
+    <updated>2023-01-08T07:50:22.920Z</updated>
+    
+    <content type="html"><![CDATA[<p>在AC上課也過了快半年，終於在這週終於結業了，感覺這半年學的比我工作兩年學的東西還多了好多  </p><p><img src="/images/post/head-cv-07.jpg" alt="$cover"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>學期3是我壓力最大的一段過程，因為剛到新公司有很多新的東西需要學習跟適應。一開始我本來還打算先過幾個月比較有空閒再上學期3，沒想到要獲得獎學金的規則是必須要一氣呵成全部上完 😅，但是想想也沒有錯程式太久沒碰是會忘記的，因為中間有休息一個月導致我有些JS語法也忘記了還要回去複習一下。</p><p>學期3最大的上課模式跟之前相差滿多的，比較偏向正常工程師學習新的東西的流程，會先看<a href="https://beta.reactjs.org/learn">官方文件</a>了解基本功能跟使用方法，如果在應用上有看不懂或是卡關的地方則看看別人寫的文章，補強自己漏掉的一些觀念。但是對於邊上班邊學習的我有滿大的時間壓力，同時要理解文件的觀念跟完成當周的作業，所以變成我沒有太多時間找其他參考資料深入理解，如果能時光能倒轉我應該會想加入共讀小組，大家一起分享實用的文章應該可以節省不少search的時間。</p><p><img src="https://images2.imgbox.com/0b/cc/jClmQGlm_o.png"><br><em>React的官方文件</em></p><h2 id="前端框架REACT"><a href="#前端框架REACT" class="headerlink" title="前端框架REACT"></a>前端框架REACT</h2><p>現在前端框架已經是前端工程師必備的技能了，上完學期3我才算真正了解為什麼需要前端框架。前端框架可以提升開發效率、降低維護難度的開發架構。因為框架把整個網頁拆分，並且把重複的元件重複引用，如果你做的元件耦合度不高也能讓你的網頁在進行修改時不會牽一髮而動全身，所以比起傳統用JS修改DOM的作法更考驗工程師如何寫出好的程式品質了 🤣</p><p>其實學完REACT覺得攥寫的方法很符合處女座的我，只要能把程式整理整整齊齊的我的心情就會很愉悅，前端框架可以達到資料跟UI完全分離讓畫面變得很乾淨，但是相對的拆分細的缺點是檔案變很多個，雖然JSX有支援按下command按鈕可以連到那個元件的功能，但是有時候還是會眼花，也許久了就會慢慢適應了吧。</p><p>遺憾的是我現在的公司是用Vue來做開發，所以我REACT只能先學到這裡之後再來研究更深入的功能跟外掛，公司已經在追問我什麼時候會學完Vue了 😅</p><h2 id="Simple-Twitter"><a href="#Simple-Twitter" class="headerlink" title="Simple Twitter"></a>Simple Twitter</h2><p>Simple Twitter也讓我體驗到前後端分離的協作過程，算是非常寶貴的一次實戰體驗。其實在Twitter專案之前我一直很擔心我的能力是否能否完成，因為前面幾週的作業我都是在星期天晚上死線前交出來，沒有時間再回頭複習，經過這次參賽的經驗給我滿大的信心，覺得一個專案的開發沒有我想像中的那麼困難，當然也很感謝我的組員在我卡關時及時地給予支援，如果只有我一個人要完成應該很困難。</p><blockquote><p>專案的詳細的介紹可以看<a href="../13_alpha-camp-2">這篇</a></p></blockquote><h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這次的畢業代表的不是結束，是一個新的開始。雖然在上課的時候覺得好痛苦，沒辦法出去玩或是玩遊戲，但上完課後就要靠自己督促自己不斷的學習，畢竟軟體工程師的宿命就是要不斷地學新的工具、新的方法，技術實在是進步的太快了。但是我很感謝AC在這半年來不僅學會了程式，也學習到很多程式相關的軟知識跟很強調基礎觀念，有好的觀念可以在未來的學習過程事半功倍，能理解為什麼要學這個工具解決了哪些痛點。</p><p>也希望跟我一樣在AC學習的同學們都能在新的一年轉職成功，看得出來大家為了轉職都付出了很大的努力 💪💪💪</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在AC上課也過了快半年，終於在這週終於結業了，感覺這半年學的比我工作兩年學的東西還多了好多  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/post/head-cv-07.jpg&quot; alt=&quot;$cover&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot;</summary>
+      
+    
+    
+    
+    <category term="Courses" scheme="https://johnnytsai81.github.io/categories/Courses/"/>
+    
+    
+    <category term="ALPHA-Camp" scheme="https://johnnytsai81.github.io/tags/ALPHA-Camp/"/>
+    
+  </entry>
   
   <entry>
     <title>Simple Twitter專案開發心得</title>
@@ -67,11 +93,11 @@
   </entry>
   
   <entry>
-    <title>ALPHA camp 2-2~2-3 自學經驗回顧</title>
+    <title>ALPHA Camp 2-2~2-3 自學經驗回顧</title>
     <link href="https://johnnytsai81.github.io/Courses/11_alpha-camp-1/"/>
     <id>https://johnnytsai81.github.io/Courses/11_alpha-camp-1/</id>
     <published>2022-09-21T04:17:39.000Z</published>
-    <updated>2022-12-31T13:06:05.534Z</updated>
+    <updated>2023-01-08T03:58:45.524Z</updated>
     
     <content type="html"><![CDATA[<p>一轉眼我已經上完ALPHA camp第二學期的課程了，這段期間也覺得自己已經慢慢往前端工程師的方向前進了</p><p><img src="/images/post/head-cv-07.jpg" alt="$cover"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我現在的職位是網頁設計師，工作內容涵蓋了UI設計跟前端程式，我也對這些領域十分有興趣，但網頁設計的職涯發展會十分受限，所以我得在UI&#x2F;UX設計跟前端工程師選一條路專精。</p><p>有一天公司的同事跟我說，他上過AC的課程後決定要辭職專心衝刺😳，所以我抱著好奇的心情開始試讀AC的課程…</p><h2 id="從JQuery轉成JS"><a href="#從JQuery轉成JS" class="headerlink" title="從JQuery轉成JS"></a>從JQuery轉成JS</h2><p>AC的課程希望我們用原生的JS撰寫，一來是比較能理解程式的運作過程及原理(畢竟JQuery省略很多步驟)，二來是在學習新套件會比較快上手(套件多半還是用JS語法撰寫)。</p><p>因為我大部分都用JQuery寫程式，再學了JS才發現JQuery真的是懶人在用的，因為JS的寫法真的很繁瑣…(常常抓一個DOM抓老半天🥲)，JQuery只要一行程式就解決了。</p><p>這時就要先從資料類型開始理解，才會理解為什麼會發生意外的錯誤。更多詳細介紹可以參考這篇文章:</p><blockquote><p><a href="../12_js_find">用JS抓取元素(Javascript篇)</a></p></blockquote><h2 id="觀念的建立"><a href="#觀念的建立" class="headerlink" title="觀念的建立"></a>觀念的建立</h2><p>一個好的前端工程師的會注重他的程式碼品質，不單單只是把功能做出來而已。</p><p>好的程式碼所要具備的條件:</p><ol><li>有清楚的註解，能讓之後維護的工程師能快速了解程式架構or位置 (我曾經維護過沒有任何註解的程式，或是程式的排列順序跳來跳去的碼…)</li><li>不寫重複行為的程式，也就是符合DRY原則 (Do not Repeat Yourself)</li><li>擴充性高的程式。因為程式不太可能在一開始就確定全部的功能，擴充性高的程式不會因為新增一個功能就必須大改程式</li><li>可讀性高的程式，命名上能讓團隊的其他成員大概猜出用途。但是這需要團隊制定好命名慣例(naming convention)，像是<strong>OOCSS(Object oriented CSS)、SMACSS (Scalable and Modular Architecture for CSS)、BEM (Block Element Modifier)</strong></li></ol><p>這也是AC很強調的點，如果沒有做好這些動作有可能就會產生技術債，成為大家口中很雷的工程師 😂</p><h2 id="實戰面試題目"><a href="#實戰面試題目" class="headerlink" title="實戰面試題目"></a>實戰面試題目</h2><p>上了課最重要的還是…要拿到心儀公司的offer對吧 😏<br>因為面試通常沒有太多時間請你實做，所以面試都會考觀念題比較多(如果沒考試的公司那還是別去了，有很高的機率是雷)，所以不能只是埋頭苦幹做作品，也要花點時間去了解程式運作的原理。AC也有題庫跟模擬面試的工作坊，測驗你是否有耐心的去了解觀念。但是也可以多找找題庫補足自己的缺漏，觀念確立後再進行進階的程式會事半功倍歐！</p><blockquote><p><a href="https://github.com/lydiahallie/javascript-questions">JS題庫</a></p></blockquote><h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>上課的這兩個月裡，我的生活起了很多變化，經歷了辭職跟找到兩份工作。股神巴菲特說過：「最好的投資就是投資你自己。」所以我很滿意自己所做的決定，期待之後第三學期又有什麼新挑戰 🚀🚀🚀</p>]]></content>
     

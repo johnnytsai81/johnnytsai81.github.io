@@ -217,16 +217,12 @@
     right: auto;
 }
 
-.swiper-button-prev-3.swiper-button-prev {
-    margin-left: -30px;
-}
-
 .swiper-button-prev-3.swiper-button-prev::after {
-    left: 0px;
+    left: -1rem;
 }
 
 .swiper-button-next-3.swiper-button-next::after {
-    right: 0rem;
+    right: -1rem;
 
 }
 
