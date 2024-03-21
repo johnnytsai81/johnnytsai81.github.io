@@ -132,8 +132,8 @@ function fadeUpWord() {
 
 // 輪播圖字等過場結束才執行的效果
 function fadeOutWord() {
-	var visibleTime = 0;
-	var visibleTime = setInterval(function () {
+	let visibleTime = 0;
+	visibleTime = setInterval(function () {
 		if ($('#loading').css('opacity') == 0) {
 			clearInterval(visibleTime);
 		};
