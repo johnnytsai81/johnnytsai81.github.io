@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用GSAP製作網站特效（四）MotionPath</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><meta name="google-site-verification" content="csMqM_jSDHR5JB6bx5sbYtDim3pnfXztxvWKHSykzRA"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><link rel="stylesheet" href="/style/app.css"><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script defer src="/js/webfont.js"></script><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="MotionPath是GSAP的套件之一，主要用途是讓物件跟著線跑動，可以做出一些很特別的動畫。
+
+MotionPath 的基礎操作因為是套件所以需要另外呼叫
+gsap.registerPlugin(MotionPathPlugin);
+
+呼叫完之後你必須要設定一個想被Observer套用的行為模式
+gsap.to(&amp;quot;.b&amp;quot;, &amp;#123; // 要動的物件	duration: 1.75,	ease: &amp;quot;linear&amp;quot;,	motionPath: &amp;#123;		path: &amp;quot;.path&amp;quot;, // 追蹤的線(線為svg裡面的path)		align: &amp;quot;.path&amp;quot;, // 基準點的物件		alignOrigin: [0, 0],.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Plugin"><div class="arrow-hover"><span>Plugin</span></div></a></div></div><h1 class="page-title" id="#postTitle">用GSAP製作網站特效（四）MotionPath</h1><p class="page-subtitle">MotionPath是GSAP的套件之一，主要用途是讓物件跟著線跑動，可以做出一些很特別的動畫。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Animation"><div class="line-hover"><span>Animation</span></div></a></div><time datetime="2023-10-24T04:17:39.000Z">2023-10-24</time></div></div><div class="w-full"><article class="post-content"><p>MotionPath是GSAP的套件之一，主要用途是讓物件跟著線跑動，可以做出一些很特別的動畫。</p>
+<p><img src="/images/post/head-cv-09.jpg" alt="$cover"></p>
+<h2 id="MotionPath-的基礎操作"><a href="#MotionPath-的基礎操作" class="headerlink" title="MotionPath 的基礎操作"></a>MotionPath 的基礎操作</h2><p>因為是套件所以需要另外呼叫</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">gsap.<span class="title function_">registerPlugin</span>(<span class="title class_">MotionPathPlugin</span>);</span><br></pre></td></tr></table></figure>
+
+<p>呼叫完之後你必須要設定一個想被Observer套用的行為模式</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">gsap.<span class="title function_">to</span>(<span class="string">&quot;.b&quot;</span>, &#123; <span class="comment">// 要動的物件</span></span><br><span class="line">	<span class="attr">duration</span>: <span class="number">1.75</span>,</span><br><span class="line">	<span class="attr">ease</span>: <span class="string">&quot;linear&quot;</span>,</span><br><span class="line">	<span class="attr">motionPath</span>: &#123;</span><br><span class="line">		<span class="attr">path</span>: <span class="string">&quot;.path&quot;</span>, <span class="comment">// 追蹤的線(線為svg裡面的path)</span></span><br><span class="line">		<span class="attr">align</span>: <span class="string">&quot;.path&quot;</span>, <span class="comment">// 基準點的物件</span></span><br><span class="line">		<span class="attr">alignOrigin</span>: [<span class="number">0</span>, <span class="number">0</span>], <span class="comment">// 基準點，[0, 0]代表center center的意思</span></span><br><span class="line">	&#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="案例研究"><a href="#案例研究" class="headerlink" title="案例研究"></a>案例研究</h2><iframe src="https://codepen.io//johnnytsai81/embed/xxaNMMB?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>MotionPath操作起來很直觀簡單，但是他有一個大缺點是不會跟隨著螢幕大小變化去更新路徑的變化，如果偵測到resize就重新整理網頁不是一個很好的用戶體驗。</p>
+<p><code>progress()</code>是用來記錄目前的動畫進度，0代表開始、1代表結束。這邊利用<code>progress()</code>紀錄上次的動畫進度，以防在resize更新動畫跳回一開始的狀態。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> progress = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span> (tween) &#123;</span><br><span class="line">	progress = tween.<span class="title function_">progress</span>(); <span class="comment">// 在載入動畫的情況下才更新progress</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">tween.<span class="title function_">progress</span>(progress); <span class="comment">// 載入上次的進度</span></span><br></pre></td></tr></table></figure>
+
+<p>另外一個小巧思是，物件在gsap還沒有載入的時候會在螢幕左上方很醜，所以這邊預設一開始是看不到的，等到載入好再顯示物件。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">tween.<span class="title function_">set</span>(<span class="string">&quot;.airplane&quot;</span>, &#123;</span><br><span class="line">	<span class="attr">duration</span>: <span class="number">0.2</span>,</span><br><span class="line">	<span class="attr">opacity</span>: <span class="number">1</span>,</span><br><span class="line">&#125;).<span class="title function_">to</span>(<span class="string">&quot;.airplane&quot;</span>, &#123;</span><br><span class="line">	<span class="attr">duration</span>: <span class="number">10</span>,</span><br><span class="line">	<span class="attr">ease</span>: <span class="string">&quot;linear&quot;</span>,</span><br><span class="line">	<span class="attr">repeat</span>: -<span class="number">1</span>, <span class="comment">// 無限循環</span></span><br><span class="line">	<span class="attr">motionPath</span>: &#123;</span><br><span class="line">	<span class="attr">duration</span>: <span class="number">10</span>,</span><br><span class="line">	<span class="attr">ease</span>: <span class="string">&quot;linear&quot;</span>,</span><br><span class="line">	<span class="attr">repeat</span>: -<span class="number">1</span>, <span class="comment">// 無限循環</span></span><br><span class="line">	<span class="attr">motionPath</span>: &#123;</span><br><span class="line">		<span class="attr">start</span>: <span class="number">0.5</span>, <span class="comment">// 開始點</span></span><br><span class="line">		<span class="attr">end</span>: -<span class="number">0.5</span>, <span class="comment">// 結束點</span></span><br><span class="line">		<span class="attr">offsetY</span>: -<span class="number">50</span>, <span class="comment">// 水平平移50</span></span><br><span class="line">		<span class="attr">autoRotate</span>: <span class="number">180</span>, <span class="comment">// 會隨著斜率改變角度</span></span><br><span class="line">		<span class="attr">path</span>: <span class="string">&quot;.wave-path&quot;</span>, <span class="comment">// 抓取的軌跡</span></span><br><span class="line">		<span class="attr">align</span>: <span class="string">&quot;.wave-path&quot;</span>,</span><br><span class="line">		<span class="attr">alignOrigin</span>: [<span class="number">0.5</span>, <span class="number">0.5</span>], <span class="comment">// 垂直水平置中</span></span><br><span class="line">	&#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="常用變數介紹"><a href="#常用變數介紹" class="headerlink" title="常用變數介紹"></a>常用變數介紹</h4><div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>型別</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>Number</td>
+<td>開始點，預設為0也就是路徑的起點</td>
+</tr>
+<tr>
+<td>end</td>
+<td>Number</td>
+<td>結束點，預設為1也就是路徑的終點</td>
+</tr>
+<tr>
+<td>path</td>
+<td>String | Element | Array</td>
+<td>線段的位置(svg)</td>
+</tr>
+<tr>
+<td>align</td>
+<td>String | Element</td>
+<td>以哪一個元素為基準點</td>
+</tr>
+<tr>
+<td>alignOrigin</td>
+<td>Array</td>
+<td>基準點的位置，[0.5, 0.5]就是center center的意思</td>
+</tr>
+<tr>
+<td>autoRotate</td>
+<td>Boolean | Number</td>
+<td>是否會隨著斜率改變角度</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>預設為path也就是二維的，三維的為type: "cubic"</td>
+</tr>
+<tr>
+<td>offsetX</td>
+<td>Number</td>
+<td>垂直平移距離</td>
+</tr>
+<tr>
+<td>offsetY</td>
+<td>Number</td>
+<td>水平平移距離</td>
+</tr>
+</tbody>
+</table>
+</div></article><section class="jump-container my-12"><div class="jump-container-wrap"><!-- em is empty placeholder--><em></em><a class="button right" href="/Plugin/17_gsap-3/" title="用GSAP製作網站特效（三）Observer"><span class="right-arrow"><span class="title">上一篇</span><span>用GSAP製作網站特效（三）Observer</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用GSAP製作網站特效（ㄧ）基礎篇</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><meta name="google-site-verification" content="csMqM_jSDHR5JB6bx5sbYtDim3pnfXztxvWKHSykzRA"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><link rel="stylesheet" href="/style/app.css"><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script defer src="/js/webfont.js"></script><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="GSAP是一個發展相當久、專門處理動態效果的外掛。具有檔案小效能高的優點，且瀏覽器的支援度高，適合應用於專案中專門來處理動態效果。        
+
+新手教學官方有提供基本的教學，加上最新官網改版後有優化了教學的內容可以作為參考。 官網連結
+建立動畫的第一步(Tween)在GSAP最基本的操作動畫方式叫Tween，首先你要設定動畫開始的狀態及動畫結束的狀態，最後設定你想要改變的物件跟動畫效果。
+
+// to只須寫動畫結束的狀態gsap.to(&amp;quot;#my-div&amp;quot;, &amp;#123;rotation: 27, x: 100, duration: 1&amp;#125;);// fromTo是寫動畫開始及結束的狀態，中間使用&amp;#123;&amp;#125;做為區隔gsap.fromTo(&amp;quot;#my-div.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Plugin"><div class="arrow-hover"><span>Plugin</span></div></a></div></div><h1 class="page-title" id="#postTitle">用GSAP製作網站特效（ㄧ）基礎篇</h1><p class="page-subtitle">GSAP是一個發展相當久、專門處理動態效果的外掛。具有檔案小效能高的優點，且瀏覽器的支援度高，適合應用於專案中專門來處理動態效果。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Animation"><div class="line-hover"><span>Animation</span></div></a></div><time datetime="2023-08-06T04:17:39.000Z">2023-08-06</time></div></div><div class="w-full"><article class="post-content"><p>GSAP是一個發展相當久、專門處理動態效果的外掛。具有檔案小效能高的優點，且瀏覽器的支援度高，適合應用於專案中專門來處理動態效果。        </p>
+<p><img src="/images/post/head-cv-09.jpg" alt="$cover"></p>
+<h2 id="新手教學"><a href="#新手教學" class="headerlink" title="新手教學"></a>新手教學</h2><p>官方有提供基本的教學，加上最新官網改版後有優化了教學的內容可以作為參考。 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://gsap.com/resources/get-started/#html">官網連結</a></p>
+<h2 id="建立動畫的第一步-Tween"><a href="#建立動畫的第一步-Tween" class="headerlink" title="建立動畫的第一步(Tween)"></a>建立動畫的第一步(Tween)</h2><p>在GSAP最基本的操作動畫方式叫Tween，首先你要設定動畫開始的狀態及動畫結束的狀態，最後設定你想要改變的物件跟動畫效果。</p>
+<p><img src="https://images2.imgbox.com/66/71/MmYFt7zI_o.jpg"></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// to只須寫動畫結束的狀態</span></span><br><span class="line">gsap.<span class="title function_">to</span>(<span class="string">&quot;#my-div&quot;</span>, &#123;<span class="attr">rotation</span>: <span class="number">27</span>, <span class="attr">x</span>: <span class="number">100</span>, <span class="attr">duration</span>: <span class="number">1</span>&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// fromTo是寫動畫開始及結束的狀態，中間使用&#123;&#125;做為區隔</span></span><br><span class="line">gsap.<span class="title function_">fromTo</span>(<span class="string">&quot;#my-div&quot;</span>, &#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;, &#123;<span class="attr">opacity</span>: <span class="number">0.5</span>, <span class="attr">duration</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="方法使用的時機"><a href="#方法使用的時機" class="headerlink" title="方法使用的時機"></a>方法使用的時機</h4><ul>
+<li><code>to</code>進入時的狀態</li>
+<li><code>from</code>進入前的狀態</li>
+<li><code>fromTo</code>進入前跟進入後的狀態 (較複雜的動畫建議使用)</li>
+<li><code>set</code>等同於to但是沒有ease的效果 (可以設定初始狀態)</li>
+</ul>
+<p>這邊有官方的demo可以玩玩看</p>
+<iframe src="https://codepen.io/GreenSock/embed/dydJyXw?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>動畫的行為則有很多種，大多都是跟css有所相關</p>
+<h4 id="跟css有關的參數"><a href="#跟css有關的參數" class="headerlink" title="跟css有關的參數"></a>跟css有關的參數</h4><div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x: 50</td>
+<td>x軸離中心點的位置，預設單位為px，等同於<code>transform: translateX(...px)</code></td>
+</tr>
+<tr>
+<td>y: 50</td>
+<td>y軸離中心點的位置，預設單位為px，等同於<code>transform: translateY(...px)</code></td>
+</tr>
+<tr>
+<td>xPercent: 50</td>
+<td>x軸離中心點的位置，預設單位為%，等同於<code>transform: translateX(...%)</code></td>
+</tr>
+<tr>
+<td>yPercent: 50</td>
+<td>y軸離中心點的位置，預設單位為%，等同於<code>transform: translateY(...%)</code></td>
+</tr>
+<tr>
+<td>autoAlpha: 0 (opacity: 0)</td>
+<td>透明度</td>
+</tr>
+<tr>
+<td>display: "block"</td>
+<td>佈局</td>
+</tr>
+<tr>
+<td>scale: 2</td>
+<td>放大，等同於<code>transform: scale(...)</code></td>
+</tr>
+<tr>
+<td>rotation: 90</td>
+<td>旋轉，等同於<code>transform: rotate(...)</code></td>
+</tr>
+<tr>
+<td>repeat: -1</td>
+<td>動畫重複次數，如果設定<code>-1</code>則為無限循環播放</td>
+</tr>
+<tr>
+<td>marginLeft: 20</td>
+<td>等同於<code>margin-left:...px</code></td>
+</tr>
+<tr>
+<td>backgroundColor: "#ffffff"</td>
+<td>背景顏色</td>
+</tr>
+<tr>
+<td>duration: 1</td>
+<td>動畫執行秒數</td>
+</tr>
+<tr>
+<td>ease: "power1.out"</td>
+<td>動畫轉場速率，必須設定動畫轉場時間才會作用。參數有兩個，EX:<code>Sine.easeInOut</code>) 更多的選擇可以參考<a target="_blank" rel="external nofollow noopener noreferrer" href="https://gsap.com/resources/getting-started/Easing/">官方文件</a>。</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="特殊的參數"><a href="#特殊的參數" class="headerlink" title="特殊的參數"></a>特殊的參數</h4><div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stagger: 0.1</td>
+<td>每一個被選取物件間隔的動畫時間，如果覺得很難懂也有<a target="_blank" rel="external nofollow noopener noreferrer" href="https://gsap.com/resources/getting-started/Staggers/">官方文件</a>專為這個參數做介紹</td>
+</tr>
+<tr>
+<td>force3D: false</td>
+<td>預設為true(當使用<code>scale</code>時safari會把他像素化，如果改成<code>false</code>可以避免使用3D運算，畢竟safari在z軸上問題多多，但2D會讓CPU做較多的運算)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="admonition info"><p class="admonition-title">tip
+</p><p>跟長度有關的參數預設的單位都是px，如果想要不同的單位則需要加上引號。
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">x</span>: <span class="number">200</span>, <span class="comment">// 一般的寫法</span></span><br><span class="line"><span class="attr">x</span>: <span class="string">&quot;+=200&quot;</span> <span class="comment">// 相對位置的寫法</span></span><br><span class="line"><span class="attr">x</span>: <span class="string">'40vw'</span>, <span class="comment">// 特殊單位的寫法</span></span><br><span class="line"><span class="attr">x</span>: <span class="function">() =&gt;</span> <span class="variable language_">window</span>.<span class="property">innerWidth</span> / <span class="number">2</span>, <span class="comment">// 使用函式計算的方法</span></span><br></pre></td></tr></table></figure></p>
+</div>
+
+<h2 id="回調函式"><a href="#回調函式" class="headerlink" title="回調函式"></a>回調函式</h2><p>gsap可以設定回調函式，以便你在動畫的過程中進行操作</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">gsap.<span class="title function_">to</span>(<span class="string">&quot;#my-div&quot;</span>, &#123;</span><br><span class="line">    <span class="attr">rotation</span>: <span class="number">27</span>, </span><br><span class="line">    <span class="attr">x</span>: <span class="number">100</span>, </span><br><span class="line">    <span class="attr">duration</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">onComplete</span>: myFunction,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>利用onComplete的回調函式，你就可以在動畫執行完畢後進行後續的操作。</p>
+<div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onComplete</td>
+<td>完成時調用</td>
+</tr>
+<tr>
+<td>onStart</td>
+<td>開始時調用</td>
+</tr>
+<tr>
+<td>onUpdate</td>
+<td>每次動畫更新時調用</td>
+</tr>
+<tr>
+<td>onRepeat</td>
+<td>每次動畫重複時調用</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>除此之外，gsap也提供了控制動畫的函式，像是開始start()、暫停pause()、倒轉播放reverse()、回到開始狀態restart()，可以藉此快速建立所需的功能，增加互動性甚至是動態的豐富度。</p>
+<iframe src="https://codepen.io/GreenSock/embed/OJLgdyg?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<h2 id="RWD設定"><a href="#RWD設定" class="headerlink" title="RWD設定"></a>RWD設定</h2><p>在不同的裝置你可能會需要不同的動畫效果(通常是調整移動的距離)，官方有給一個matchMedia的函式，你可以自行設定斷點再用三元去做判斷。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> mm = gsap.<span class="title function_">matchMedia</span>();</span><br><span class="line">mm.<span class="title function_">add</span>(</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 設定斷點</span></span><br><span class="line">        <span class="attr">isMobile</span>: <span class="string">&quot;(max-width: 1200px)&quot;</span>,</span><br><span class="line">        <span class="attr">isPad</span>: <span class="string">&quot;(min-width: 1201px)&quot;</span>,</span><br><span class="line">        <span class="attr">isNotebook</span>: <span class="string">&quot;(min-width: 1400px)&quot;</span>,</span><br><span class="line">        <span class="attr">isComputer</span>: <span class="string">&quot;(min-width: 1600px)&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function">(<span class="params">context</span>) =&gt;</span> &#123;</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">let</span> &#123; isMobile, isPad, isNotebook, isComputer &#125; = context.<span class="property">conditions</span>;</span><br><span class="line">        gsap.<span class="title function_">to</span>(<span class="string">&quot;.windmill&quot;</span>, &#123;</span><br><span class="line">		    <span class="attr">rotation</span>: <span class="number">360</span>,</span><br><span class="line">            <span class="attr">duration</span>: isPad ? <span class="number">7.2</span> : <span class="number">3.6</span>,</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="套件"><a href="#套件" class="headerlink" title="套件"></a>套件</h2><p>如果你想完成一個簡單的動畫，上面的介紹便可以滿足你的需求。但是當你想要做一個很複雜的動畫，那你就會需要安裝其他套件。套件有分免費的跟需要付費的，我個人覺得免費版就很夠用了，如果有需要付費版的功能也可以找其他套件來代替。</p>
+<p><img src="https://images2.imgbox.com/f3/c8/KD0a6XCs_o.jpg"></p>
+<p>下一篇會介紹我最常用到的ScrollTrigger，也是最能體現GSAP強大之處的套件。</p>
+</article><section class="jump-container my-12"><div class="jump-container-wrap"><!-- em is empty placeholder--><a class="button left" href="/Plugin/16_gsap-2/" title="用GSAP製作網站特效（二）ScrollTrigger"><span class="left-arrow"><span class="title">下一篇</span><span>用GSAP製作網站特效（二）ScrollTrigger</span></span></a><a class="button right" href="/Courses/14_alpha-camp-3/" title="ALPHA Camp 學期3 自學經驗回顧"><span class="right-arrow"><span class="title">上一篇</span><span>ALPHA Camp 學期3 自學經驗回顧</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>

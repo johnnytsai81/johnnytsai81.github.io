@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 全域 */
+/* 元件 */
 @layer components {
     body {
-        @apply font-lato
+        @apply font-lato block
     }
 
     /* 標題欄 */
     .nav-title {
-        @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider;
+        @apply block mt-4 ml-8 lg:inline-block lg:mt-0 tracking-wider
     }
 
     /* 首頁視覺標題 */
@@ -81,10 +81,5 @@
     /* 卡片連結 */
     .card-link {
         @apply absolute w-full h-full top-0 left-0 z-0
-    }
-    
-    /* 進度表 */
-    .card-process {
-        @apply relative bg-[color:var(--light-color)] rounded-full w-full h-[8px] before:absolute before:bg-[color:var(--sub-color)] before:rounded-full before:h-[8px]
     }
 }

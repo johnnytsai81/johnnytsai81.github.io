@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>用GSAP製作網站特效（三）Observer</title><meta name="description" content="Website / UI Designer"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><meta name="google-site-verification" content="csMqM_jSDHR5JB6bx5sbYtDim3pnfXztxvWKHSykzRA"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/base.css"><link rel="stylesheet" href="/style/common/common.css"><link rel="stylesheet" href="/style/app.css"><script src="/jquery/jquery.min.js"></script><script src="/jquery/inview.min.js"></script><script src="/jquery/swiper/js/swiper.min.js"></script><script defer src="/js/clipboard.min.js"></script><script defer src="/js/custom.js"></script><script defer src="/js/webfont.js"></script><link rel="stylesheet" href="/style/post.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="Observer是GSAP的套件之一，主要用途為偵測使用者的行為，像是滑鼠滾輪向下、或是用手機向下滑。如果你想要向上滑跟向下滑有不同的結果，那就很適合使用這個外掛。
+
+Observer 的基礎操作因為是套件所以需要另外呼叫
+gsap.registerPlugin(Observer);
+
+呼叫完之後你必須要設定一個想被Observer套用的行為模式
+Observer.create(&amp;#123;	target: window,   // 觸發的物件	type: &amp;quot;wheel,touch&amp;quot;,   // 觸發的行為	onUp: () =&amp;gt; previous(),  // 往上滾動執行的函式	onDown: () =&amp;gt; next(),  // 往下滾動執行的函式	ignore: &amp;qu.."><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Anthony's Blog" type="application/atom+xml">
+</head><body><header><div id="loading"><img id="loading-image" src="/images/loading-logo.png" alt="Loading..."><div class="loader"></div></div><div class="loading-easein"></div><div class="loading-background"></div><nav class="hidden lg:flex items-center justify-between flex-wrap py-6 px-8"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" alt="Logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="block lg:flex lg:items-center lg:w-auto"><div class="lg:flex-grow"><a class="nav-title line-hover" href="/"> <span>Home</span></a><a class="nav-title line-hover" href="/work"><span>Work</span></a><a class="nav-title line-hover" href="/blog"><span>Blog</span></a></div></div></nav><nav class="relative header-widget flex-shrink-0 self-center justify-between flex py-4 px-6 lg:hidden z-50"><div class="flex items-center flex-shrink-0"><a href="/"> <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" height="30" width="70" viewbox="0 0 70 30"><path class="logo-text" d="M39.88.24l7.19,29.52H38.89l-.79-5.17H32l-.78,5.17H23.14L30.21.24ZM35,6.28,32.89,18.8h4.3L35.09,6.28Z" fill="#1860c3"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76.71,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M20.14,15.09A14.38,14.38,0,0,0,5.76,29.47,14.38,14.38,0,0,0,20.14,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="5.76" cy="15.09" r="2.56" fill="#1860c3"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24,29.47,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><path class="logo-leaf" d="M49.86,15.09A14.38,14.38,0,0,0,64.24.71,14.38,14.38,0,0,0,49.86,15.09Z" fill="#ffbf6b"/><circle class="logo-dot" cx="64.24" cy="15.09" r="2.56" fill="#1860c3"/></svg></a></div><div class="burger-btn"></div><div class="open-menu"><div class="open-menu-list"><a class="text-[3rem] text-[color:var(--main-color)]" href="/"> <div>Home</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/work"><div>Work</div></a><a class="text-[3rem] text-[color:var(--main-color)]" href="/blog"><div>Blog</div></a></div></div></nav></header><main><div class="post-page"><div class="head-content my-4"><div class="flex items-center justify-between mb-4"><div class="block lg:flex lg:items-center lg:w-auto"><a href="/categories/Plugin"><div class="arrow-hover"><span>Plugin</span></div></a></div></div><h1 class="page-title" id="#postTitle">用GSAP製作網站特效（三）Observer</h1><p class="page-subtitle">Observer是GSAP的套件之一，主要用途為偵測使用者的行為，像是滑鼠滾輪向下、或是用手機向下滑。如果你想要向上滑跟向下滑有不同的結果，那就很適合使用這個外掛。</p><div class="flex items-center justify-between pt-4"><div class="block lg:flex lg:items-center lg:w-auto"><a class="mr-4" href="/tags/Animation"><div class="line-hover"><span>Animation</span></div></a></div><time datetime="2023-10-02T04:17:39.000Z">2023-10-02</time></div></div><div class="w-full"><article class="post-content"><p>Observer是GSAP的套件之一，主要用途為偵測使用者的行為，像是滑鼠滾輪向下、或是用手機向下滑。如果你想要向上滑跟向下滑有不同的結果，那就很適合使用這個外掛。</p>
+<p><img src="/images/post/head-cv-09.jpg" alt="$cover"></p>
+<h2 id="Observer-的基礎操作"><a href="#Observer-的基礎操作" class="headerlink" title="Observer 的基礎操作"></a>Observer 的基礎操作</h2><p>因為是套件所以需要另外呼叫</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">gsap.<span class="title function_">registerPlugin</span>(<span class="title class_">Observer</span>);</span><br></pre></td></tr></table></figure>
+
+<p>呼叫完之後你必須要設定一個想被Observer套用的行為模式</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Observer</span>.<span class="title function_">create</span>(&#123;</span><br><span class="line">	<span class="attr">target</span>: <span class="variable language_">window</span>,   <span class="comment">// 觸發的物件</span></span><br><span class="line">	<span class="attr">type</span>: <span class="string">&quot;wheel,touch&quot;</span>,   <span class="comment">// 觸發的行為</span></span><br><span class="line">	<span class="attr">onUp</span>: <span class="function">() =&gt;</span> <span class="title function_">previous</span>(),  <span class="comment">// 往上滾動執行的函式</span></span><br><span class="line">	<span class="attr">onDown</span>: <span class="function">() =&gt;</span> <span class="title function_">next</span>(),  <span class="comment">// 往下滾動執行的函式</span></span><br><span class="line">	<span class="attr">ignore</span>: <span class="string">&quot;.deadzone&quot;</span> <span class="comment">// 忽略的區塊</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>你也可以使用回調函式去看參數的變化</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Observer</span>.<span class="title function_">create</span>(&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="attr">onChange</span>: <span class="function">(<span class="params">self</span>) =&gt;</span>  &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;velocity:&quot;</span>, self.<span class="property">velocityX</span>, self.<span class="property">velocityY</span>, <span class="string">&quot;delta:&quot;</span>, self.<span class="property">deltaX</span>, self.<span class="property">deltaY</span>, <span class="string">&quot;target element:&quot;</span>, self.<span class="property">target</span>, <span class="string">&quot;last event:&quot;</span>, self.<span class="property">event</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="案例研究"><a href="#案例研究" class="headerlink" title="案例研究"></a>案例研究</h2><iframe src="https://codepen.io/GreenSock/embed/XWzRraJ?height=300&theme-id=dark&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>gsap也可以做出像輪播圖一格一格的滑動感，只是難度上比一般的輪播圖套件來的難很多，但是他的優勢就是可以用Observer做出往上滑跟往下滑有不同的動畫效果。</p>
+<p><code>animating</code>是用來製造輪播圖效果的參數，當我們正在滑動的時候就不觸發，避免過場動畫亂掉。</p>
+<p>因為監聽滑鼠行為的時候操作方向會跟手勢滑動相反(如果你是用Mac可能沒感覺)，如果你想同時監聽兩者行為的話建議加上<code>wheelSpeed: -1</code>。</p>
+<p><code>gotoSection()</code>是當我們滑動時需要改變目前顯示的區塊，往下滑會回上一張所以currentIndex會-1，第二個變數是用來顯示對應的動畫效果。</p>
+<p>最後<code>tolerance</code>這參數是防止稍微移動一下就觸發onDown跟onUp，這邊建議給他10~50左右。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Observer</span>.<span class="title function_">create</span>(&#123;</span><br><span class="line">	<span class="attr">type</span>: <span class="string">&quot;wheel,touch,pointer&quot;</span>,</span><br><span class="line">	<span class="attr">wheelSpeed</span>: -<span class="number">1</span>,</span><br><span class="line">	<span class="attr">onDown</span>: <span class="function">() =&gt;</span> !animating &amp;&amp; <span class="title function_">gotoSection</span>(currentIndex - <span class="number">1</span>, -<span class="number">1</span>),</span><br><span class="line">	<span class="attr">onUp</span>: <span class="function">() =&gt;</span> !animating &amp;&amp; <span class="title function_">gotoSection</span>(currentIndex + <span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">	<span class="attr">tolerance</span>: <span class="number">10</span>,</span><br><span class="line">	<span class="attr">preventDefault</span>: <span class="literal">true</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="常用變數介紹"><a href="#常用變數介紹" class="headerlink" title="常用變數介紹"></a>常用變數介紹</h4><div class="table-outer">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>型別</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lockAxis</td>
+<td>Boolean</td>
+<td>開啟鎖定指定軸的方向的相關參數 (可以參考<a target="_blank" href="https://codepen.io/GreenSock/pen/BarGQgw?editors=1011" rel="external nofollow noopener noreferrer">這個</a>例子會比較清楚是在幹麻的)</td>
+</tr>
+<tr>
+<td>tolerance</td>
+<td>Number</td>
+<td>忍受值，如果設定50代表你的滑鼠要移動超過50px才會做觸發的動作</td>
+</tr>
+<tr>
+<td>dragMinimum</td>
+<td>Number</td>
+<td>拖動忍受值，如果設定50代表你的手要滑動超過50px才會做觸發的動作</td>
+</tr>
+<tr>
+<td>ignore</td>
+<td>Element | String | Array </td>
+<td>無視的區塊</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>Function</td>
+<td>只要有任何的滾動行為都會觸發函式</td>
+</tr>
+<tr>
+<td>onChangeX</td>
+<td>Function</td>
+<td>只要有任何的左右滾動行為都會觸發函式</td>
+</tr>
+<tr>
+<td>onChangeY</td>
+<td>Function</td>
+<td>只要有任何的上下滾動行為都會觸發函式</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>Function</td>
+<td>只要有任何的點擊行為都會觸發函式</td>
+</tr>
+<tr>
+<td>onDown</td>
+<td>Function</td>
+<td>只要有滑鼠滾輪向下或手指向下滑都會觸發函式 (如果要向上請加上<code>wheelSpeed: -1</code>)</td>
+</tr>
+<tr>
+<td>onLeft</td>
+<td>Function</td>
+<td>只要有滑鼠滾輪向右或手指向右滑都會觸發函式</td>
+</tr>
+<tr>
+<td>onRight</td>
+<td>Function</td>
+<td>只要有滑鼠滾輪向右或手指向左滑都會觸發函式</td>
+</tr>
+<tr>
+<td>onHover</td>
+<td>Function</td>
+<td>滑鼠移入區塊後觸發函式</td>
+</tr>
+<tr>
+<td>onHoverEnd</td>
+<td>Function</td>
+<td>滑鼠移出區塊後觸發函式</td>
+</tr>
+<tr>
+<td>onLockAxis</td>
+<td>Function</td>
+<td>鎖定指定軸時觸發函式</td>
+</tr>
+<tr>
+<td>onPress</td>
+<td>Function</td>
+<td>按壓拖動時觸發函式</td>
+</tr>
+<tr>
+<td>onRelease</td>
+<td>Function</td>
+<td>按壓並且放開時觸發函式</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>想監聽哪些行為，預設是wheel、touch、pointer <ul><li>wheel：滑鼠滾動</li><li>scroll：滾動行為</li><li>touch：任何裝置的觸碰行為(包含手機跟電腦)</li><li>pointer：任何除了觸碰行為的行為</li></ul></td>
+</tr>
+<tr>
+<td>target</td>
+<td>Element | String</td>
+<td>想觸發的區塊，預設是viewport</td>
+</tr>
+</tbody>
+</table>
+</div></article><section class="jump-container my-12"><div class="jump-container-wrap"><!-- em is empty placeholder--><a class="button left" href="/Plugin/18_gsap-4/" title="用GSAP製作網站特效（四）MotionPath"><span class="left-arrow"><span class="title">下一篇</span><span>用GSAP製作網站特效（四）MotionPath</span></span></a><a class="button right" href="/Plugin/16_gsap-2/" title="用GSAP製作網站特效（二）ScrollTrigger"><span class="right-arrow"><span class="title">上一篇</span><span>用GSAP製作網站特效（二）ScrollTrigger</span></span></a></div></section><article class="mt-6 comment-container"><script async repo="johnnytsai81/johnnytsai81.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="github-light"></script></article></div></div></main><footer><div class="flex justify-center flex-col lg:flex-row py-3"><p class="mb-0 font-light lg:pr-8 text-center text-sm text-[color:var(--iron-color)]">Copyright © 2022 A Tsai,  All Rights Reserved</p><p class="mb-0 font-light lg:pr-8 text-center  text-sm text-[color:var(--iron-color)]">Designed by Anthony Tsai</p><p class="mb-0 font-light text-center  text-sm text-[color:var(--iron-color)]">Powered by Hexo</p></div></footer></body></html>

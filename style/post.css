@@ -143,7 +143,9 @@
 
 /* 一般內文 */
 .post-page .post-content>p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 /* 分隔線 */
@@ -174,7 +176,7 @@
 }
 
 /* 連結 */
-.post-page .post-content p a {
+.post-page .post-content a {
   color: var(--main-color);
   cursor: pointer;
   position: relative;
@@ -186,7 +188,7 @@
   transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.post-page .post-content p a::before {
+.post-page .post-content a::before {
   content: "";
   display: inline-block;
   transform-origin: 50% 100%;
@@ -202,12 +204,12 @@
 }
 
 @media (min-width: 1024px) {
-  .post-page .post-content p a:hover {
+  .post-page .post-content a:hover {
     top: -2px;
     transition: all 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   }
 
-  .post-page .post-content p a:hover::before {
+  .post-page .post-content a:hover::before {
     display: inline-block;
     transform: translate3d(0px, 3px, 0px) scale3d(1, 2, 1);
     background: var(--sub-color);
@@ -318,6 +320,7 @@
   position: relative;
   line-height: 2rem;
   margin-left: 1rem;
+  font-size: 1rem;
 }
 
 .post-page ul li::before {
@@ -477,6 +480,13 @@ p.admonition-title {
 
 .admonition>:last-child {
   margin-bottom: 0 !important;
+}
+
+/* 內文 */
+.post-page .admonition>p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 /*=============================================
